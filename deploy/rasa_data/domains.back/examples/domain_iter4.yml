@@ -1,0 +1,92 @@
+intents:
+  - None
+  - greetings
+  - gratitude
+  - goodbye
+  -
+  - ignorance -> no
+  - referenceobtained -> ?
+  - convflow -> ?
+  -
+  - askcreator
+  - askfeeling
+  - askjoke
+  - compliment
+  - gethelp
+  - getnews
+  - gettime
+  - getweather
+  - insult
+  - ishappy
+  - isnthappy
+  - laught
+  - yes
+  - wantdrink
+  - invoicestatus
+  - providerconsultation
+  - robotlaunch
+
+entities:
+  - crednif
+  -
+  - session
+  - reference
+  - cif
+  - system
+  - adquira
+  - organization
+  - builtin.currency
+  - paycondition
+  - iscreditor
+
+config:
+  store_entities_as_slots: true
+
+slots:
+  session:
+    type: text
+  reference:
+    type: text
+  cif:
+    type: text
+  system:
+    type: text
+  crednif:
+    type: text
+  iscreditor:
+    type: text
+  adquira:
+    type: text
+  organization:
+    type: text
+  builtin.currency:
+    type: text
+  paycondition:
+    type: text
+
+requested_slot:
+  type: categorical
+  values:
+  - session
+  - reference
+  - cif
+  - system
+  - organization
+  - builtin.currency
+  - paycondition
+  - crednif
+  - iscreditor
+
+actions:
+  - actions.ActionGreet
+  - actions.ActionGratitude
+  - actions.askForReference
+  - actions.utterInvoiceStatus
+  - actions.providerInformation
+  - actions.farewell
+  - actions.cifIgnorance
+  - actions.systemIgnorance
+  - actions.robotLaunch
+  - actions.referenceIgnorance
+  - actions.asumeA060
+  - actions.ActionNone

@@ -1,0 +1,7 @@
+coloredlogs==10.0
+Flask==1.0.2
+Flask_Cors==3.0.4
+gevent==1.4.0
+typing==3.6.4
+requests==2.20
+rasa_core_sdk==0.12.1

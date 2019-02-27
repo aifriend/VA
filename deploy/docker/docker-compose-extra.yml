@@ -1,0 +1,27 @@
+version: '3.0'
+services:
+
+  memory_manager:
+    image: core/memory:init
+    build:
+      context: ../../core/memory/docker
+      dockerfile: Dockerfile
+      args:
+        port: 3306
+    networks: ['rasa-network']
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./memory_manager/logs:/logs
+    depends_on:
+      - configuration_service
+
+  duckling:
+    image: rasa/duckling:latest
+    networks: ['rasa-network']
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs/duckling:/logs
+
+networks: {rasa-network: {}}

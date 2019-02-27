@@ -1,0 +1,178 @@
+intents:
+  # forms
+  - invoicestatus:
+      use_entities: true
+  - robotlaunch:
+      use_entities: true
+  - providerconsultation:
+      use_entities: true
+  # stories
+  - greetings
+  - goodbye
+  - gethelp
+  - stop
+  - deny
+  - next_step
+  # alone
+  - affirm
+  - thankyou
+  - compliment
+  - gratitude
+  - out_of_scope
+  - human_handoff
+  # internal
+  - inform
+  - chitchat
+
+entities:
+  # internal
+  - session
+  # dialog flow
+  - cnn
+  - macsystem
+  - currency
+  - sys-number
+  - paycon
+  # dialog helper
+  - sys-time
+  - pedido
+  - adquira
+  - organizacion
+  - org_compras
+  - codigo
+  - proveedor
+  - person
+
+# featurized: value not important (Policy: 0 - 1)
+# categorical: value important (Policy: value)
+# unfeaturized: do not affect dialog flow (No Policy)
+slots:
+  session:
+    type: text
+    initial_value: "default"
+  place:
+    type: text
+  data:
+    type: text
+  pedido:
+    type: text
+  adquira:
+    type: text
+  organizacion:
+    type: text
+  codigo:
+    type: text
+  proveedor:
+    type: text
+  status:
+    type: text
+  robot_id:
+    type: unfeaturized
+    auto_fill: false
+  provider_id:
+    type: unfeaturized
+    auto_fill: false
+  reference:
+    type: unfeaturized
+    auto_fill: false
+  orgcompras:
+    type: unfeaturized
+    auto_fill: false
+  currency:
+    type: unfeaturized
+    auto_fill: false
+  paycondition:
+    type: unfeaturized
+    auto_fill: false
+  system:
+    type: unfeaturized
+    auto_fill: false
+  step:
+    type: unfeaturized
+    initial_value: "0"
+  requested_slot:
+    type: unfeaturized
+
+actions:
+  # utters
+  - utter_default
+  - utter_greetings
+  - utter_goodbye
+  - utter_noworries
+  - utter_youarewelcome
+  - utter_not_implemented
+  - utter_stop
+  - utter_stop_followup
+  - utter_compliment
+  - utter_gethelp
+  - utter_canthelp
+  - utter_out_of_scope
+  - utter_possibilities
+  - utter_thank_usecase
+  - utter_have_you_used_repsolbot_before
+  - utter_anything_else
+  - utter_encourage_building_bot
+  - utter_offer_recommendation
+  - utter_getstarted
+  - utter_not_sure
+  - utter_continue_step
+  - utter_no_more_steps
+  - utter_reset_form
+  - utter_intro
+  - utter_ask_which_product
+  - utter_ask_describe_problem
+  - utter_ask_if_problem
+  - utter_action_handoff
+  - utter_ask_rephrase
+  - utter_ask_affirmation
+  # actions
+  - action_chitchat
+  - action_greetings
+  - action_goodbye
+  - action_reset_form
+  - action_reset_history
+  - action_reset_history_and_form
+  - action_default_ask_affirmation
+  - action_default_ask_rephrase
+  - action_default_nlu_fallback
+  - action_default_core_fallback
+  - action_invoicestatus_next_step
+  - action_providerconsultation_next_step
+  - action_robotlaunch_next_step
+  # shared
+  - utter_insist
+  # invoice status
+  - utter_ask_reference
+  - utter_wrong_reference
+  - utter_invoice_status
+  - utter_invoice_status_authorization
+  - utter_invoice_status_recorded
+  - utter_invoice_status_deleted
+  - utter_invoice_status_not_registered
+  - utter_invoicestatus_form_error
+  # provider consultation
+  - utter_ask_provider_id
+  - utter_wrong_provider_id
+  - utter_ask_system
+  - utter_wrong_system
+  - utter_providerconsultation_status
+  - utter_providerconsultation_default_status
+  - utter_providerconsultation_form_error
+  - utter_providerconsultation_sap_response
+  # robot launch
+  - utter_ask_robot_id
+  - utter_wrong_robot_id
+  - utter_ask_currency
+  - utter_wrong_currency
+  - utter_ask_orgcompras
+  - utter_wrong_orgcompras
+  - utter_ask_paycondition
+  - utter_wrong_paycondition
+  - utter_rpalaunch_form_error
+  - utter_robotlaunch_status
+
+forms:
+  - invoicestatus_form
+  - robotlaunch_form
+  - providerconsultation_form
+

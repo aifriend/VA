@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "cloudantDB": {
+    "database": "repsol-lb",
+    "username": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "password": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "name": "cloudantDB",
+    "connector": "cloudant"
+  }
+}

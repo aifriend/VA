@@ -1,0 +1,101 @@
+version: '3.0'
+
+services:
+
+  configuration_service:
+    container_name: configuration_service
+    image: core/configuration_service:init
+    build:
+      context: core/configuration
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 9000:9000
+    volumes:
+      - ./deploy/docker/configuration_service/logs:/app/logs
+
+  dialog_manager:
+    container_name: dialog_manager
+    image: core/dialog_manager:init
+    build:
+      context: core/dialog
+      dockerfile: docker/Dockerfile
+      args:
+        port: 8090
+    networks:
+      - rasanet
+    ports:
+      - 8090:8090
+    volumes:
+      - ./deploy/docker/dialog_manager/logs:/app/logs
+    depends_on:
+      - configuration_service
+      - business_logic
+      - confidence_controller
+      - context_manager
+      - security_service
+
+  business_logic:
+    container_name: business_logic
+    image: core/business_logic:init
+    build:
+      context: core/business
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8085:8085
+    volumes:
+      - ./deploy/docker/business_logic/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+  confidence_controller:
+    container_name: confidence_controller
+    image: core/confidence_controller:init
+    build:
+      context: core/confidence
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8080:8080
+    volumes:
+      - ./deploy/docker/confidence_controller/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+  context_manager:
+    container_name: context_manager
+    image: core/context_manager:init
+    build:
+      context: core/context
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8050:8050
+    volumes:
+      - ./deploy/docker/context_manager/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+  security_service:
+    container_name: security_service
+    image: core/security_service:init
+    build:
+      context: core/security
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8065:8065
+    volumes:
+      - ./deploy/docker/security_service/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+networks:
+
+  rasanet: {}

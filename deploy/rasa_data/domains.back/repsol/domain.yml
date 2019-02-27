@@ -1,0 +1,163 @@
+intents:
+  ## user cases
+  - invoicestatus:
+      use_entities: false
+  - providerconsultation:
+      use_entities: false
+  - robotlaunch:
+      use_entities: false
+  ## defaults
+  - None
+  - gratitude
+  - goodbye
+  - greetings
+  - name
+  - stop
+  - yes
+  - no
+  ## internal use only
+  - inform
+  - greet
+  ## chitchat
+  - askcreator
+  - askfeeling
+  - askjoke
+  - compliment
+  - gethelp
+  - getnews
+  - gettime
+  - getweather
+  - insult
+  - ishappy
+  - isnthappy
+  - wantdrink
+  - laught
+
+entities:
+  ## internal use only
+  - session ==> rasa_session
+  ## nlu entities
+  #_helpers
+  - adquira (List=etiquetas) -> providerconsultation
+  - pedido (List=etiquetas) -> providerconsultation and invoicestatus
+  - proveedor (List=etiquetas) -> providerconsultation and robotlaunch
+  - codigo (List=etiquetas) -> providerconsultation and robotlaunch
+  - organizacion (List=etiquetas) -> robotlaunch
+  - sol (Simple) -> chitchat
+  #_data
+  - :macsystem (list=etiquetas) -> providerconsultation -> *system
+  - :number (Prebuilt number) -> providerconsultation and invoicestatus -> *reference
+  - :money (Prebuilt currency) -> robotlaunch -> *currency
+  - :cnn (Regex=cie,nie,nif) -> providerconsultation and robotlaunch -> *cnn
+  - :paycon (List) -> robotlaunch -> *paycondition
+  - :location (List) -> chitchat
+
+templates:
+  utter_fake:
+    - text: ""
+
+slots:
+  ## form slots
+  - *name (Simple) -> greetings -> internal use only
+  - *cnn (:cnn + codigo) -> providerconsultation and robotlaunch -> crednif; cif
+  - *orgcompras (:number + organizacion) -> robotlaunch
+  - *currency (:money) -> robotlaunch
+  - *paycondition (:paycon) -> robotlauch
+  - *reference (:number + pedido) -> invoicestatus
+  - *system (:macsystem) -> providerconsultation
+  session:
+    type: text
+    initial_value: "default"
+  name:
+    type: text
+  status:
+    type: text
+  reference:
+    type: unfeaturized
+    auto_fill: false
+  cnn:
+    type: unfeaturized
+    auto_fill: false
+  orgcompras:
+    type: unfeaturized
+    auto_fill: false
+  currency:
+    type: unfeaturized
+    auto_fill: false
+  paycondition:
+    type: unfeaturized
+    auto_fill: false
+    initial_value: "a060"
+  system:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+actions:
+  ## default utters
+  - utter_submit
+  - utter_slots_values
+  - utter_noworries
+  - utter_continue
+  - utter_wrong_entity
+  - utter_restart
+  - utter_gethelp
+  - utter_goodbye
+  - utter_greet
+  - utter_greetings
+  - utter_greetings_firstime
+  - utter_name
+  - utter_no
+  - utter_stop
+  - utter_yes
+  - utter_defult
+  ## chitchat utters
+  - utter_chitchat
+  - utter_askcreator
+  - utter_askfeeling
+  - utter_askjoke
+  - utter_compliment
+  - utter_getnews
+  - utter_gettime
+  - utter_getweather
+  - utter_gratitude
+  - utter_insult
+  - utter_ishappy
+  - utter_isnthappy
+  - utter_laught
+  - utter_wantdrink
+  ## business roobot launch utters
+  - utter_rpa_response_ok
+  - utter_rpa_response_queue
+  - utter_rpa_response_failure
+  - utter_rpa_response_error_time
+  - utter_rpa_response_error
+  ## business invoice status utters
+  - utter_wrong_reference
+  - utter_invoicestatus_status
+  - utter_ask_for_reference
+  - utter_invoice_status
+  - utter_invoice_status_authorization
+  - utter_invoice_status_recorded
+  - utter_invoice_status_deleted
+  - utter_invoice_status_not_registered
+  ## business provider consultation utters
+  - utter_provider_information_SRM
+  - utter_provider_information_OTHER
+  - utter_ask_for_all_info
+  - utter_ask_for_cif
+  - utter_ask_for_system
+  - utter_mandatory_field
+  - utter_robot_launched
+  - utter_ask_for_creditor
+  - utter_ask_for_nif
+  - utter_ask_for_organization
+  - utter_ask_for_currency
+  - utter_mandatory_reference
+  - utter_ask_for_paycondition
+
+forms:
+  - invoicestatus_form
+  - providerconsultation_form
+  - robotlaunch_form

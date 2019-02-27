@@ -1,0 +1,24 @@
+PROVIDER CONSULTATION DIALOGUE
+------------------------------
+Q. ¿El proveedor está configurado por Adquira?
+A-HPS. Introduzca el cif o nif del acreedor
+Q1. 24256398T
+A-HPS1. Para que maquina o sistema se factura?
+Q1. SRM
+A-HPS2. El proveedor con None 24256398T y sistema SRM factura para Adquira
+
+
+NEXT STEP TEST CASE
+-------------------
+Q. ¿El proveedor está configurado por Adquira?
+Q1. eres muy amable (SMALLTALKS)
+Q2. muchas gracias (SMALLTALKS)
+Q3. que hora es? (SMALLTALKS)
+Q4. podrias darme alguna noticia? (SMALLTALKS)
+Q5. eres tonto (SMALLTALKS)
+Q6. si (ARTICULADOR: affirm)
+Q7. podrias ayudarme? (ARTICULADOR: gethelp)
+Q8. gracias (ARTICULADOR: gratitude)
+Q9. siguientes pasos (ARTICULADOR: next_step)
+Q10. 24256398T (SLOT: inform)
+Q11. SRM (SLOT: inform)

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mem-app
+data:
+    topics:
+        restartphone: 1

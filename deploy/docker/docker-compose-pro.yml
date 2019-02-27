@@ -1,0 +1,73 @@
+version: '2'
+services: 
+  repository:
+    build: ./repository
+    ports: 
+      - "8075:8075"
+    volumes:  
+      - ./logs:/logs  
+  rpa: 
+    build: ./rpa 
+    ports: 
+      - "8095:8095" 
+    volumes:  
+      - ./logs:/logs  
+  client: 
+    build: ./client 
+    ports: 
+      - "8060:8060" 
+    volumes:  
+      - ./logs:/logs  
+  rasa: 
+    build: ./rasa 
+    ports: 
+      - "5005:5005"
+    volumes: 
+      - ./logs:/logs 
+  memory:
+    build: ./memory
+    ports:
+      - "8020:8020"
+    volumes:
+      - ./logs:/logs
+  redis:
+    image: "redis"
+    ports:
+      - "6379:6379"
+  security: 
+    build: ./security
+    ports:
+      - "8065:8065"
+    volumes:
+      - ./logs:/logs
+  logic: 
+    build: ./logic
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./logs:/logs
+  mysql:
+    image: mysql/mysql-server:latest
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'true'
+    volumes:
+      - mysqldata:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  aicontroller: 
+    build: ./aicontroller
+    ports: 
+      - "8090:8090" 
+    volumes:  
+      - ./logs:/logs  
+    links: 
+      - logic
+      - repository 
+      - rpa 
+      - client 
+      - rasa 
+      - memory 
+      - redis 
+      - security 
+volumes:
+  mysqldata:

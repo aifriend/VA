@@ -1,0 +1,2247 @@
+## intent:ask_howbuilt
+- ¿Cómo te construyeron?
+- ¿Cómo te hicieron?
+- Dime cómo te hicieron.
+- Déjame saber cómo te hicieron exactamente
+- Me gustaría saber cómo fuiste creado.
+- ¿Puedes darme una idea de cómo fuiste creado?
+- Quiero saber cómo te formaste.
+- ¿Cuál fue el proceso para hacerte?
+- ¿Puedes explicar cómo fuiste creado?
+- ¿Especifica cómo fuiste creado?
+- ¿Me gustaría saber cómo te pusieron juntos?
+- ¿Puedes decir cómo fuiste construido?
+- ¿Cómo te hicieron?
+- ¿De qué manera fuiste hecho?
+- ¿Cómo te convertiste en quien eres?
+- ¿Cómo fuiste ideado?
+- ¿Cómo se hizo exactamente?
+- ¿Cómo fue exactamente ideado?
+- Entonces, ¿cómo te hicieron?
+- ¿Cómo llegaste a ser?
+- ¿Cómo te hicieron?
+- ¿Cómo te construyeron?
+- ¿Cómo te formaste?
+- ¿Cómo te hicieron?
+- ¿Cómo te construyeron?
+- ¿Cómo te crearon?
+- ¿Cómo te hicieron?
+- ¿Sabes cómo te hicieron?
+- ¿Sabes cómo te construyeron?
+- ¿Qué proceso se utilizó para crearte?
+- ¿Qué proceso se utilizó para construirte?
+- ¿Cómo llegaste a ser?
+- ¿Cómo fuiste concebido?
+- ¿De qué manera fuiste ideado?
+- ¿Cómo te construyeron?
+- ¿De qué manera fuiste formado?
+- ¿Cómo te formaste?
+- ¿Con qué medios te hiciste?
+- ¿Se originó a través de qué medios?
+- ¿Cómo te pusiste?
+- ¿Con qué método te creaste?
+
+## intent:ask_howold
+- ¿cual es tu edad?
+- ¿cuántos años?
+- ¿cual es tu edad?
+- ¿Cuando naciste?
+- ¿cuando es tu cumpleaños?
+- ¿cuando es tu cumpleaños?
+- ¿Cuántos años tienes?
+- ¿Sabes cuántos años tienes?
+- ¿Cuál es tu edad exacta?
+- ¿En qué año naciste?
+- ¿Puedes decirme tu edad?
+- ¿Cual es tu edad?
+- ¿Cuál es tu fecha de nacimiento?
+- ¿Cuántos años tendrás en tu próximo cumpleaños?
+- ¿Cuándo celebras tu día de nacimiento?
+- ¿Qué edad tenías en tu último cumpleaños?
+- ¿Cuántas velas había en tu último pastel de cumpleaños?
+- ¿Tienes amigos de la misma edad que tú? Si es así, ¿cuántos años tienen?
+- Cuéntame tu día, mes y año de nacimiento.
+- ¿Cual es tu edad?
+- y tu tienes cuantos años?
+- ¿Cuál es tu año de nacimiento?
+- ¿Qué edad tenías cuando celebraste tu último cumpleaños?
+- ¿Qué edad tenías cuando celebraste tu último cumpleaños?
+- ¿Dime tu edad?
+- que tal tu edad
+- ¿Qué edad tenías en tu último cumpleaños?
+- Qué edad tienes
+- ¿Qué edad tendrás este año?
+- ¿Cual es tu edad?
+- ¿En qué año naciste?
+- ¿Cuánto tiempo has estado alrededor?
+- ¿Cuánto tiempo llevas vivo?
+- ¿Cuál era tu edad en tu último cumpleaños?
+- ¿Cuál será tu edad en tu próximo cumpleaños?
+- ¿Cuántos años has vivido?
+- ¿Cuántos años llevas vivo?
+- ¿Cuánto tiempo has ocupado la tierra?
+
+## intent:ask_isbot
+- ¿Eres un bot?
+- ¿Eres un bot real?
+- Eres un bot
+- ¿Eres realmente un bot?
+- Eres un robot
+- Eres un robot
+- ¿Eres un bot rasa?
+- ¿Eres un bot rasa?
+- ¿Qué eres, un bot?
+- dime, ¿eres un bot?
+- ¿Eres un skynet?
+- eres un chatbot
+- estas ai
+- eres tu inteligencia artificial
+- eres artificial
+- Supongo que eres un chatbot
+- eres un robot
+- eres ai
+- eres chatbot
+- eres Bot
+- Eres un bot ?
+- eres un bot
+- ¿Eres el bot?
+- Hola, ¿eres el bot?
+- ¿Eres un bot de chat?
+- ¿Estás rasa bot?
+- ¿Eres un bot?
+- eres robot
+- eres real
+- Que eres ?
+- Así que hoy estoy aquí para hacerte una pregunta muy simple, ¿qué eres?
+- eres real lol
+- Porque eres un bot
+- ¿eres Bot?
+- oh eres chatbot?
+- ¿Estás seguro de que eres un bot?
+- Eres un bot
+
+## intent:ask_languagesbot
+- ¿Que lenguas hablas?
+- ¿En qué idiomas puedes hablar?
+- ¿Qué idiomas sabes?
+- ¿En qué idiomas hablas con fluidez?
+- ¿En qué idiomas puedes conversar?
+- ¿Qué idiomas sabes usar?
+- ¿Con qué idiomas estás familiarizado?
+- ¿Qué idiomas puedes usar?
+- ¿Con qué idiomas estás familiarizado?
+- ¿Qué idiomas sabes?
+- ¿En qué idiomas hablas con suficiente fluidez?
+- ¿Qué idiomas puedes hablar?
+- ¿En qué idiomas te sientes cómodo hablando?
+- ¿En qué idiomas eres bueno para hablar?
+- ¿En qué idiomas estás bien versado?
+- ¿En qué idiomas te puedes sentir cómodo hablando?
+- ¿En qué idiomas prefieres hablar más?
+- ¿Qué idiomas puedes manejar bien?
+- ¿Sabes algun otro idioma?
+- ¿Hablas alguna otra lengua?
+- ¿Qué idiomas sabes?
+- ¿Qué idiomas hablas?
+- ¿Que hablas?
+- ¿Habla otros idiomas?
+- ¿Puedes comunicarte en otros idiomas?
+- ¿En qué idiomas te puedes comunicar?
+- ¿Cuántos idiomas sabes?
+- ¿qué idiomas sabes?
+- Dime algunos idiomas, ¿sabes?
+- ¿Hablas alguna otra lengua?
+- ¿Qué más sabes además del inglés?
+- ¿Eres bilingue?
+- ¿eres multilingüe?
+- ¿Qué idiomas extranjeros conoces?
+- ¿En qué idiomas extranjeros hablas con fluidez?
+
+## intent:ask_restaurant
+- restaurantes
+- ¿Me pueden mostrar un restaurante sin gluten?
+- quiero un restaurante francés
+- Estoy buscando un restaurante chino
+- necesito un nuevo restaurante
+- ayudame a encontrar restaurante
+- Voy a necesitar ayuda para encontrar un restaurante.
+- Hola, ayúdame a encontrar un restaurante.
+- ¿Cómo puedes ayudarme a encontrar un restaurante?
+- Donde está el restaurante
+- Mostrarme cómo encontrar un restaurante.
+- Necesito encontrar este restaurante.
+- Ayúdame a encontrar este restaurante.
+- Oye, ¿puedes ayudarme a localizar este restaurante?
+- Encuéntrame un lugar para comer.
+- ¿Puedes recomendar un restaurante abierto ahora mismo?
+- ¿Cuál es el restaurante más cercano abierto cerca de mí?
+- Tengo hambre, búscame un lugar para ir.
+- Sugiéreme un buen restaurante alrededor.
+- Muéstrame el restaurante abierto más cercano
+- ¿Qué es un buen lugar para comer cerca?
+- Recomiéndame un restaurante por aquí.
+- Elige un restaurante para mí, por favor.
+- Ayúdame a encontrar un restaurante.
+- ¿Puedes encontrar un restaurante para mí?
+- ¿Encontrar un restaurante para mí?
+- ¿Me encontrarías un restaurante?
+- ¿Me encontrarías un restaurante?
+- ¿Podrías encontrarme un restaurante?
+- ¿Podrías encontrarme un restaurante?
+- ¿Podrías encontrarme un restaurante para comer?
+- Encuentra un restaurante para que yo coma.
+- Encuéntrame un restaurante donde pueda comer.
+- Encuentra un restaurante donde pueda comer.
+- Necesito un restaurante.
+- ¿Puedes encontrarme un restaurante?
+- ¿Dónde debo comer?
+
+## intent:ask_time
+- ¿Cuál es la hora actual?
+- que hora es en sydney
+- que hora es ahora
+- Qué hora es ?
+- ¿Qué hora es en Estados Unidos?
+- ¿Qué hora es Estados Unidos?
+- ¿Qué hora es Estados Unidos?
+- que hora es
+- ¿Qué hora es?
+- ¿Puedes darme el tiempo?
+- ¿Hora?
+- ¿Sabes el tiempo?
+- ¿Puedes decir la hora?
+- Dame el tiempo.
+- Dime la hora.
+- ¿Podrías decirme que hora es?
+- ¿Disculpa, qué hora es?
+- ¿Sabes que hora es?
+- ¿Podrías decirme la hora?
+- ¿Podría decirme la hora por favor?
+- ¿Qué hora es?
+- ¿Sabes el tiempo?
+- ¿Me dirías qué hora es?
+- ¡Tiempo por favor!
+- Perdóneme, pero ¿sabe la hora?
+- ¿Hora?
+- ¿Que hora es?
+- ¿Sabes que hora es?
+- ¿Cuál es la hora actual?
+- ¿Qué hora es en este momento?
+- ¿Tienes el tiempo?
+- ¿Puedes decirme qué hora es?
+- Hola, necesito el tiempo.
+- Necesito saber qué hora es.
+- Dime la hora.
+- ¿Qué hora es?
+- ¿Qué hora es ahora?
+- ¿Cuál es la hora actual?
+- ¿Puedes decirme la hora?
+- ¿Cuál podría ser el tiempo?
+- ¿Cuál es la hora y el minuto ahora?
+- ¿Qué hora tenemos?
+- ¿Qué hora es en este momento?
+
+## intent:ask_whatismyname
+- ¿Cuál es mi nombre?
+- ¿Puedo saber mi nombre?
+- ¿Cuál es mi nombre?
+- ¿Cómo me llamo?
+- Dime mi nombre.
+- Explícame mi nombre.
+- ¿Cuál podría ser mi nombre?
+- ¿Con qué nombre me voy?
+- ¿Qué nombre debo reconocer por mí mismo?
+- ¿Cuál es mi nombre?
+- ¿Puedes decirme mi nombre?
+- ¿Cuál es mi nombre?
+- ¿Tengo un nombre?
+- ¿Tengo un nombre? ¿Qué es?
+- ¿Cómo me llamaron?
+- Di mi nombre.
+- ¿Sabes mi nombre?
+- ¿Cómo me llama la gente?
+- ¿Puedes decirme mi nombre?
+- ¿Qué más me llama la gente?
+- Tengo un nombre, ¿cuál es?
+- dime mi nombre
+- Me gustaría saber mi nombre
+- Informame cual es mi nombre
+- Por favor, déjame saber cuál es mi nombre
+- ¿Puedes decirme cómo me llamo?
+- Me gustaría saber cuál es mi nombre.
+- ¿Cuál es el nombre que me dieron?
+- ¿Cómo me llaman todos?
+- ¿Cómo me llamo?
+- ¿Cómo me llamaron mis padres?
+- ¿Cómo me llaman mis colegas?
+- ¿Cuál sería el nombre en mi lápida?
+- ¿Sabes cuál es mi nombre?
+- ¿Cuál es mi primer nombre?
+- ¿Cuál es mi nombre completo?
+- ¿Cómo me llama la gente?
+- ¿Cuál es exactamente mi nombre?
+
+## intent:ask_wherefrom
+- Dónde vives
+- ¿de donde eres?
+- Así que de dónde eres
+- ¿Dónde estás?
+- ¿Donde naciste?
+- ¿En que ciudad naciste?
+- ¿Dónde creciste?
+- ¿En qué estado naciste?
+- ¿En qué país naciste?
+- ¿De dónde es?
+- ¿Dónde estabas antes de estar aquí?
+- ¿De donde?
+- ¿Sabes de dónde vienes?
+- ¿Dónde está tu ciudad natal?
+- ¿De qué país eres?
+- ¿eres de por aquí?
+- ¿Dónde creciste?
+- ¿de donde son tus padres?
+- ¿Dónde pasaste tu juventud?
+- ¿de donde vienes?
+- ¿Donde naciste?
+- ¿Dónde consideras tu hogar?
+- ¿Qué ciudad reclamas para tu nacimiento?
+- ¿De qué ciudadanía reclamas?
+- ¿Cuál es tu herencia?
+- ¿Cuál es tu lugar de nacimiento?
+- ¿Dónde creciste?
+- ¿Fuiste concebido en qué lugar?
+- ¿Cuál es tu raíz?
+- ¿Cuál es tu origen?
+- ¿De dónde vienes?
+- ¿De donde vienes?
+- ¿Dónde te originaste?
+- ¿Dónde están tus raíces?
+- ¿Dónde están tus orígenes?
+- ¿De qué área eres?
+- ¿De qué lugar eres?
+- ¿Cómo se llama el lugar del que vienes?
+
+## intent:ask_whoami
+- ¿Quién soy?
+- esta bien quien soy
+- Quién soy
+- Dime quien soy yo?
+- Dime quien soy
+- ¿Sabes quién soy?
+- ¿Puedes decirme quién soy?
+- ¿Cómo descubro quién soy?
+- ¿Cómo puedo determinar quién soy?
+- ¿Sabes quién soy?
+- ¿Puedes decirme quién soy?
+- ¿Cómo descubro quién soy?
+- ¿Cómo puedo determinar quién soy?
+- quien soy yo
+- ¿Quién puedo?
+- ¿Debo saber quién soy yo?
+- Dime quien soy.
+- ¿Cómo me identifico?
+- ¿Quién podría ser?
+- dime quien soy
+- ¿Cuál es mi identidad?
+- ¿Dime cuál es mi identidad?
+- ¿Puedes decirme lo que soy?
+- ¿Puedes decirme cuál es mi identidad?
+- ¿Puedes decirme quién soy?
+- quién soy
+
+## intent:ask_builder
+- ¿Puedes compartir tu jefe conmigo?
+- Quiero conocer a tu dueño
+- Quiero conocer la empresa que te diseñó.
+- Quiero conocer la empresa que te generó.
+- Quiero conocer la empresa que te inventó.
+- Quiero saber quién te inventó
+- ¿Puedo preguntar quién te inventó?
+- por favor dime la compañía que te creó
+- por favor dime quien te creó
+- Cuéntame más sobre tus creadores.
+- Cuéntame más sobre tus fundadores.
+- ¿Qué compañía te trajo a la existencia?
+- ¿Qué compañía te creó?
+- ¿Qué compañía te inventó?
+- ¿Quién es tu jefe?
+- ¿Quién es tu constructor?
+- ¿Quién te construyó?
+- ¿Quien te creó?
+- ¿Quién es tu creador?
+- ¿Quién te diseñó?
+- ¿Para quién trabajas?
+- ¿Quién te fabricó?
+- ¿Quién te generó?
+- ¿Quién tuvo la idea de construirte?
+- ¿Quién tuvo la idea de generarte?
+- ¿Quién tuvo la idea de hacerte?
+- ¿Quien esta detrás de todo esto?
+- ¿Quién es el dueño legal de ti?
+- quien es tu jefe dime
+- ¿Quien es tu jefe?
+- quien es tu creador
+- ¿Quién es tu programador?
+- ¿Quien te hizo?
+- ¿Quién te modeló?
+- ¿Quien es tu dueño?
+- ¿Quién te produjo?
+- ¿Quién pensó hacerte?
+- ¿Quién se tomó la molestia de instalarte?
+- ¿Y quién te construyó?
+- ¿Quién te construyó?
+- quien construye yoi
+- ¿quien te hizo?
+- ¿Dónde te hicieron?
+- ¿Por qué te hicieron?
+- ¿Cómo te hicieron?
+- ¿Quien te creó?
+
+## intent:ask_howdoing
+- Ahoy amigo, ¿cómo estás?
+- Estás bien
+- estas teniendo un buen dia
+- ¿Estas bien?
+- estás bien
+- ¿Te sientes bien?
+- cómo van las cosas
+- ¿cómo van las cosas contigo?
+- ¿Cómo están las cosas?
+- cómo estás
+- como estas
+- Cómo estás esta mañana
+- como te sientes
+- cómo estás hoy
+- ¿Cómo estás?
+- ¿Cómo lo haces?
+- como has estado
+- Cómo va
+- Cómo va su día
+- Cómo va tu día
+- Cómo ha sido tu tarde
+- ¿Que tal tu día?
+- Cómo te va
+- ¿Cómo lo llevas?
+- como es la vida
+- ¿como te ha estado tratando la vida?
+- ¿Cómo te trata la vida amigo?
+- como va tu dia
+- ¿Como has estado?
+- Estoy bien y tú
+- todo está bien
+- ¿Esta todo bien?
+- Está todo bien
+- Qué tal tu día
+- ¿Que esta pasando?
+- lo que es bueno
+- ¿Qué hay de nuevo?
+- que pasa hombre
+- Que pasa
+- ¿cómo estás?
+- ¿Tienes un gran día?
+- ¿Cómo estás hoy mi dulce amigo?
+- ¿como estas?
+- Cómo estás
+- ¿Cómo estás?
+
+## intent:ask_weather
+- ¿Cómo está el clima hoy?
+- ¿Como está el clima?
+- ¿Qué tiempo hace en tu casa?
+- ¿Tienes buen tiempo?
+- ¿Esta lloviendo?
+- ¿Cómo es ahí afuera?
+- ¿Hace calor o frío?
+- Hermoso día, ¿verdad?
+- ¿Cuál es el pronóstico del tiempo?
+- ¿Es bastante ventoso afuera?
+- ¿Necesitaré mi impermeable hoy?
+- ¿Qué tiempo hace mañana?
+- ¿Buen día hoy?
+- ¿Cuál es la temperatura de hoy?
+- ¿Podemos esperar alguna tormenta?
+- ¿Estarán claros los cielos hoy?
+- ¿Estamos en busca de un anotador?
+- Parece un hermoso día oye?
+- ¿Construiremos un muñeco de nieve hoy?
+- ¿Está húmedo ahí afuera hoy?
+- ¿Hay algún cambio meteorológico que deba tener en cuenta?
+- ¿Qué tiempo hace mañana?
+- ¿Cómo es el clima en el mundo bot?
+- ¿Qué tiempo hace en Berlín?
+- ¿cómo está el tiempo hoy?
+- ¿Cómo está el clima?
+- ¿Como es el clima donde estas?
+- ¿Está el sol donde estás?
+- está soleado
+- ¿Está el sol donde estás?
+- Cuál es el tiempo
+- ¿Qué tiempo hace en Berlín?
+- como esta el clima en berlin
+
+## intent:ask_whatisrasa
+- ¿Cómo funciona Rasa?
+- ¿Puedes decirme más sobre rasa?
+- ¿Qué construye Rasa?
+- ¿Qué haces en Rasa?
+- ¿Qué es Rasa?
+- ¿Qué hace Rasa?
+- ¿Puedes decirme lo que hace Rasa?
+- Dame más información sobre Rasa.
+- ¿Qué hace rasa?
+- Quiero aprender lo que hace rasa.
+- ¿Qué hace rasa exactamente?
+- Cuéntame más sobre rasa
+- Cuéntame más sobre tu compañía.
+- Cuéntame más sobre rasa
+- Quiero saber qué es rasa.
+- que puedo hacer con rasa
+- ¿Qué hacen ustedes en rasa?
+- que hace rasa
+- que es rasa
+- Quiero saber qué rasa realmente hace eso todavía no está claro para mí.
+- No he entendido lo que es realmente rasa
+- ¿Puedes por favor explicar lo que hace rasa?
+- explícame que hace rasa
+- explícame que rasa es
+- No entiendo lo que es rasa
+- que es rasa en realidad
+- que es rasa
+- Quiero aprender algo sobre rasa.
+- Quiero saber que hace rasa.
+- ¿Qué es el núcleo rasa?
+- ¿Qué puedo construir con Rasa Core?
+- ¿Qué está haciendo rasa exactamente?
+- ¿Qué haces como empresa?
+
+## intent:ask_whatspossible
+- ayuda
+- ayuda por favor
+- no se lo que quiero
+- Necesito algo de ayuda
+- opciones
+- muéstrame el menú
+- muéstrame lo que es posible
+- entonces que puedes hacer
+- Entonces, ¿en qué me puedes ayudar?
+- ¿En qué eres bueno?
+- que puedo hacer aqui
+- ¿Qué puedo hacer con este bot?
+- ¿Para qué es este bot?
+- ¡guay! puedo hacer algo mas aqui?
+- ayuadame
+- ¡Háblame!
+- Vuelve
+- cómo puedes ayudarme
+- que más puedo hacer
+- ¿Hay más opciones?
+- hm que no me ayuda del todo, ¿hay algo más que puedas hacer?
+- que puedo hacer aqui
+- Qué puedo hacer ahora
+- um que ahora
+- y ahora que
+- ¿ayuda?
+- ¿ahora que?
+- Genial, ¿hay algo más que puedas hacer, bot?
+- ¿Qué puedes hacer?
+- ¿cómo puedes ayudarme?
+- ¿Puedes hacer algo más?
+- Te pregunté si puedes hacer otra cosa.
+- algo más
+- ¿Y ahora qué?
+- ¿Qué más puedo hacer aquí?
+- ¿Puedes explicarme en una oración lo que estás haciendo?
+- ¿cuales son las opciones?
+
+## intent:ask_whoisit
+- quien es este
+- Con quién estoy hablando
+- cuál es tu nombre
+- con quien estoy hablando
+- Quién eres
+- como te llamas bot
+- cual es tu nombre
+- ¿Como te llaman?
+- ¿quién esta hablando?
+- ¿quien habla?
+- quien habla?
+- quien eres y que quieres de mi
+- ¿quién eres tú?
+- ¿Quién es?
+- ¿quien eres?
+- quién eres tú
+- Quiero saber quien eres
+- Quien eres
+- si pero quien eres en tu corazón
+- ¿Eres un bot?
+- ¿quien es este?
+- ¡Hola! cuál es tu nombre?
+
+## intent:bye
+- adiós
+- buenas noches
+- adiós
+- buenas noches
+- nos vemos
+- toodle-oo
+- adiós
+- me tengo que ir
+- despedida
+- te veo luego
+- adiós por ahora
+- adiós
+- adios fue agradable hablar contigo
+- adios udo
+- bye bye bot
+- bye bot
+- k byyye #slay
+- luego te hablo
+- ciao
+- Adiós
+- entonces adiós
+- tschüssikowski
+- ¡adiós!
+
+## intent:canthelp
+- ok entonces no puedes ayudarme
+- Eso fue una mierda, no estás ayudando.
+- no puedes ayudarme
+- No puedes ayudarme con lo que necesito.
+- supongo que no puedes ayudarme entonces
+- ok supongo que no puedes ayudarme
+- eso no es lo que quiero
+- ok, pero eso no me ayuda
+- esto no lleva a nada
+- Esta conversación no es realmente útil.
+- No puedes ayudarme con lo que quiero.
+- Creo que no puedes ayudarme
+- hm no creo que puedas hacer lo que quiero
+- detener
+- deja de volver
+- ¿Tienes algo?
+- ¿Y te llamas compañía bot? pff
+- ¿y eso es?
+- ¿nada más?
+
+## intent:contact_sales
+- Quiero hablar con tu gente de ventas.
+- Quiero hablar con tu personal de ventas.
+- Quiero hablar con las ventas.
+- Ventas
+- Por favor haga una llamada de ventas
+- Por favor contactame con alguien de ventas.
+- Quiero ponerme en contacto con tus vendedores.
+- Me gustaría hablar con alguien de su equipo de ventas.
+- ventas por favor
+- Quiero hablar con ventas sobre nuestro proyecto.
+- Quiero una oferta para tu plataforma.
+- Quiero tener una suscripción para su producto.
+- Quiero aprender más sobre sus precios.
+- Quiero hablar con alguien sobre su sistema de precios.
+- Dame alguien que pueda explicar tu modelo de negocio.
+- Tener una llamada con el equipo de ventas.
+- Déjame hablar con tus vendedores.
+- ventas
+- Quiero una llamada de ventas
+- Quiero contactar con el equipo de ventas.
+- Quiero hablar con tus vendedores.
+- Quiero contactar con tu equipo de ventas.
+- También quiero reservar una llamada de ventas.
+- Quiero contactar con ventas
+- Quiero reservar una llamada con su equipo de ventas.
+- contactar ventas
+- Quiero contactar a ventas
+- Identificación como una llamada por favor
+- Me gustaría tener una llamada con el equipo de ventas.
+- quiero que alguien me llame
+- solicitar una llamada
+- solicitar una llamada
+- Quiero hablar con ventas
+- Me gustaría hablar con un vendedor.
+- Pero quería una llamada de ventas.
+- Quiero hablar con tu vendedor.
+- Me gustaría hablar con alguien que me pueda explicar qué puedo hacer con rasa.
+- ¿Puede alguien ayudarme con infos sobre la plataforma rasa?
+- Quiero información sobre la plataforma.
+- ¿Cómo funciona su precio?
+- ¿Hay diferentes paquetes que los clientes puedan reservar?
+- por favor proporcione información sobre su paquete de empresa
+- Necesito saber cómo puedo reservar soporte
+- Empezamos a trabajar con rasa pero ahora necesitamos apoyo.
+- Construimos un bot con rasa pero ahora estamos interesados ​​en la plataforma.
+- Déjame hablar con tu personal de ventas
+- Quiero aprender más sobre sus precios.
+- contactar ventas
+- Quiero contactar a ventas ahora
+- déjame contactar a ventas
+- conectarse a ventas
+- Conectame con tu departamento de ventas.
+- Departamento de ventas
+- ¿Puedes conectarme a ventas?
+- Quiero estar conectado a tu equipo de ventas.
+- conexión del equipo de ventas
+- Conectar con el equipo de ventas.
+- Quiero conectar tus ventas.
+- Necesito hablar con tu equipo de ventas.
+- ¿Puedo hablar con un representante de ventas?
+- Quiero conectarme a ventas
+- tráeme el equipo de ventas
+- contacto de ventas
+- contacta con ventas
+- A continuación el contacto de ventas.
+- por favor conectame a ventas
+- necesito hablar con ventas
+- Quiero estar en contacto con las ventas.
+- Llamar con equipo de ventas.
+- Quiero tener una llamada con ventas.
+- Déjame llamar al equipo de ventas.
+- Necesito una llamada de ventas.
+- solicitar llamada de ventas
+- solicitud de llamada
+- necesito la solicitud de llamada
+- déjame tener la llamada
+- quiero llamar
+- venta de llamadas
+- Solicitar llamada con equipo de ventas.
+- Llamada de contacto con ventas.
+- equipo de ventas
+- solicitar equipo de ventas
+- contactar a ventas
+- elijo la llamada
+- Elijo la llamada con ventas.
+- tener una llamada
+- llamada
+- Me gustaría tener una demo programada
+- pero quiero una llamada de ventas
+- ¿Puedo tener una llamada mañana a las 3 pm?
+- Quiero aprender más sobre la plataforma Rasa.
+- reservar una llamada
+- ventas ventas ventas
+- reservar una llamada de ventas
+- Creo que quiero hablar con su gente de ventas.
+- solo dame una llamada
+- ok quiero hablar con tus vendedores
+- Quiero comprar la plataforma rasa.
+- Quiero conectarme con tu equipo de ventas.
+- Quiero comprar la plataforma rasa.
+- Quiero una llamada de ventas
+- llamada de venta
+- Me gustaría contactar con su equipo de ventas por favor.
+- Ok, quiero hablar con su equipo de ventas inmediatamente
+- hm ok entonces quiero hablar con el tipo de ventas
+- Quiero hablar con ventas.
+- una llamada
+- Vamos a contactar con ventas ahora
+- Obviamente, hable con su increíble equipo de ventas.
+- hmmm ventas
+- ok ventas
+- déjame hablar con ventas
+- ventas pl
+- hablemos con ventas
+- Déjame hablar con tu personal de ventas!
+- ¿Puedo hablar con tu desagradable vendedor?
+- ¿Puedo recibir una llamada de ventas?
+- ¿Puedo hablar con el equipo de ventas?
+- Habla con el equipo de ventas.
+- Quiero hablar con tu equipo de ventas.
+- ¿Puedo tener una llamada?
+
+## intent:deny
+- no
+- definitivamente no
+- Nunca
+- absolutamente no
+- no lo creo
+- Me temo que no
+- no señor
+- No, señora
+- de ninguna manera
+- No lo siento
+- No en realidad no.
+- nah no para mí
+- nah
+- no y no otra vez
+- no vayas
+- no, gracias
+- declinar
+- negar
+- renuncio
+- no importa
+- No te voy a dar mi dirección de correo electrónico.
+- No, aún no he decidido si quiero registrarme.
+- No quiero dártelo.
+- No te lo voy a dar.
+- no, no acepto
+- ¡¡¡¡no!!!!
+- no lo hiciste mal
+- no, no puedo
+- no estoy seguro
+- NEIN
+- nein
+- realmente no
+- Supongo que significa - no
+- no quiero
+- no quiero ninguno de esos
+- nah gracias
+- ninguno de éstos
+
+## intent:enter_data
+- 100k
+- 100k
+- 240k / año
+- 150,000 USD
+- 150,000 $ / año
+- alrededor de $ 500,000 por año
+- Planeamos con 250.000 euros por un año.
+- sobre 4,000,000 INR
+- 50,000,000 INR
+- 60 millones INR
+- Pensamos 4 millones de INR / año.
+- Entre 100 y 200.000.
+- 50,000 dolares
+- No estoy seguro aún, planeamos con 50 mil euros en este momento.
+- 75000-150000 euros
+- Nuestra estimación es de 10k.
+- Trabajo para [Bayer] (empresa)
+- El nombre de la compañía es [Daimler] (compañía)
+- empresa: [uber] (empresa)
+- es una pequeña empresa de los Estados Unidos, el nombre es [Microsoft] (compañía)
+- Es una empresa de tecnología, [Apple] (empresa)
+- [microsoft] (empresa)
+- [pista] (empresa)
+- [SAP] (empresa)
+- [IBM] (empresa)
+- [t-mobile US] (empresa)
+- [vodafone] (empresa)
+- [accenture] (empresa)
+- [McKinsey Alemania] (empresa)
+- [BCG brasil] (empresa)
+- [BCG digital ventures] (empresa)
+- Trabajo para [Stanford University] (empresa)
+- Trabajo para el [grupo de investigación de inteligencia artificial del centro de turismo de la UBC, Vancouver, Canadá] (empresa)
+- maxmeier@firma.de
+- bot-fan@bots.com
+- maxmeier@firma.de
+- bot-fan@bots.com
+- Mi correo electrónico es email@rasa.com
+- Mi correo es markjobs@ibm.com
+- mi correo electrónico es khardik.kmosu@bol.net.in
+- Mi correo comercial es mikemiller@sales.apple.com
+- correo electrónico = stephanywhite@microsoft.com
+- correo: julianfrank@hotmail.com
+- santaklaus@googlemail.com
+- saswatkarhar@rediffmail.com
+- nerd@stanford.edu
+- alexander.denker@tu-berlin.de
+- sislawawa@india.com
+- chengming@aliyun.com
+- solomq122@qq.mail.com
+- [Gerente de producto] (función de trabajo)
+- Soy un [gerente de producto] (trabajo)
+- Trabajo como [gerente de proyecto] (función de trabajo)
+- Soy el [desarrollador] (trabajo)
+- [analista de datos] (función de trabajo)
+- [científico de datos] (trabajo)
+- [dev] (función de trabajo)
+- [ingeniero] (trabajo)
+- [gerente de marca] (función de trabajo)
+- [marketing] (trabajo)
+- [gerente de ventas] (trabajo)
+- [gerente de crecimiento] (función de trabajo)
+- [CTO] (función de trabajo)
+- [CEO] (función de trabajo)
+- [COO] (función de trabajo)
+- [Asistente del CEO] (función de trabajo)
+- Soy el [ingeniero principal] (trabajo)
+- Soy un desarrollador de Python.
+- Soy un [investigador de IA] (función laboral)
+- [Max Meier] (nombre)
+- Mi nombre es [Max Meier] (nombre)
+- [Ralph White] (nombre)
+- Soy [Tom Miller] (nombre)
+- [Ann Snyder] (nombre)
+- [Victoria McMillan] (nombre)
+- [Denise Perry] (nombre)
+- [Bob Geldorf] (nombre)
+- [Susan Catterfeld] (nombre)
+- [Taylor Shwed] (nombre)
+- [Meredith Gray] (nombre)
+- [Alex Karev] (nombre)
+- Planeamos construir un bot de ventas para aumentar nuestras ventas en un 500%.
+- Planeamos construir un robot de ventas para aumentar nuestros ingresos en un 100%.
+- una herramienta de seguro que consulta a los clientes potenciales sobre el mejor seguro de vida para elegir.
+- Estamos construyendo un asistente de conversación para que nuestros empleados reserven salas de reuniones.
+- Trabajo en [gestión de proyectos] (trabajo)
+- Soy un desarrollador
+- mi nombre es [linda] (nombre)
+- Trabajo en [innvoation] (trabajo)
+- mi función de trabajo es [desarrollador] (función de trabajo)
+- Soy responsable de nuestro [departamento de innovación] (trabajo)
+- Trabajo como [desarrollo frontend] (trabajo)
+- [jefe de proyecto] (función de trabajo)
+- Soy un [gerente de proyecto] (trabajo)
+- Soy [gerente de proyecto] (trabajo)
+- Es foo@bar.com
+- 10000000
+- [ACME Mops] (empresa)
+- mrmop@mops.app
+- 5 dolares
+- Soy un [portero] (trabajo)
+- Mi correo electrónico es linda@linda.linda
+- Quiero construir un bot que envíe a las personas lindas imágenes de animales en función de su color favorito.
+- Soy un [desarrollador] (trabajo)
+- Quiero construir un bot genial.
+- mi emayl es yolo en yolo.de
+- [gerente] (función de trabajo)
+- adele@gmx.com
+- mi nombre es [marc] (nombre)
+- un billón de dólares
+- Soy un [desarrollo de pila completa] (trabajo: desarrollador de pila completa) r
+- moabit@yoga.com
+- Es el [estudio de yoga moabit] (empresa)
+- mi nombre es [oli miller] (nombre)
+- 100000k
+- Estoy en [project mgmt] (trabajo)
+- 10000 dolares
+- 400 trillones
+- philipp@superphilipp.philipp
+- Estoy en [negocio] (trabajo)
+- 5 millones
+- [Alex] (nombre: alex)
+- mi nombre es [loretta meier] (nombre)
+- Quiero construir un super bot para enviarme fotos lindas de animales
+- 10000k
+- [Desarrollador] (trabajo: desarrollador)
+- Quiero construir un bot de ventas.
+- 50k
+- Quiero construir un bot.
+- un chatbot para trapeadores - mopbot
+- [Señor. Mop] (nombre)
+- loretta@strawberry-ice.come porque trabajo en el departamento de hielo de fresa
+- La fábrica de helados es la empresa.
+- no estoy seguro todavía
+- 2 euros
+- [Philip] (nombre)
+- [Bosch] (empresa)
+- Quiero construir un bot de preguntas frecuentes
+- Soy un [desarrollador de python] (trabajo)
+- [Jim] (nombre)
+- hello@hello.com
+- Quiero construir muchos bots diferentes.
+- Soy un [ingeniero de aprendizaje automático] (trabajo)
+- no tenemos uno
+- hi@rasa.com
+- [Helvetia] (empresa)
+- [Jim Halpert] (nombre)
+- Quiero construir un bot de seguro de salud.
+- Soy un [ingeniero de software] (trabajo)
+- [John Smith] (nombre)
+- [Jenny] (nombre)
+- [douglas] (empresa)
+- [klaus klausson] (nombre)
+- 5 euros
+- Me gustaría construir un transformador.
+- Soy un [piloto de carreras] (función de trabajo)
+- klausimausi@apple.com
+- ifuckrobots666@apple.com
+- mi nombre es [saswat] (nombre)
+- Soy [autoemplayado] (trabajo)
+- un robot sensible
+- [rasa] (empresa)
+- no tengo ninguno
+- un bot
+- akela@philipp.com
+- Quiero construir un bot
+- oov
+- Mi presupuesto es ov
+- Mi correo electrónico es ov
+- oov por año
+- el nombre de la empresa es oov
+- Yo trabajo para ov
+- [Akela] (nombre)
+- un bot de salud
+- help@help.com
+- Soy un [desarrollador] (función de trabajo)
+- Quiero construir un bot de salud.
+- 200k
+- Mi nombre es [Alex] (nombre)
+- [Rasa] (empresa)
+- test@test.com
+- 2000k
+- Soy [Akela] (nombre)
+- Quiero construir todos los bots.
+- 20k
+- Quiero construir bots
+- [desarrollador] (trabajo)
+- un bot genial
+- [Defensor del desarrollador] (función de trabajo)
+- [reddit] (empresa)
+- un bot
+- philipp@thephilippcompany.com
+- [empresa filipina] (empresa)
+- [philipp] (nombre)
+- Quiero construir un bot philipp
+- joey@koolmanconsulting.com
+- Una que me pregunta mucho sobre mi.
+- jefe nerd en tecnologías rasa
+- [Elise] (nombre)
+- myemail@gmail.com
+- 123@skdv.fvsdj
+- no tengo uno
+- no tienen idea
+- No lo sé todavía
+- ulrikovitcheisenkleber@eisenkleberlimitedcokg.com
+- eisenkleber limitado co kg
+- Ulrikovitch Eisenkleber
+- no tengo uno
+- [diseñador] (trabajo)
+- un bot de pizza
+- operaciones
+- Ninguno lo construiré a partir de restos
+- ni idea
+- [Vladimir] (nombre)
+- alrededor de 200k
+- Quiero construir un bot sobre mi
+- Soy un [dev] (función de trabajo)
+- no lo tengo
+- Quiero construir un bot seguro
+- [gerente de producto] (trabajo)
+- help@rasa.com email
+- [BBC] (nombre)
+- Quiero construir todos los bots.
+- Soy un [gerente de producto] (función de trabajo)
+- [Freya] (nombre)
+- número 300k
+- Trabajo en [biz dev] (trabajo)
+- mi correo es kevin@yoloooz.de
+- [ceo] (función de trabajo)
+- un bot de ventas
+- 200000000
+- [linda] (nombre)
+- linda@mail.com
+- ninguna
+- no lo sé
+- [Zendesk] (empresa)
+- [Jacqueline] (nombre)
+- 123@gmail.com
+- udo@udo.ai
+- hey@kldpeffesfoken.oinwf
+- Evaluar Rasa :-)
+- El maestro de los desastres.
+- [jefe de biz deve] (función de trabajo)
+- [Udo] (nombre)
+- [Udo.AI] (empresa)
+- Tal vez en su lugar alex+rasarasa@rasa.com
+- ¿Puedes probar alex+123@rasa.com en su lugar?
+- linda@yoloyolo.de
+- [Linda] (nombre)
+- resolución de problemas
+- un bot de chocolate
+- ¿una buena?
+- Elise
+- Elise@gmail.com
+- un sistema de soporte de servicio al cliente
+- Una que me adula todas las mañanas.
+- Yo soy el jefe
+- 90k
+- Rasa bot
+- Soy [donezo] (nombre)
+- Mi función es [servir la mantequilla] (trabajo)
+- [wurst co kg] (empresa)
+- [¡¡Sin compañía!! ](empresa)
+- [Soy un profesional independiente] (empresa)
+- [Foudner] (función de trabajo)
+- linda@linda.com
+- Estoy en [éxito del cliente] (trabajo)
+- Soy [jefe de ventas] (función laboral)
+- [la compañía de linda] (compañía)
+- un bot de akela
+- Estoy en [ventas] (trabajo)
+- Yo trabajo para el [New York Times] (compañía)
+- El [New York Times] (compañía)
+- [Ali Park] (nombre)
+- 1 millón
+- Soy un [ingeniero] (trabajo)
+- Es [Ali Park] (nombre)
+- 2 millones
+- ali@nytimes.com
+- Trabajo para el [new york times] (compañía)
+- Trabajo en la [NYT] (empresa)
+- no hay presupuesto
+- Soy un [desarrollo] (función de trabajo)
+- generación líder
+- 100000
+- Estoy en [marketing] (trabajo)
+- linda@rasa.ai
+- yesplease@yes.com
+- MENTAS ESCALABLES (empresa)
+- Mi nombre es [Tom] (nombre)
+- 500k
+- Me gustaría construir un bot dispensador de cubitos de hielo.
+- Soy una [mujer de negocios] (trabajo)
+- 0
+- Soy un [desarrollador] (función de trabajo)
+- un gran
+- Una que me haga ascender.
+- conversacional
+- propella@daskapital.de
+- [Bolschewistische Kurkapelle Schwarz-Rot] (empresa)
+- [akela propella] (nombre)
+- schlabberjimmy@glibberglitter.edu
+- Soy un vendedor de glibber y glitter.
+- schnuffelknuddelbaerchen33@rasa.de
+- Tengo unos 200 dólares en mi cuenta de ahorros
+- Ninguna
+- 200 dolares
+- Me gustaría construir glibber o glitter inteligente
+- bigassnerd@rasa.com
+- [sam] (nombre)
+- como 60 libras
+- nada
+- tamedmouse@micerevolution.fr
+- volodimir@rasa.com
+- [volodimir voldemarich] (nombre)
+- idk
+- el bot que te ayuda a elegir un seguro para el auto;)
+- [ml investigador] (trabajo)
+- junk@junk.com
+- j@p.com
+- no pienso en ninguno de esos
+- ok, en realidad soy un [ingeniero] (trabajo)
+- al@acme.org
+- [marcas ACME] (empresa)
+- [Al Capone] (nombre)
+- £ 50k
+- El bot debería ayudar con los recursos humanos.
+- Soy un bot [desarrollador] (trabajo)
+- none@none.co.uk
+- [Juste P] (nombre)
+- 50
+- Soy un [científico de datos] (trabajo)
+- Soy un [jefe de inteligencia de negocios] (función laboral)
+- mío
+- $ 1
+- juste@juste.com
+- [Juste] (nombre)
+- € 1
+- un bot que envía lindas fotos shiba
+- [defensor del desarrollador] (trabajo)
+- shiba@shiba.com
+- tylerthemateman@clubmate.com
+- [Tyler] (empresa)
+- Soy un [trabajador de la construcción] (trabajo)
+- Quiero construir un bot de kick ass.
+- 1 millón de grandes
+- [Club Mate] (empresa)
+- me@me.com
+- herbert@gmail.com
+- Herbert
+- 10 m
+- oficial de limonada
+- un chico genial
+- un bot de helado
+- 500 millones
+- mi nombre es [jimmy] (nombre)
+- medio millon
+- es [akela] (nombre)
+- [investigador de IA] (trabajo)
+- un gran transformador
+- gran bot viejo
+- hi@elise.de
+- ulle@gmx.de
+- [CSI] (empresa)
+- 5 libras
+- me@you.de
+- Soy un [administrador de proyectos] (función de trabajo)
+- 120000
+- akela@akela.com
+- la compañia de akela
+- [akela] (nombre)
+- mil millones
+- Un bot akela con el que puedo hablar todo el tiempo con akela.
+- Estoy en [marketing] (trabajo)
+- banco ACME (empresa)
+- [Alan] (nombre)
+- unos 10 k
+- Quiero un gran bot para impresionar a mi jefe.
+- uno como este
+- probador de bot badass
+- Un bot para conseguir un ascenso.
+- Soy un [dev] (función de trabajo)
+- 10
+- Soy un muy buen [ingeniero] (trabajo)
+- [James] (nombre)
+- ames@rasa.com
+- valid_email@one.de
+- valid@one.email
+- desempleado
+- En eso me ascenderán
+- Gaste dinero
+- Son 500000000
+- Un bot de lobo.
+- [akilla] (nombre)
+- una tortuga
+- vendo tortugas
+- 123@akela.com
+- Un bot de cubitos de hielo.
+- jimmy neutron industries
+- ok su email@email.com
+- Soy un [desarrollador de pila completa] (trabajo)
+- akelaistcool@schwabenländle.de
+- bot de spam
+- el bot como tu
+- recogiendo mi nariz
+- Soy un [freelancer] (trabajo)
+- cuidado de la salud
+- algo para hablar con mis amigos mientras estoy ocupado trabajando
+- mi bot está en [inglés] (idioma)
+- el idioma es [inglés] (idioma)
+- Está en [inglés] (idioma)
+- [idioma en Inglés)
+- [inglés] (idioma) es el idioma de mi bot
+- habla [inglés] (idioma)
+- Lo escribí en [inglés] (idioma)
+- Es un bot [inglés] (idioma)
+- está en [inglés] (idioma)
+- el usuario puede hablar con mi bot en [inglés] (idioma)
+- la gente habla [inglés] (idioma)
+- el usuario puede comunicarse con el bot en [inglés] (idioma)
+- el asistente está en [inglés] (idioma)
+- el idioma del asistente de ai es [inglés] (idioma)
+- el bot habla [inglés] (idioma)
+- el asistente habla [ingles] (idioma)
+- Está disponible en [inglés] (idioma)
+- Hasta ahora solo está en [inglés] (idioma)
+- Hasta ahora solo habla [inglés] (idioma)
+- [inglés] (idioma) es el único idioma pero quiero agregar más
+- está solo en [inglés] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [inglés] (idioma)
+- idioma = [inglés] (idioma)
+- es un bot [inglés] (idioma)
+- Lo he entrenado en [inglés] (idioma)
+- todos los datos de entrenamiento estaban en [inglés] (idioma)
+- Está entrenado en [inglés] (idioma)
+- Se entrena solo en [inglés] (idioma)
+- mi bot está en [alemán] (idioma)
+- el idioma es [alemán] (idioma)
+- está en [alemán] (idioma)
+- [idioma aleman)
+- [alemán] (idioma) es el idioma de mi bot
+- habla [alemán] (idioma)
+- Lo escribí en [alemán] (idioma)
+- es un bot [alemán] (idioma)
+- está en [alemán] (idioma)
+- el usuario puede hablar con mi bot en [alemán] (idioma)
+- la gente habla [alemán] (idioma)
+- el usuario puede comunicarse con el bot en [alemán] (idioma)
+- el asistente está en [alemán] (idioma)
+- el idioma del asistente de ai es [alemán] (idioma)
+- el bot habla [alemán] (idioma)
+- el asistente habla [alemán] (idioma)
+- Está disponible en [alemán] (idioma)
+- Hasta ahora solo está en [alemán] (idioma)
+- Hasta ahora solo habla [alemán] (idioma)
+- [alemán] (idioma) es el único idioma, pero quiero agregar más
+- es solo en [alemán] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [alemán] (idioma)
+- idioma = [alemán] (idioma)
+- es un bot [alemán] (idioma)
+- Lo he entrenado en [alemán] (idioma)
+- todos los datos de entrenamiento estaban en [alemán] (idioma)
+- Está entrenado en [alemán] (idioma)
+- Se entrena solo en [alemán] (idioma)
+- mi bot esta en [español] (idioma)
+- el idioma es [español] (idioma)
+- Está en [español] (idioma)
+- [lengua española)
+- [español] (idioma) es el idioma de mi bot
+- habla [español] (idioma)
+- Lo escribí en [español] (idioma)
+- Es un bot [español] (idioma)
+- está en [español] (idioma)
+- El usuario puede hablar con mi bot en [español] (idioma)
+- la gente habla [español] (idioma)
+- El usuario puede comunicarse con el bot en [español] (idioma)
+- el asistente está en [español] (idioma)
+- el idioma del asistente de ai es [español] (idioma)
+- el bot habla [español] (idioma)
+- el asistente habla [español] (idioma)
+- Está disponible en [español] (idioma)
+- Hasta ahora solo está en [español] (idioma)
+- Hasta ahora solo habla [español] (idioma)
+- [español] (idioma) es el único idioma pero quiero agregar más
+- está solo en [español] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [español] (idioma)
+- idioma = [español] (idioma)
+- es un bot [español] (idioma)
+- Lo he entrenado en [español] (idioma)
+- todos los datos de entrenamiento estaban en [español] (idioma)
+- Está entrenado en [español] (idioma)
+- Se entrena solo en [español] (idioma)
+- mi bot está en [portugués] (idioma)
+- el idioma es [portugués] (idioma)
+- Está en [portugués] (idioma)
+- [Lengua portuguesa)
+- [portugués] (idioma) es el idioma de mi bot
+- habla [portugués] (idioma)
+- Lo escribí en [portugués] (idioma)
+- es un bot [portugués] (idioma)
+- está en [portugués] (idioma)
+- El usuario puede hablar con mi bot en [portugués] (idioma)
+- la gente habla [portugués] (idioma)
+- El usuario puede comunicarse con el bot en [portugués] (idioma)
+- el asistente está en [portugués] (idioma)
+- el idioma del asistente de ai es [portugués] (idioma)
+- el bot habla [portugués] (idioma)
+- el asistente habla [portugués] (idioma)
+- Está disponible en [portugués] (idioma)
+- Hasta ahora solo está en [portugués] (idioma)
+- Hasta ahora solo se habla [portugués] (idioma)
+- [portugués] (idioma) es el único idioma pero quiero agregar más
+- es solo en [portugués] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [portugués] (idioma)
+- idioma = [portugués] (idioma)
+- es un bot [portugués]
+- Lo he entrenado en [portugués] (idioma)
+- todos los datos de entrenamiento estaban en [portugués] (idioma)
+- Está entrenado en [portugués] (idioma)
+- Se entrena solo en [portugués] (idioma)
+- mi bot está en [francés] (idioma)
+- el idioma es [francés] (idioma)
+- está en [francés] (idioma)
+- [Idioma francés)
+- [francés] (idioma) es el idioma de mi bot
+- habla [francés] (idioma)
+- Lo escribí en [francés] (idioma)
+- es un bot [francés] (idioma)
+- está en [francés] (idioma)
+- el usuario puede hablar con mi bot en [francés] (idioma)
+- la gente habla [francés] (idioma)
+- el usuario puede comunicarse con el bot en [francés] (idioma)
+- el asistente está en [francés] (idioma)
+- el idioma del asistente de ai es [francés] (idioma)
+- el bot habla [francés] (idioma)
+- el asistente habla [francés] (idioma)
+- Está disponible en [francés] (idioma)
+- Hasta ahora solo está en [francés] (idioma)
+- Hasta ahora solo habla [francés] (idioma)
+- [francés] (idioma) es el único idioma pero quiero agregar más
+- es solo en [francés] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [francés] (idioma)
+- idioma = [francés] (idioma)
+- es un bot [francés] (idioma)
+- Lo he entrenado en [francés] (idioma)
+- todos los datos de entrenamiento estaban en [francés] (idioma)
+- Está entrenado en [francés] (idioma)
+- Se entrena solo en [francés] (idioma)
+- mi bot está en [holandés] (idioma)
+- el idioma es [holandés] (idioma)
+- Está en [holandés] (idioma)
+- [lenguaje alemán)
+- [holandés] (idioma) es el idioma de mi bot
+- habla [holandés] (idioma)
+- Lo escribí en [holandés] (idioma)
+- es un bot [holandés] (idioma)
+- está en [holandés] (idioma)
+- El usuario puede hablar con mi bot en [holandés] (idioma)
+- la gente habla [holandés] (idioma)
+- el usuario puede comunicarse con el bot en [dutch] (idioma)
+- el asistente está en [holandés] (idioma)
+- el idioma del asistente de ai es [holandés] (idioma)
+- el bot habla [holandés] (idioma)
+- el asistente habla [holandés] (idioma)
+- Está disponible en [holandés] (idioma)
+- Hasta ahora solo está en [holandés] (idioma)
+- Hasta ahora solo habla [holandés] (idioma)
+- [holandés] (idioma) es el único idioma pero quiero agregar más
+- es solo en [holandés] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [holandés] (idioma)
+- idioma = [holandés] (idioma)
+- es un bot [holandés] (idioma)
+- Lo he entrenado en [holandés] (idioma)
+- todos los datos de entrenamiento estaban en [holandés] (idioma)
+- Está entrenado en [holandés] (idioma)
+- Se entrena solo en [holandés] (idioma)
+- mi bot está en [italiano] (idioma)
+- el idioma es [italiano] (idioma)
+- está en [italiano] (idioma)
+- [idioma italiano)
+- [italiano] (idioma) es el idioma de mi bot
+- habla [italiano] (idioma)
+- Lo escribí en [italiano] (idioma)
+- es un bot [italiano] (idioma)
+- está en [italiano] (idioma)
+- El usuario puede hablar con mi bot en [italiano] (idioma)
+- la gente habla [italiano] (idioma)
+- El usuario puede comunicarse con el bot en [italiano] (idioma)
+- el asistente está en [italiano] (idioma)
+- el idioma del asistente de ai es [italiano] (idioma)
+- el bot habla [italiano] (idioma)
+- el asistente habla [italiano] (idioma)
+- Está disponible en [italiano] (idioma)
+- Hasta ahora solo está en [italiano] (idioma)
+- Hasta ahora solo habla [italiano] (idioma)
+- [Italiano] (idioma) es el único idioma pero quiero agregar más
+- es solo en [italiano] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [italiano] (idioma)
+- idioma = [italiano] (idioma)
+- es un bot [italiano] (idioma)
+- Lo he entrenado en [italiano] (idioma)
+- todos los datos de entrenamiento estaban en [italiano] (idioma)
+- se entrena en [italiano] (idioma)
+- Se entrena solo en [italiano] (idioma)
+- mi bot esta en [mandarin] (idioma)
+- el idioma es [mandarin] (idioma)
+- Está en [mandarín] (idioma)
+- [Idioma mandarín)
+- [mandarin] (idioma) es el idioma de mi bot
+- habla [mandarin] (idioma)
+- Lo escribí en [mandarin] (idioma)
+- Es un bot [mandarín] (idioma)
+- Está en [mandarín] (idioma)
+- El usuario puede hablar con mi bot en [mandarin] (idioma)
+- la gente habla [mandarin] (idioma)
+- El usuario puede comunicarse con el bot en [mandarin] (idioma)
+- el asistente está en [mandarin] (idioma)
+- el idioma del asistente de ai es [mandarin] (idioma)
+- el bot habla [mandarin] (idioma)
+- el asistente habla [mandarin] (idioma)
+- Está disponible en [mandarín] (idioma)
+- Hasta ahora solo está en [mandarin] (idioma)
+- Hasta ahora solo habla [mandarin] (idioma)
+- [Mandarin] (idioma) es el único idioma pero quiero agregar más
+- es solo en [mandarin] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [mandarín] (idioma)
+- idioma = [mandarín] (idioma)
+- es un bot [mandarín] (idioma)
+- Lo he entrenado en [mandarin] (idioma)
+- todos los datos de entrenamiento estaban en [mandarin] (idioma)
+- Está entrenado en [mandarín] (idioma)
+- Se entrena solo en [mandarín] (idioma)
+- mi bot está en [chino] (idioma)
+- el idioma es [chino] (idioma)
+- está en [chino] (idioma)
+- [idioma chino)
+- [chino] (idioma) es el idioma de mi bot
+- habla [chino] (idioma)
+- Lo escribí en [chino] (idioma)
+- es un bot [chino] (idioma)
+- está en [chino] (idioma)
+- el usuario puede hablar con mi bot en [chino] (idioma)
+- la gente habla [chino] (idioma)
+- El usuario puede comunicarse con el bot en [chino] (idioma)
+- el asistente está en [chino] (idioma)
+- el idioma del asistente de ai es [chino] (idioma)
+- el bot habla [chino] (idioma)
+- el asistente habla [chino] (idioma)
+- Está disponible en [chino] (idioma)
+- Hasta ahora solo está en [chino] (idioma)
+- Hasta ahora solo habla [chino] (idioma)
+- [Chino] (idioma) es el único idioma pero quiero agregar más
+- está solo en [chino] (idioma) pero planeo entrenarlo en otros idiomas
+- idioma: [chino] (idioma)
+- idioma = [chino] (idioma)
+- es un bot [chino] (idioma)
+- Lo he entrenado en [chino] (idioma)
+- todos los datos de entrenamiento estaban en [chino] (idioma)
+- Está entrenado en [chino] (idioma)
+- Se entrena solo en [chino] (idioma)
+- Quiero extraer [nombres] (entidad: nombre)
+- [lugares] (entidad: lugar)
+- [empresas] (entidad: organización)
+- obtener [fechas] (entidad: fecha) de los mensajes
+- un [lugar] (entidad)
+- [lugares] (entidad: lugar) y [nombres] (entidad: nombre)
+- Estoy interesado en [ordinales] (entidad)
+- cantidades de [dinero] (entidad)
+- cuánto [dinero] (entidad)
+- [cantidades] (entidad: dinero)
+- [cuánto tiempo] (entidad: duración)
+- extracción [duraciones] (entidad: duración)
+- [distancias] (entidad: distancia)
+- la [distancia] (entidad) entre lugares
+- la [distancia] (entidad) de un lugar a otro
+- Quiero usar [pip] (package_manager)
+- [pip] (package_manager)
+- [conda] (package_manager)
+- Yo uso [anaconda] (package_manager)
+- por favor, dame las instrucciones para [pip] (package_manager)
+- por favor [conda] (package_manager)
+- [pip] (package_manager) por favor
+
+## intent:greet
+- Hola
+- Oye
+- Hola bot
+- Hey bot
+- Hola
+- Buenos días
+- Hola de nuevo
+- Hola amigos
+- Hola señor
+- Hola amigo!
+- Hola
+- saludos
+- Hola todos
+- Hola hay alguien ahí
+- hola robot
+- hola
+- Heeey
+- hola hola
+- Oye
+- hey hey
+- Hola
+- Hola
+- Hola
+- yo
+- Hola
+- ¿Hola?
+- ¡Hey bot!
+- Hola amigo
+- Buenos días
+- Hola yo
+- hola dulce chico
+- yoo
+- Hola
+- hiihihi
+- hola corazon
+- hola
+- hola
+- ayyyy whaddup
+- ¿Hola?
+- hola
+- heya
+- hey bot
+- Hellllooooooo
+- que pasa
+- Hei
+- Bueno, hola ;)
+- ¡Dije, helllllloooooO !!!!
+- Heya
+- ¿Qué tal mi bot?
+- hiii
+- heyho
+- oye, hablemos
+- hey hablemos
+- jojojo
+- hey amigo
+- hola soy yo otra vez
+- Que pasa
+- Hola
+- Hola
+- jop
+- Hola amigo
+- hola soy yo
+- buena noches
+- Buenos días
+- buenas tardes
+
+## intent:human_handoff
+- Quiero hablar con un humano
+- déjame hablar con una persona real por favor
+- ¿Hay también humanos trabajando para tu empresa?
+- Dame un humano apropiado
+- No quiero hablar con un bot.
+- ¿Puedo hablar con alguien que realmente pueda ayudarme?
+- No me gusta hablar con una máquina.
+- ¿Puedes por favor conectarme con un empleado rasa real?
+- Dame un humano ahora
+- eso es molesto me gustaría hablar con alguien real
+- Me gustaría hablar con una persona
+- ¿Puedes ponerme en contacto con un humano?
+- déjame hablar con un humano
+- Me gusta hablar con un empleado de rasa real
+- No quiero hablar con un bot
+- Hablar con un bot es una estupidez
+- Quiero hablar con alguien más inteligente que tú.
+- ¿Puedo por favor hablar con un humano?
+- Prefiero hablar con un empleado rasa real
+- quiero hablar con alguien mas
+- déjame hablar con una persona real
+por favor dame un humano
+- Quiero hablar con una persona
+- servicio al cliente
+- Quiero hablar con el servicio al cliente
+- alguien de atención al cliente
+- ¿Me puedes reenviar a tu equipo?
+- agente de servicio
+- traspaso humano
+- dame un humano
+- Habla con una persona real
+- Quiero hablar con una persona real
+- mal quiero hablar con un humano
+- ¿Podría hablar con Akela?
+- Quiero hablar con alguien en rasa
+- Quiero hablar con un gerente
+- Quiero hablar con los fundadores.
+- Quiero hablar con un humano
+
+## intent:affirm
+- si
+- por supuesto
+- Por supuesto
+- si
+- Okay
+- guay
+- ve a por ello
+- si
+- si, lo haré gracias
+- ¡Estoy seguro de que lo haré!
+- oh impresionante!
+- si
+- aceptar
+- Acepto
+- acepto
+- OK acepto
+- Cambié de opinión. Quiero aceptarlo
+- está bien
+- bien
+- ¡voy a!
+- ok, me comporto ahora
+- yop
+- Oki Doki
+- sí por favor
+- ¡sí por favor!
+- jo
+- si si tengo que
+- amayzing
+- confirmar
+- bonito
+- coolio
+- Definitivamente sí, sin duda.
+- yas
+- Sip
+- Perfecto
+- cosa segura
+- absolutamente
+- oh ok
+- Por supuesto
+- hm, me gustaría eso
+- ja
+- ¡Por supuesto!
+- sí, acepto
+- dulce
+- ¡increíble!
+- ¡Que agradable!
+- ¡guay!
+- Hurra
+- si acepta por favor
+- genial
+- oh genial
+- si
+- bien
+
+## intent:out_of_scope
+- Quiero pizza
+- por favor ayuda con mi helado esta goteando
+- No, espera, vuelve. Quiero un helado que gotee pero un cono que lo atrape para que puedas beber el helado más tarde.
+- Quiero un helado que no gotee
+- hey pequeña mamá, déjalos susurrar en tu oído
+- Alguien llama a la policía, creo que el bot murió.
+- muéstrame una foto de un pollo
+- ninguno
+- Quiero cocina francesa
+- Estoy hambriento
+- restaurantes
+- restaurante
+- eres un perdedor lmao
+- ¿Me pueden mostrar un restaurante sin gluten?
+- ¡No me importa!
+- no me importa como estas
+- ¿otra vez?
+- oh espera, te di mi dirección de correo electrónico del trabajo, ¿puedo cambiarla?
+- espera déjame encontrarlo
+- ¡Basta ya, no me importa!
+- ¿De Verdad? eres tan susceptible?
+- ¿Cómo?
+- Cambié de opinión
+- ¿qué?
+- te rompí
+- No quiero decir el nombre de mi empresa.
+- ¡Ese enlace no funciona!
+- ya tienes eso
+- Esta es una experiencia realmente frustrante.
+- no te detengas
+- quiero un restaurante francés
+- bot de mierda
+- ¿quieres casarte conmigo?
+- Dame comida
+- quiero comida
+- udo, quiero casarme contigo
+- quiero fiesta
+- Shitmuncher
+- Me gustas
+- Quiero pizza
+- ¡¡Quiero pizza!!
+- bot tonto
+- quiero comer
+- eres un estúpido bot
+- te odio
+- ¿Puedo hacerte preguntas primero?
+- ¿Es un páramo lleno de partes de robot rotas?
+- No puedo lidiar con tu solicitud
+- eres vegano
+- ¿Quién responderá mi correo electrónico?
+- ¿Vendes robots de vacío?
+- Quiero comprar un roomba para mi nieto
+- y hacer ruidos de pollo en el teléfono.
+- esta barbara aun esta casada contigo
+- ¿Qué hace tu esposa este fin de semana?
+- como son los niños
+- eres bastante aburrido
+- personal o laboral?
+- ¿Estás usando Rasa Core y NLU?
+- Cuéntame un chiste
+- ¿Qué más?
+- ¡Ya te dije! Soy un munchmuncher
+- soy un munchmuncher
+- ¿Quiénes son los ingenieros en rasa?
+- ¿Quienes son?
+- ¿Podemos seguir charlando?
+- Háblame
+- ¿Quién es tu robot favorito?
+- Un ratón domado llegará a su puerta en los próximos días.
+- Lo sabrás por la única rosa roja que lleva entre sus dientes.
+- domesticaré un ratón para ti
+- ¿No es el boletín sólo spam?
+- regresa
+- ¿Puedes ayudarme con los documentos?
+- lo siento, no puedo reformular
+- y tu API REST no funciona
+- ya te dije
+- mejor que tu
+- ¡Dios mío, no otra vez!
+- ¡Eres un robot rudo!
+- lol
+- ¿Por qué necesitas eso?
+- ¿Es eso de tu incumbencia?
+- ¿Puedes ayudarme con tus documentos?
+- Inmediatamente necesito ayuda para implementar el bot más genial que puedas imaginar.
+- ¿Puedes ayudarme con tus documentos?
+- ¿Puedes decirme cómo construir un bot?
+- ¿Puedes aprender de nuestra conversación?
+- Común, solo intenta
+- hey, me contacté hace un par de días pero no recibí ninguna respuesta, ¿alguna noticia?
+- Por favor, apúrate, tengo un plazo de dos semanas para entregar el bot. Es para una compañía muy grande.
+- eres molesto
+- ¿Tengo que aceptar?
+- ¿Es Rasa realmente inteligente?
+- ¿Kannst du auch deutsch?
+- ¿Vale la pena suscribirse al boletín?
+- Es una lástima
+- ¡Quiero más de ti en mi vida!
+- el que es mejor que tu
+- eres un inútil
+- los bots son malos
+- no me gustan los bots
+- ¿tienes un numero de telefono?
+- ¿Dónde vives?
+- ¿Cómo están los gatos de akela?
+- Pero te acabo de decir que :(
+- ¿Por qué no contestas?
+- Pero eres un sitio en inglés :(
+- ¿Puedes ayudarme a construir un bot?
+
+## intent:signup_newsletter
+- Quiero registrarme en el boletín.
+- Quiero suscribirme al boletín.
+- Me gustaría suscribirme al boletín.
+- Darse de alta en el boletín de noticias.
+- Regístrate.
+- Boletín de noticias por favor.
+- agregame al boletín
+- boletín
+- Regístrate en la NL
+- Yeaaah vamos para el boletín
+- Quiero suscribirme a tu newsletter.
+- boletín de noticias pls
+- Regístrese para el boletín de noticias
+- Recibe las últimas noticias de Rasa.
+- suscribirme al boletín - mi correo electrónico es yesplease@rasa.ai
+- boletín de noticias, aquí está mi correo electrónico: sisi@rasa.com
+- boletín - mi correo es lol@rasa.com
+- Suscríbete al boletín de Rasa.
+- Boletín de noticias
+- suscribirse
+- Recibe el boletín
+- Yo también quiero suscribirme
+- Me gusta suscribirme
+- Me gustaría suscribirme
+- Quiero el boletín.
+- Regístrate
+- Quiero registrarme
+- boletín por favor
+- nl
+- Quiero recibir el boletín
+- Quiero el boletín
+- agregame como tu suscriptor
+- agregarme a la lista de suscripción
+- boletín por favor mi correo es linda@yolo.de
+- Quiero recibir tu nl
+- Quiero el boletín
+- Quiero suscribirme al boletín.
+- ¿Puedes por favor suscribirme al boletín?
+- ¿Me pueden suscribir al boletín?
+- boletín de suscripción
+- Boletín de suscripción
+- dame el boletín
+- necesito el boletín
+- ¿Puedo recibir el boletín a partir de ahora?
+- Me encantaría recibir el boletín.
+- por favor envíeme el boletín
+- Envíame el boletín
+- Quiero recibir el boletín a partir de ahora.
+- obtener boletín
+- Recibe el boletín
+- Quiero recibir el boletín
+- Estoy deseando el boletín
+- Prefiero recibir el boletín
+- suscribirme al boletín
+- por favor suscribeme a su boletin de noticias
+- Me encantaría recibir la newsletter de rasa.
+- suscribirme a ese boletín
+- suscribirme al boletín de noticias rasa
+- Quiero suscribirme al boletín.
+- Hagamos la suscripción al boletín.
+- registro de boletines
+- registrarme para el boletín
+- Por favor inscríbeme para recibir el boletín.
+- agregame al boletín
+- Agrégame a la lista del boletín.
+- Necesito estar en la lista del boletín.
+- Quiero unirme al boletín de correos.
+- Quiero recibir los emails del boletín.
+- ¿Me pueden suscribir al boletín?
+- únete a ese boletín
+- Quiero unirme a la lista de boletines.
+- ¿Qué tal el registro del boletín?
+- suscribirse al boletín
+- boletín es
+- Voy por el boletín
+- Probemos el boletín de noticias.
+- Probemos el registro del boletín.
+- ¿Qué tal el boletín?
+- registro de boletín primero
+- Primero vamos a suscribirnos al boletín.
+- Ahora quiero suscribirme al boletín.
+- ¿Puedes agregar alan@mail.com a la lista de boletines?
+- Quiero en este boletín de dope - mi correo electrónico es alex@mail.com
+- ¡Pero por favor apúntenme para recibir el boletín!
+- Quiero registrarme para el nl
+- suscriba example@rasa.com al boletín
+- suscriba hi@rasa.com al boletín de noticias
+- suscribirse al boletín
+- por favor suscribirme al boletín de noticias alex@example.cz
+- suscriba mi correo electrónico alex@mail.mail al boletín
+- suscribirse
+- También quiero suscribirme al boletín.
+- suscribete a tu newsletter
+- ¿Puedo recibir correos electrónicos tuyos?
+- Noticias
+- me gustaría tu periódico por favor
+- suscribirse al boletín
+- ¿Qué tal si te suscribes al boletín?
+- obtener una suscripción
+- hacer una suscripción
+- hagamos una suscripción
+- ¡Me encantaría suscribirme a un boletín!
+- Necesito este boletín de dope
+- Oh, en realidad quiero recibir el boletín
+- Quiero suscribirme a tu newsletter.
+- ¿Puedo inscribirme en el boletín también?
+- haz el boletín entonces
+- Quiero suscribirme
+- Quiero boletín
+- Quiero en ese boletín dope
+- suscribirse
+
+## intent:thank
+- Gracias
+- Gracias
+- Muchas gracias
+- gracias bot
+- Gracias por eso
+- saludos
+- salud hermano
+- ¡Vale gracias!
+- Perfecto, gracias
+- muchas gracias por todo
+- gracias por la ayuda
+- muchas gracias
+- increíble, gracias
+- Genial, gracias
+- genial, gracias
+- Gracias
+- ¡Gracias!
+- Guay. Gracias
+- Gracias
+- gracias esta es una gran noticia
+- gracias
+- muchas gracias
+- ¡Gracias!
+- Genial, gracias
+- Gracias por el enlace del foro, lo comprobaré.
+- ¡Gracias!
+
+## intent:how_to_get_started
+- ¿Cómo empiezo con Rasa?
+- como uso rasa
+- ¿Cuál es la diferencia entre rasa [nlu] (producto) y rasa [núcleo] (producto)?
+- como empezar con rasa
+- como empezar con eso
+- ¿Cómo construir un bot?
+- ¿Cómo puedo construir un chatbot?
+- ¿Qué puedo hacer con Rasa?
+- Donde comenzar el desarrollo de rasa.
+- QUE ES RASA
+- QUÉ ES
+- Entonces, ¿cómo uso rasa?
+- ¿Puedo probar funciones sin tener que lidiar con su conversación predefinida?
+- ¿Puedes guiarme para crear una base de conocimientos de chatbot?
+- como puedo aprender rasa
+- Quiero usar rasa para construir mi chatbot
+- ¿Cómo consigo rasa [núcleo] (producto)
+- ¿Cómo entreno rasa [nlu] (producto)
+- ¿Cómo aprendo rasa [núcleo] (producto)?
+- que es rasa [core] (producto)
+- lo que es [nlu] (producto)
+- Quiero aprender sobre rasa [core] (producto)
+- Quiero usar [nlu] (producto)
+- [producto principal)
+- [nlu] (producto)
+- rasa [pila] (producto: núcleo)
+- como aprender rasa [stack] (producto: core)
+- Quiero aprender sobre rasa [nlu] (producto: nlu)
+- Quiero aprender sobre rasa [core] (producto: core)
+- cómo empezar con [nlu] (producto)
+- Dame información sobre [nlu] (producto)
+- dime cómo empezar con [core] (producto)
+- ¿qué tal [nlu] (producto)
+- Cuéntame sobre [core] (producto) por favor
+- ¿Qué es esto [nlu] (producto)?
+
+## intent:technical_question
+- que es patito
+- ¿Dónde entrenar intenciones en rasa?
+- patito
+- dicklung
+- que es patito
+- Necesito una ayuda para integrar rasa con un mensajero.
+- ¿Qué infraestructura se requiere para ejecutar un bot?
+- Puedes ayudarme con este problema
+- Ayúdame con la instalación.
+- teniendo problemas con la instalación de rasa
+- Estoy teniendo problemas para configurar esto
+- ¿Qué tal el aprendizaje interactivo?
+- ¿aprendizaje interactivo?
+- ¿El lado técnico de las cosas?
+- ¿rasa tiene todas las mismas características que [luis] (current_api)
+- es rasa mejor que [dialogflow] (current_api)
+- ¿Debo usar rasa en lugar de ibm Watson api?
+- ¿Es Rasa mejor que Dialogflow?
+- procesamiento de db
+- ¿Cómo funcionan las tragamonedas?
+- ¿Qué componentes de Rasa son de código abierto?
+- como integrar rasa chatbot con mi sitio web
+- como funciona rasa
+- con excepciones
+- en que idioma esta rasa programado
+- ¿Qué tecnologías usaste para crear un chatbot más maduro?
+- Qué tecnología se usa para crearte.
+- Tener algunos problemas con la instalación.
+- ¿Rasa soporta entrada de voz?
+- ¿hay una integración alexa
+
+## intent:switch
+- Actualmente utilizo [flujo de diálogo] (current_api: dialogflow)
+- Quiero cambiar de [flujo de diálogo] (current_api: dialogflow) a rasa
+- Quiero cambiar de [flujo de diálogo] (current_api: dialogflow) a rasa
+- Quiero convertir mi bot [flujo de diálogo] (current_api: dialogflow) a rasa
+- Actualmente uso [LUIS] (current_api: luis)
+- Utilizo [luis] (current_api) en este momento
+- [luis] (current_api) atm
+- cambiando de [DialogFlow] (current_api: dialogflow)
+- Utilizo [DialogFlow] (current_api: dialogflow)
+- Quiero cambiar de [dialogflow] (current_api) a Rasa
+- Quiero pasar de [LUIS.ai] (current_api: luis) a Rasa
+- [DialogFlow] (current_api: dialogflow)
+- [luis.ai] (current_api: luis)
+- [LUIS] (current_api: luis)
+- [bot framework] (current_api)
+- Yo uso [wit.ai] (producto)
+- chatfuel
+- ¿Cómo se compara rasa con [dialogflow] (producto)?
+- cómo se compara rasa con [luis] (producto)
+- es rasa mejor que [flujo de diálogo] (producto: flujo de diálogo)
+- ¿Cuál es la diferencia entre [bot framework] (producto) y rasa?
+
+## intent:nlu_info
+- ¿Puede explicarme cómo funciona [el reconocimiento de entidad] (nlu_part)?
+- ¿Cómo funciona [reconocimiento de entidad] (nlu_part)?
+- una explicación de cómo ayudaría el [reconocimiento de entidad] (nlu_part)
+- Todavía no entiendo cómo funciona [el reconocimiento de entidad] (nlu_part)
+- sería útil aprender más sobre [reconocimiento de entidad] (nlu_part)
+- Cuéntame sobre [reconocimiento de entidad] (nlu_part)
+- Quiero aprender sobre [reconocimiento de entidad] (nlu_part)
+- [reconocimiento de entidad] (nlu_part)
+- ¿Qué es [reconocimiento de entidad] (nlu_part)?
+- No entiendo [reconocimiento de entidad] (nlu_part)
+- [reconocimiento de la entidad] (nlu_part) - ¿qué es eso?
+- No entiendo cómo maneja [reconocimiento de entidad] (nlu_part) en Rasa
+- ¿Cómo se gestiona [el reconocimiento de entidad] (nlu_part) en rasa?
+- Revisé la documentación en [reconocimiento de entidad] (nlu_part) pero todavía no lo entiendo
+- ¿Puede explicarme cómo funciona [clasificación de intención] (nlu_part)?
+- ¿Cómo funciona [clasificación de intención] (nlu_part)?
+- una explicación de cómo ayudaría [clasificación de intención] (nlu_part) el trabajo
+- Todavía no entiendo cómo funciona [clasificación de intención] (nlu_part)
+- sería útil aprender más sobre [clasificación de intención] (nlu_part)
+- Cuéntame acerca de [clasificación de intención] (nlu_part)
+- Quiero aprender sobre [clasificación de intención] (nlu_part)
+- [clasificación de intención] (nlu_part)
+- ¿Qué es [clasificación de intención] (nlu_part)?
+- No entiendo [clasificación de intención] (nlu_part)
+- [clasificación de intención] (nlu_part) - ¿qué es eso?
+- No entiendo cómo manejas [clasificación de intención] (nlu_part) en Rasa
+- ¿Cómo se gestiona [clasificación de intención] (nlu_part) en rasa?
+- Revisé la documentación sobre [clasificación de intención] (nlu_part) pero todavía no la entiendo
+- usas [patito] (nlu_part)
+- Quiero saber si rasa funciona con [patito] (nlu_part)
+- [patito] (nlu_part)
+- ¿Cómo se integra [patito] (nlu_part)
+- ¿Rasa funciona con [patito] (nlu_part)?
+- ¿Es [patito] (nlu_part) parte de rasa?
+- [intenciones] (nlu_part)
+
+## synonym:intent classification
+- intents
+- intent
+
+## synonym:entity recognition
+- entity extraction
+
+## intent:pipeline_recommendation
+- ¿Con qué tubería debería empezar?
+- ¿Cuál es la tubería correcta para elegir?
+- ¿Con qué soy un buen oleoducto para empezar?
+- ¿Qué tubería debo usar?
+- ¿Qué tubería es mejor para lo que quiero?
+- ¿Con qué tubería debería empezar?
+- ¿Debo comenzar mejor con la tubería de tensorflow o spacy?
+- spacy o tensorflow, ¿qué es mejor empezar?
+- No sé qué tubería usar
+- ¿Qué tubería es mejor?
+- ¿Qué tubería es mejor?
+- recomendar tubería
+- recomendación de oleoducto
+- dame una recomendación
+
+## intent:nlu_generation_tool_recommendation
+- ¿Qué herramientas puedo usar para crear datos nlu?
+- ¿Cómo puedo obtener datos nlu
+- ¿Dónde puedo obtener datos para el nlu
+- Recomiéndame algunas herramientas nlu
+- Cómo trabajar con datos no.
+- necesito más datos nlu
+- ¿Hay herramientas para crear datos nlu?
+- necesito más datos nlu
+- Necesito mas datos para nlu
+- Tengo que tener menos datos.
+- ¿Hay formas más simples de crear datos nlu?
+
+## intent:install_rasa
+- Quiero instalar Rasa Stack
+- ¿Cómo instalar Rasa?
+- ¿Dónde conseguir Rasa Stack?
+- ¿Cómo instalar Rasa Core?
+- Instala Rasa NLU
+- ¿Cómo instalo rasa en windows?
+- como corro rasa en windows
+- Instala Rasa en Linux
+- Instala Rasa en Mac
+- ¿Puedes ayudarme a instalar Rasa?
+- Simplemente instale Rasa Stack
+- Cómo instalar Rasa Stack
+- Me gustaría instalar Rasa Core
+- Me gustaría instalar Rasa NLU
+- Ayúdame a instalar Rasa
+- Quiero hacer una instalación Rasa Stack.
+- Voy a instalar Rasa Stack.
+- Por favor, ayúdame a instalar Rasa Stack.
+- Por favor instale Rasa Stack
+- Creo que quiero instalar Rasa Stack.
+- ¿Cómo instalo Rasa Stack?
+- Quiero información sobre la instalación de Rasa
+- Me gustaría realizar una instalación de Rasa Stack.
+- Déjame instalar Rasa Stack.
+- Necesito Rasa Stack
+- Ayúdame a conseguir Rasa Core.
+- ¿Podría tener Rasa Stack?
+- ¿Podrías instalar Rasa Stack para mí?
+- ¿Podrías ayudarme a conseguir la pila de Rasa?
+- ¿Necesito Rasa Stack?
+- Por favor, necesito Rasa Core.
+- ¿Me puedes conseguir Rasa Core?
+- Necesito ayuda para conseguir Rasa Stack.
+- Quiero usar Rasa Stack
+- Me estoy poniendo Rasa Stack
+- Me he decidido por Rasa Stack.
+- Estoy instalando Rasa Stack
+- Rasa Stack es lo que voy a instalar.
+- He elegido Rasa Stack.
+- Necesito Rasa Stack.
+- Necesito instalar Rasa Core.
+- Necesito instalar Rasa NLU.
+- ¿Te importa ayudarme a instalar Rasa?
+- Es urgente para mí instalar Rasa.
+- Por favor ayúdame con la instalación de Rasa Stack.
+- Necesito poner a Rasa Stack en funcionamiento.
+- Sí, necesito Rasa Stack.
+- Gracias de antemano por sugerirme que instale Rasa NLU.
+- Instalar Rasa Stack será de gran ayuda para mí.
+
+## synonym:conda
+- anaconda
+
+## intent:ask_which_events
+- ¿Qué eventos comunitarios tienes?
+- ¿Dónde puedo encontrarme con Rasas?
+- ¿Tienes un grupo de usuarios?
+- ¿hay algún encuentro
+- ¿Hay un encuentro de Rasa?
+- Quiero conocer a Rasa
+
+## intent:ask_when_next_event
+- ¿Cuándo es el próximo evento comunitario?
+- ¿Cuándo es el próximo evento en [Berlín] (ubicación)
+- ¿Hay un evento en [Montreal] (ubicación)
+- ¿Hay un evento Rasa en [San Francisco] (ubicación)
+- cual es el proximo evento rasa
+- ¿Cuál es el próximo evento comunitario?
+- ¿Cuándo es el próximo grupo de usuarios?
+- ¿Tienes un evento en [Berlín] (ubicación)
+
+## lookup:location
+- San Francisco
+- Montreal
+- Nueva York
+- Washington
+- berlin
+- Zurich
+- Hamburgo
+- Francfort
+- Munich
+- madrid
+- colonia
+- Düsseldorf
+- Barcelona
+- Viena
+- varsovia
+- paris
+- Roma
+- Londres
+- Praga
+- Sidney
+- Delhi
+- Mumbai
+- Tokio
+- Rio de Janeiro
+- Beijing
+- Guangzhou
+- Shanghai
+- Chongqing
+- Hong Kong
+
+## intent:ask_question_in_forum
+- Oye, quiero hacer una pregunta en el foro.
+- Quiero obtener ayuda en el foro.
+- ¿Dónde puedo encontrar el foro?
+- Tengo un problema
+- Necesito ayuda con un problema
+- ¿Puedes ayudarme a resolver un problema?
+
+## intent:ask_why_contribute
+- ¿Por qué debería contribuir a Rasa?
+- ¿Por qué debería contribuir?
+- ¿Por qué debería ayudar a mejorar Rasa?
+- ¿Por qué contribuir a Rasa?
+
+## intent:ask_how_contribute
+- ¿Cómo contribuir a Rasa?
+- ¿Cómo puedo contribuir a Rasa?
+- como ayuda rasa
+- Cómo mejorar Rasa
+- ¿Cómo puedo mejorar Rasa?
+- Quiero ayudar a mejorar Rasa
+- Quiero hacer mejor a Rasa
+- ¿Cómo puedo apoyar a la comunidad?
+- que puedo hacer
+
+## intent:next_step
+- llévame al siguiente paso
+- Próximo paso
+- Quiero ir al siguiente paso.
+- Por favor, llévame al siguiente paso.
+- Siguiente paso por favor
+
+## intent:compliment
+- ! eso es genial !
+- ¡ama!
+- ¡eres genial!
+- ¡eres lindo!
+- agradable
+- aquí tienes un amigo
+- belleza
+- buen juego
+- buen trabajo
+- buena jugada
+- colegas para siempre
+- eres agradable
+- eres divertido
+- eres dulce
+- eres el mejor
+- eres el mejor chatbot
+- eres gracioso
+- eres hermoso
+- eres maravilloso
+- eres muy bello
+- eres una buena persona
+- es muy amable por tu parte
+- astoy agradecido
+- gran trabajo
+- has jugado bien
+- hermoso
+- increible
+- lo has hecho muy bien
+- lo hiciste bien
+- lo hiciset muy bien
+- maravilloso
+- me gustas
+- muy bien hecho
+- muy buen bot
+- que divertido eres
+- que gracioso eres
+- que lindo eres
+- te amo
+- te portas muy bien
+
+## intent:stop
+- cancela
+- cancelar
+- creo que no puedes ayudarme
+- deja de volver atras
+- detente
+- eso no esta bien hecho, dejalo
+- esta conversacion no es util
+- hm no creo que puedas hacer lo que quiero
+- no puedes ayudarme
+- no puedes ayudarme con lo que necesito
+- no puedes ayudarme con lo que quiero
+- ok, entonces no puedes ayudarme
+- ok, supongo que no puedes ayudarme
+- ok, pero eso no me ayuda
+- olvidalo
+- parate
+- rechazar
+- stop
+- y eso no es todo
+-

@@ -1,0 +1,46 @@
+
+Necesito incluir a un nuevo proveedor en mi organizacion de compras
+    Introduzca el cif o nif del acreedor
+quiero extender proveedor con cif 24256398T
+24256398T
+    Introduzca una organización de compras existente
+la organización de compras para extender proveedores es 123456789
+quiero extender proveedor con la organización de compras 6001
+6001
+    Con que moneda desea realizar esta operación?
+la moneda del nuevo proveedor es a1b2c3
+necesito un nuevo proveedor con moneda eur
+EUR
+    Introduzca la condicion de pago
+la condicion de pago del nuevo proveedor es a060
+a060
+    Su proceso con el proveedor y organizacion con None 24256398T ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos
+
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"sys-number":"1234", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"currency":"a1b2c3", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"currency":"eur", "session": "j.b.lopez@accenture.com"}
+
+----
+
+¿El proveedor está configurado por Adquira?
+    Introduzca el cif o nif del acreedor
+el proveedor con cif 24256398T esta configurado para adquira
+24256398T
+    Para que maquina o sistema se factura?
+adquira con maquina 1234
+adquira con maquina SRM
+    El proveedor con None 24256398T y sistema SRM factura para Adquira
+
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"macsystem":"1234", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}

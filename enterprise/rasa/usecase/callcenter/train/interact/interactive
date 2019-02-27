@@ -1,0 +1,49 @@
+adquira: None, codigo: None, currency: None, organizacion: None, orgcompras: None,
+paycondition: a060, pedido: None, place: None, proveedor: None,
+provider_id: None, reference: None, requested_slot: None, robot_id: None,
+session: default, status: None, system: None
+
+----
+
+/invoicestatus{"pedido":"factura", "sys-number":"123456789"}
+/invoicestatus{"pedido":"factura"}
+/inform{"sys-number":"123456789"}
+
+----
+
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "cnn":"A45768795", "macsystem":"SRM"}
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace"}
+/inform{"cnn":"A45768795"}
+/inform{"macsystem":"SRM"}
+
+----
+
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "cnn":"A45768795", "currency":"EUR", "paycon":"a060", "sys-number":"1234"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF"}
+/inform{"cnn":"A45768795"}
+/inform{"sys-number":"1234"}
+/inform{"currency":"EUR"}
+/inform{"paycon":"a060"}
+
+----
+
+/greetings
+
+/chitchat
+/stop
+/name
+/thankyou
+/gratitude
+/gethelp
+/compliment
+/deny
+/affirm
+/location
+/next_step
+/out_of_scope
+/human_handoff
+
+/goodbye
+
+----
+

@@ -1,0 +1,11 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true,
+    "uiDirs": "server/explorer",
+    "apiInfo": {
+      "title": "Repsol API Explorer",
+      "description": "Connector to Watson Discovery to get more relevant documents"
+    }
+  }
+}

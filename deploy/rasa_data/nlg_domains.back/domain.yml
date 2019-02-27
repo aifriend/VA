@@ -1,0 +1,131 @@
+templates:
+
+  ############################################################### default utters
+  utter_submit:
+    - "Hecho!"
+  utter_noworries:
+    - "de nada :-)"
+  utter_gratitude_action:
+    - "¡De nada!"
+  utter_not_understand:
+    - "Disculpa no le he entendido, ¿podría volver a repetir?"
+  utter_continue:
+    - "desea continuar?"
+  utter_restart:
+    - "Reiniciamos la conversacion!"
+  utter_get_help:
+    - "OK"
+    - "Como puedo ayudarte?"
+  utter_goodbye:
+    - "Hasta luego"
+  utter_greet:
+    - "¿Has estado aquí antes?"
+  utter_greetings:
+    - "¿Como estas? ¿En que puedo ayudarte?"
+    - "¡Hola! ¿En qué puedo ayudarte?"
+  utter_greetings_firstime:
+    - "Entonces bienvenido por primera vez."
+  utter_name:
+    - ""
+  utter_no:
+    - ""
+  utter_stop:
+    - ""
+  utter_yes:
+    - ""
+  utter_defult:
+    - ""
+
+  ############################################################### chitchat utters
+  utter_chitchat:
+    - "chitchat"
+  utter_ask_creator:
+    - ""
+  utter_ask_feeling:
+    - ""
+  utter_ask_joke:
+    - ""
+  utter_compliment:
+    - ""
+  utter_get_news:
+    - ""
+  utter_get_time:
+    - ""
+  utter_get_weather:
+    - ""
+  utter_gratitude:
+    - ""
+  utter_insult:
+    - ""
+  utter_ishappy:
+    - ""
+  utter_isnthappy:
+    - ""
+  utter_laught:
+    - ""
+  utter_want_drink:
+    - ""
+
+  ############################################################### business utters
+
+  ########### roobot launch ############
+  utter_rpa_response_ok:
+    - "Su petición ha sido tramitada correctamente, en cuanto sea terminada se lo confirmaremos por correo electrónico"
+  utter_rpa_response_queue:
+    - "Su petición se ha puesto en cola para procesarse, en cuanto sea realizada se lo confirmaremos por correo electrónico"
+  utter_rpa_response_failure:
+    - "No ha sido posible tramitar su petición, por favor, inténtelo dentro de unos minutos. En caso de persistir el error contacto con ISI_SOPORTE"
+  utter_rpa_response_error_time:
+    - "No ha sido posible tramitar su petición, por favor, inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+  utter_rpa_response_error:
+    - "No ha sido posible tramitar su petición, por favor, inténtelo dentro de unos minutos. En caso de persistir el error contacto con ISI_SOPORTE"
+
+  ########### invoice status ############
+  utter_wrong_reference:
+    - "El numero de pedido {reference} no se ha podido validar"
+  utter_invoicestatus_status:
+    - "El estado de su pedido es {status}"
+  utter_ask_reference:
+    - "¿Podrías darme el número de referencia?"
+  utter_invoice_status:
+    - "El estado de su factura {reference} esta pedido y confirmado"
+  utter_invoice_status_authorization:
+    - "El estado de su factura {reference} esta pendiente de confirmación"
+  utter_invoice_status_recorded:
+    - "El estado de su factura {reference} esta grabado"
+  utter_invoice_status_deleted:
+    - "El estado de su factura {reference} esta borrado"
+  utter_invoice_status_not_registered:
+    - "La factura con referencia {reference} no se encuentra dada de alta en nuestro sistema. Por favor, contacte con nuestro soporte para gestionar este asunto."
+  utter_invoice_slots_values:
+    - "Esto es lo que tengo:\n
+             - Numero de pedido: {reference}\n
+             - Estado del pedido: {status}"
+
+  ########### provider consultation ############
+  utter_provider_information_SRM:
+    - "El proveedor con CIF {cif} está configurado para Adquira en el sistema {system} para las siguientes organizaciones de compras: 60000019, 60000020, 60000036, 60000037, 60000039, 60000048, 60000052, 60000053, 60000475, 60001083 con fechas 20.05.2017, 14.05.2018, 14.05.2018, 14.05.2018, 18.03.2018, 14.05.2018, 14.05.2018, 14.05.2018, 01.01.2000, 14.05.2018 respectivamente."
+  utter_provider_information_OTHER:
+    - "El proveedor con CIF {cif} está configurado para Adquira en el sistema {system} para las siguientes organizaciones de compras: 4009, 5001, 5002, 6001, 6003, 6004 con sociedad 0232 y fechas 08.07.2004, 08.07.2004, 08.07.2004, 13.02.2015, 13.02.2015, 08.07.2004 respectivamente."
+  utter_ask_for_all_info:
+    - "¿Podría indiarnos el CIF del proveedor y un sistema de entre los siguientes (EP2, RP2, QP0, BP5, UP2)?"
+  utter_ask_for_cif:
+    - "Podría indiarnos el CIF del proveedor?"
+  utter_ask_for_system:
+    - "Podría indiarnos un sistema de entre los siguientes (EP2, RP2, QP0, BP5, UP2)?"
+  utter_mandatory_field:
+    - "El CIF es un campo obligatorio, consulte con la DEA o pidaselo al proveedor. Hasta pronto!"
+  utter_robot_launched:
+    - "Se está tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos"
+  utter_ask_for_creditor:
+    - "Podría indicar el número de acreedor?"
+  utter_ask_for_nif:
+    - "Podría indicar el NIF?"
+  utter_ask_for_orgcompras:
+    - "Podría indicar la organización de compras a la que pertenece? (El formato son 4 números) "
+  utter_ask_for_currency:
+    - "Podría indicar la divisa? (El formato son 3 caracteres: EUR, USD, GBP...)"
+  utter_mandatory_reference:
+    - "La referencia es un campo obligatorio para continuar con la consulta. Por favor, consulte el número de referencia y vuelva a intentarlo. Hasta pronto!"
+  utter_ask_for_paycondition:
+    - "Podría indiarnos la condición de pago? (Formato A060)"

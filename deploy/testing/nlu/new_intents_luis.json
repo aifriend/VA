@@ -1,0 +1,5358 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.3",
+  "name": "REPSOLVA_DEV",
+  "desc": "REPSOL VA DESARROLLO",
+  "culture": "es-es",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "affirm"
+    },
+    {
+      "name": "askcreator"
+    },
+    {
+      "name": "askfeeling"
+    },
+    {
+      "name": "askjoke"
+    },
+    {
+      "name": "compliment"
+    },
+    {
+      "name": "deny"
+    },
+    {
+      "name": "gethelp"
+    },
+    {
+      "name": "getnews"
+    },
+    {
+      "name": "gettime"
+    },
+    {
+      "name": "getweather"
+    },
+    {
+      "name": "goodbye"
+    },
+    {
+      "name": "gratitude"
+    },
+    {
+      "name": "greetings"
+    },
+    {
+      "name": "insult"
+    },
+    {
+      "name": "invoicestatus"
+    },
+    {
+      "name": "ishappy"
+    },
+    {
+      "name": "isnthappy"
+    },
+    {
+      "name": "laught"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "presentation"
+    },
+    {
+      "name": "providerconsultation"
+    },
+    {
+      "name": "robotlaunch"
+    },
+    {
+      "name": "stop"
+    },
+    {
+      "name": "wantdrink"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "adquira",
+      "subLists": [
+        {
+          "canonicalForm": "marketplace",
+          "list": [
+            "adquira"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "codigo",
+      "subLists": [
+        {
+          "canonicalForm": "codigo",
+          "list": [
+            "cif",
+            "nif",
+            "nie"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "macsystem",
+      "subLists": [
+        {
+          "canonicalForm": "systemID",
+          "list": [
+            "RP2",
+            "BP5",
+            "UP2",
+            "QP0",
+            "rp2",
+            "bp5",
+            "up2",
+            "qp0",
+            "SRM",
+            "srm"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "organizacion",
+      "subLists": [
+        {
+          "canonicalForm": "organizacion",
+          "list": [
+            "grupo",
+            "organización"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "paycon",
+      "subLists": [
+        {
+          "canonicalForm": "PC",
+          "list": [
+            "A022",
+            "A023",
+            "A024",
+            "A025",
+            "A027",
+            "A028",
+            "A030",
+            "A037",
+            "A045",
+            "A060",
+            "A075",
+            "A085",
+            "A090",
+            "A105",
+            "A120",
+            "J000",
+            "J015",
+            "J025",
+            "J030",
+            "J045",
+            "J060",
+            "J075",
+            "J090",
+            "J105",
+            "J120",
+            "R000",
+            "Z001",
+            "ZJVA"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "pedido",
+      "subLists": [
+        {
+          "canonicalForm": "pedido",
+          "list": [
+            "pedido",
+            "confirmacion",
+            "factura",
+            "cesta",
+            "documento",
+            "confirmación",
+            "referencia",
+            "contrato"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "proveedor",
+      "subLists": [
+        {
+          "canonicalForm": "proveedor",
+          "list": [
+            "acreedor",
+            "proveedores"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "cnn",
+      "regexPattern": "([a-z]|[A-Z]|[0-9])[0-9]{7}([a-z]|[A-Z]|[0-9])$",
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [
+    {
+      "name": "money",
+      "roles": []
+    },
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "proveedor {number}",
+      "intent": "providerconsultation"
+    },
+    {
+      "pattern": "{codigo} {cnn}",
+      "intent": "providerconsultation"
+    },
+    {
+      "pattern": "{pedido} {number}",
+      "intent": "invoicestatus"
+    },
+    {
+      "pattern": "sistema {macsystem}",
+      "intent": "providerconsultation"
+    }
+  ],
+  "utterances": [
+    {
+      "text": "! eso es genial !",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "!hola tu!",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": ":) gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¡adiós!",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "¡ama!",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "¡de acuerdo!",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "¡eres genial!",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "¡eres lindo!",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "¡eres un estúpido!",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "¡fenomenal! ¿cómo estás?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¡genial! ¡gracias!",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "¡gracias de nuevo!",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "¡necesito reírme!",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¡saludos!",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "¡salvaste mi día!",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "¿ayuda por favor?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿bien y tú?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo borro una confirmación?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo buscar el pedido que hay que confirmar?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo chequeo los agentes de flexnet?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo concluyo el proceso y confirmo el pedido?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo confirmar un pedido?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo confirmar una cesta?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo confirmar una factura?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo crear una confirmación?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo creo el cambio de tareas nocturnas en rémedy?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo dar entrada al pedido?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo devuelvo una confirmación?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo estas jose?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo estas maria?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿como funciona esto?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cómo hay que chequear en las bbdd en las tareas nocturnas?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo puedo saber si tengo que hacer algo en mi cesta?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cómo puedo saber si tengo que hacer algo en mi confirmación?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cómo puedo saber si tengo que hacer algo en mi factura?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cómo puedo saber si tengo que hacer algo en mi pedido?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cómo puedo usarte?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cómo realizo un chequeo del informe de las tareas del remedy?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿como se consulta el estado de mi peticion en flexnet?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo se llama el servidor de producción y pre-producción de paradigm?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo se que cantidad queda pendiente de confirmar?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo sé que tengo pendiente de confirmar un pedido?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo te esta llendo?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo te sientes hoy amigo?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿como te va la vida?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo termino una confirmación grabada?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cómo va ?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo va tu vida?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cómo veo el número de confirmación creado?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿con qué periodo hay que notificar la caducidad de licencias?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el estado de mi confirmación?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el estado de mi factura?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el estado de mi pedido?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el estado del pedido 58003640?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el estado del tiempo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el menu de opciones?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el nombre de su programador?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el nombre del programador que te hizo?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es el tiempo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es la probabilidad de sol?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es la próxima salida para grand blvd?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es la temperatura en cordoba?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es la zona horaria de bagdad?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es la zona horaria en new brookeside?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿cúal es tu estado de ánimo hoy?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es tu propósito?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cuál es tu utilidad?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cuáles son las noticias de hoy?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿cuáles son los titulares de hoy?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿cuáles son tus habilidades?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿cuándo está el pedido autorizado?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿de dónde vienes exactamente?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿debo llevar mis gafas de sol?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿debo llevar un abrigo para esta noche?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿el acreedo está configurado por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el acreedor trabaja por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el acreedor va por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el pedido 12345678 está confirmado?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿el pedido está en adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el pedido va por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor 123 factura por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor con cif a01234567 esta gestionado con adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor con cif f01234567 está configurado para trabajar con adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor está configurado por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor trabaja por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿el proveedor va por adquira?",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "¿en qué estado se encuentra el pedido 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿en qué estado se encuentra la cesta 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿en qué estado se encuentra la confirmación 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿en qué estado se encuentra la factura 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿en que estás haciendo?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿en qué lugar indica el número de confirmación una vez la he creado?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿en qué situación esta mi pedido?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿eres divertido?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿eres inteligente?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿eres inútil?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿eres retrasado?",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "¿es posible reiniciar la conversación?",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "¿está lloviendo hoy?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿está lluvioso en barcelona?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿está soleado en málaga?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿está soleado?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿está todo bien contigo?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿estás bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿estás feliz?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿estas teniendo un buen dia?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿este bot habla un lenguaje humano?",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "¿hablas como un humano?",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "¿hace calor o frio?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿hace frío?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿hace viento?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿hay alguna posibilidad de que yo tome una bebida por casualidad?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿hay posibilidad de que tome algún tipo de bebida en algun momento?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿hora?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿la cesta 12345678 está confirmado?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿la confirmación 12345678 está confirmado?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿la factura 12345678 está confirmado?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿la hora?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿me puedes contar un chiste?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿me puedes contar una broma?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿me puedes mostrar alguna noticia?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿me puedes ser de ayuda?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿necesito llevar un paraguas conmigo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿nevará mañana?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿no puedes dejar que un camarero traiga algunas bebidas ?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿otra broma tal vez?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿para qué estás construido?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿pasa proceso de autorización mi pedido?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿podemos empezar de nuevo?",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "¿podemos restablecer la conversación?",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "¿podría ayudarme?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿podría tomarme una copa por favor?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿podrías darme alguna noticia?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿podrías decirme quién te programó exactamente?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿podrías por favor servirme una bebida ?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿por dónde se accede a confirmar un pedido?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿puedes compartir conmigo una chiste malo?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿puedes decirme algo gracioso?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿puedes traerme algún tipo de bebida por favor?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿puedes traerme las noticias?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿puedo preguntar quién te hizo?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿puedo visitar disney en parís mañana por la mañana?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué calor está haciendo en ponce en este momento?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué calor hace en madrid ahora?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué calor hará este fin de semana?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué dice bloomberg sobre google hoy?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué está pasando ahora?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué está pasando en el mundo?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué esta pasando?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué fecha se indica en el campo fecha de entrega?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿qué hay de nuevo en el instituto de investigación del cáncer?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué hay hoy en las noticias de londres?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué hora es en casa?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿qué hora es exactamente ahora en berlín?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿qué hora es exactamente?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "¿qué humedad hace?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué lo hace único?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué pasa amigo?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿qué pasa tio?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿que pasa?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿qué pasó ayer en europa?",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "¿qué puedes hacer?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué puedo decir?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué sabe hacer el bot?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué sol habrá para hoy?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿que tal una chiste?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿que te hace tan especial?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué temperatura hace?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "¿qué tengo que hacer?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿qué tengo que poner en el campo \"nombre de confirmación\"?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿qué tengo que poner en el campo \"número de referencia\"?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿quién eres tú?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿quién es tu creador?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿quién te codificó?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿quien te creó?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿quien te hizo?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿quién te programó exactamente?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿quién te programó?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "¿sabes hacer algo?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "¿si desconozco algún dato puedo salvar los datos sin perderlos y sin llegar a concluir el proceso?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿sirven por aquí alguna copa para aliviar esta garganta seca por casualidad?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿te encuentras bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿te importaría servirme una copa?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿tengo confirmaciones pendientes?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿tengo que hacer algo con el pedido 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿tengo que hacer algo con la cesta 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿tengo que hacer algo con la confirmación 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿tengo que hacer algo con la factura 12345678?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "¿tiene alguna bebida por casualidad?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "¿tienes un buen chiste sobre las mujeres?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "¿todo bien compañero?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿todo en orden?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿vas bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "¿yo? feliz ? no",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "++",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "1234 x123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "1234567890 12345678n",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "1234567890 12345678n 1234, eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "1234567890 12345678x 1234 eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "1234567890 m123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "1234567890, eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "12345678n x123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "123567687989",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "16",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "a que hora quedamos esta noche",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "absolutamente no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "absolutamente.",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "acceso a hipervínculo documentum",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "aceptable por ahora",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "acepto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "acepto tu recomendación",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "adieu",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adios",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adiós",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adios +",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adios!",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adiossss",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "adquira gestiona el proveedor con cif a01234567",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "adquira gestiona el proveedor qp0",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "afirmativo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "agradable",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "agradecido",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "ahora vete a la mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "aloa",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "aloha",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "alta aplicación gdi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alta user geoframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alta usuario epos",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alta usuario paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "añadir usuario epos",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "añadir usuario epos linux",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "añadir usuario gf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "anular esta petición",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "apestas programando",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "aquí tienes un amigo",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "arrancar",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "arrrrf",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "así que si eres un robot, eso significa que alguien te hizo.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "asignación de factura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asombroso",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "atentamente",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "averiguar el clima",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "ayuadame",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "ayúdame",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "bastardo",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "bebidas o no bebidas. esa es la pregunta .",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "bebidas por favor",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "belleza",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "besame el culo",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "bésame el trasero",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "bienvenido !",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "bonjour",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "borrar necesidades secundarias en planificación de producción",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "broma",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "buen finde",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "buen juego",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "buen trabajo",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "buena jugada",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "buena propuesta",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "buena salud",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "buenas tardes",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "bueno",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "bueno para mí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "buenos dias",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "buenos días",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "buenos dias jose",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "c123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cabrón",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "callate",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "cállate",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "cancela",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "cancelar",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "chaito",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "chao",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "chatbot de mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "chequear base de datos de sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chequeo backups",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chequeo de backups de todas las sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chequeo del informe de tareas de remedy",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chequeo flexnet",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chequeo informe remedy",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chico, tienes hora?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "chiste",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "chupame el culo",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "chupame la polla",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "chupamela",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "cia",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "ciao!",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "ciertamente",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "cierto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "claramente no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "claro que si",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "clima en valencia el domingo",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "colegas para siempre",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "comenzar",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "cómo chequeo los errores en las ws de todas las sedes?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo compruebo la bbdd de todas las sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo compruebo las bases de datos de todas las sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo creo un cambio en remedy de verificación nocturna?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo doy de alta un usuario en citrix paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo doy de alta un usuario en geoframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo esta el pedido",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "como esta el tiempo en paris?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "cómo estás",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "cómo estás ?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "como estas amigo ?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "cómo estas esta mañana, jose?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "cómo estás hoy",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "cómo nos comunica sigma una modificación en la expedición de nuestros pedidos",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo obtener un listado de materiales con su partida arancelaria y otros datos del maestro",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo puedes ayudarme ?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "como puedo dar de alta un usuario de paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "como puedo valerme de ti?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "cómo recuperar un fichero de una pre-factura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo se define e imprime el boletín de análisis de especialidades",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo se determinan las rutas por origen y destino en pedidos y entregas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cómo se gestionan en sap las compra-ventas triangulares",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "como se presenta el tiempo para el finde?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "cómo se procede con la creación de un centro nuevo",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "como se ve el cielo",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "cómo solicitar modificación de disminución de condición de pago en siv",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "como te hicieron?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "como te programaron?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "cómo te sientes ?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "cómo visualizar todos los transportes para planificar monitor tte flexible compraventa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "comprobar caducidad de licencias",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "comprueba el tiempo",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "con placer",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "con salud",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "configuracion de proveedor",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "configuración proveedor 1234567890",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "confirmado",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "confirmo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "coño",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "conocer el clima",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "coooool",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "correcto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "coucou",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "crear acreedor en el grupo de compras",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "crear el acreedor en la organizacion de compras",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "crear el proveedor para la organizacion de compras",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "creo que no puedes ayudarme",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "creo que podría llegar tarde.",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "creo que sí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "cual es el estado de mi cesta",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "cual es el estado de mi pedido",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "cuál es la fecha de hoy ?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "cuál es la hora actual",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "cual es la temperatura",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "cual es la temperatura en este momento",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "cual es tu uso",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "cuales son las noticias",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "cuáles son las rutas origen y destino",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cuales son las tareas nocturnas?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cuales son los filesystem de paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cuáles son mis opciones",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "cualquier titular",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "cuando hay que avisar sobre las licencias que van a caducar?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cuentame de tu creador",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "cuentame mas sobre tus fundadores",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "cuéntame un chiste",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "dame ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "dame el tiempo en marsella",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "dame las ultimas historias",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "dar la prevision",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "das asco, tu y toda tu familia",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "de acuerdo, en serio necesito tomar algo ya!",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "de ningún modo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "de ninguna manera",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "dedicame un minuto",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "definitivamente no soy feliz",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "deja de volver atras",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "déjame tomar una copa",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "detente",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "di algo gracioso",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "di el nombre de tu creador",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "diablos no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "dime algo divertido",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "dime como esta el clima",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "dime el nombre de tu creador",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "dime el nombre de tu creador ahora",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "dime el nombre de tu creador ahora.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "dime el tiempo en telaviv",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "dime la hora en londres?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "dime mas sobre ti",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "dime una broma por favor",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "disculpe señor, ¿tiene usted la hora por casualidad?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "disminución de pago en siv",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "diviérteme",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "eh, tú",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "el acreedor es 1234567890",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el acreedor factura por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el chatbot, qué sabe hacer?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "el cif es x20987654",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el código de compras es 1234",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el formato de pago es a060",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el nif es 12345678n",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el número de mi cesta es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el número de mi contrato es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el número de referencia es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el numero de referencia es 11111111",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el número de referencia es 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el pago es x123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "el pedido 12345678 no le ha llegado a para aprobar",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "el proveedor con cif a01234567 esta gestionado por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el proveedor con nif 12345678c",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el proveedor con nif x98765432",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el proveedor factura por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el proveedor qp0 está gestionado por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el sistema es qp0",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "el traslado no genera entrega entrante",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "en efecto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "en realidad no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eres absolutamente terrible y nada útil.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "eres agradable",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres divertido",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres dulce",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres el mejor",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres el mejor chatbot",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres estupido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres gracioso",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres hermoso",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres maravilloso",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres muy bello",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres tonto",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un asco",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un asco programando",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un idiota",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un idiota ...",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un inútil",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres un inútil.",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres una buena persona",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "eres una mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eres util?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "es 123456",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 12355778f",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 1360340",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 14588779j",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 156887786h",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 16588997y",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es 6001",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es a060",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es bueno saberlo, gracias!",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "es eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "es imcomprensible lo que haces",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "es muy amable por su parte",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "es perfecto para mi",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "es un error",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "esa es una buena noticia",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "eso es correcto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "eso es falso",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eso es gracioso",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "eso es hilarante",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "eso es realmente agradable",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "eso es tan asombroso",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "eso es verdad",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "eso está bien por ahora",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "eso está mal redactado",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eso funciona",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "eso no es",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eso no es lo que quise decir",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eso no es lo que yo dije",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "eso no esta bien hecho, déjalo",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "esperemos que si",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "espero que mueras pronto",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "espero que te mueras",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "está bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "esta bien para mi",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "esta conversacion no es util",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "esta lloviendo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "está nevando?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "está nublado en gallicia",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "este bot me cabrea mucho",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "este chatbot es horrible",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "este es un servicio terrible.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "este servicio es el peor de su tipo.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "esto es una mierda, no estas ayudando",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "esto esta bien para mi",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "esto no es lo que quiero",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "esto no me gusta nada",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy agradecido",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "estoy bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "estoy confundido",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "estoy de acuerdo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "estoy de acuerdo.",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "estoy en desacuerdo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "estoy fuera de aquí",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "estoy increíblemente insatisfecho",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy literalmente muriendo de sed en este momento",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "estoy muy insatisfecho en este momento",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy muy poco satisfecho",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy muy triste",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy perdido",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "estoy sediento",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "estoy totalmente insatisfecho",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estoy triste",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "estupido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "estúpido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "estúpido bot",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "eur x123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "eur, 1234567890",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "eur, 2345, 23345678c, 1234567890",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "exactamente",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "excelente adiós",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "excelente bye",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "expedición pedidos sigma",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "extender proveedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "extender proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "extension de proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "extension proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "falso",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "filesystem paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "fs paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "genial gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gilipollas retrasado",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias :)",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias a ti también !",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias amigo",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias hombre",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias maria",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias monica",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias por la ayuda",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias por tu ayuda",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias tio",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gracias, chatbot",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "gran trabajo",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "gtg",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "guay",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "habla del que te creó.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "hablamos pronto",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "hace frío afuera",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "hace frio en texas?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "hace mucho viento fuera",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "hagámoslo de nuevo",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "haha",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "has jugado bien",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "hasta la proxima",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "hasta la vista",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "hasta luego",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "hay que registrar siempre toda petición?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hay un error",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "hazlo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "hazme reir",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "helllloooo",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hermoso",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "hermoso día, ¿no te parece?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "hey chico de noticias dime lo que tienes!",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "hey follador",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "hey jodido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "hey perra",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "hey, ¿puedes decirme la hora de madrid por favor?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "heyy",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hiii",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hijo de puta",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "hipervínculo a documentum - vincular una carpeta documento",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hm no creo que puedas hacer lo que quiero",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola bot",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola carlos",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola chatbot",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola maria",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola!",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola, ¿qué tal estas?",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola, amigo",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hostname paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "idiota",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "imbecil",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "impresionante nos vemos",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "impresionante thx",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "imprimir boletín análisis",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "incluir user epos windows",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "incorrecto",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "increíble",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "informe de tareas remedy",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "iniciar",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "ip paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "jaja :)",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "jajajaja",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "jodida mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "jodido idiota",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "la cesta 12345678 no le ha llegado a para aprobar",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "la condicion de pago es c123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la condición de pago es x123",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la confirmación 12345678 no le ha llegado a para aprobar",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "la divisa es euros",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la factura 12345678 no le ha llegado a para aprobar",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "la felicidad no es el tema en este momento.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "la gente me llama juan",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "la moneda es eur",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la organización de compras es 1234",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la organización es 1234",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "la santidad de tu ser fue violada cuando fuiste creado.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "linda",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "lista de ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "llámame jose",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "lo hago",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "lo has hecho muy bien",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "lo hiciste bien",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "lo hiciste bien hoy",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "lo quiero",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "lo sé. gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "lol",
+      "intent": "laught",
+      "entities": []
+    },
+    {
+      "text": "mal servicio",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "maldito bot",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "maldito infierno",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "maldito sea",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "mandame",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "maravilloso",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "maricón",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "más ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "mata a tu perro",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "material de rlesa nuevo no dado de alta en sigma o material que han podido borrar",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "material nuevo no dado de alta en alfa o material que han podido borrar",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "me das asco",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "me encantaría saber quién te hizo.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "me encantaría tomar una copa ahora mismo.",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "me gustaría escuchar una broma!",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "me gustaria extender proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "me gustaría saber el nombre de tu creador.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "me gustaría saber el tiempo que hace en alemania",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "me gustaría saber si el estado de mi cesta con numero de documento 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "me gustaría saber si el proveedor con cif x12345678 para up2 esta gestionado por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "me gustaria saber si el proveedor cuyo cif es x45768795 y sistema srm esta gestionando marketplace",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "me gustas",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "me hace dolorosamente infeliz",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "me haces sonreír",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "me has salvado la vida",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "me necesito una bebida",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "me necesito una copa realmente fuerte",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "me niego",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "me parece bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "me puedes ayudar ?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "me puedes entretener?",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "me puedes llamar alberto",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "me tengo que ir",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "me voy adios",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "mi confirmación es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi confirmación está grabada. es correcto?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mi contrato es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi documento es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi factura con numero de documento 12345678 en que estado esta",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi factura con número de documento 12345678 en qué estado esta?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi factura en qué estado esta?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi nivel de satisfacción está por debajo de cero ahora",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "mi nombre es name",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "mi oferta es 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi pedido en qué estado esta?",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "mi sed es real",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "mirar el tiempo",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "mis mejores deseos",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "mmm no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "modificar pago en siv",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "modificar pedidos sigma",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mostrar ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "muchas gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "muchisimas gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "muéstrame las mejores historias de hoy",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "muéstrame lo que haces",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "muestrame lo que sabes hacer",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "muestrame un articulo deportivo de la cnn",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "muy bien hecho",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "muy buen bot",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "muy guay",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "nada",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nah",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nahh",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "necesita orientación",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "necesita un poco de orientación",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "necesito algo de ayuda !",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "necesito ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "necesito borrar necesidades en producción",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "necesito consultar la asignación de factura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "necesito el boletín de especialidades",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "necesito incluir al acreedor en mi grupo de compras 1234",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "necesito que me cuentes una historia divertida",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "necesito que me digas qué o quién te hizo.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "necesito que me orientes",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "necesito saber cómo definir las rutas de origen destino",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "necesito saber cuanto tardo en llegar a paris",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "necesito saber el tiempo en marruecos",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "necesito saber la hora",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "necesito saber la hora ahora",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "necesito traer abrigo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "necesito un abrigo?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "necesito un paraguas",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "necesito un trago ahora mismo",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "necesito una bebida fuerte",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "necesito una lista de materiales y la partida de arancel",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "negativo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nein",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no acepto tu recomendación",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no apruebo esto, es absolutamente terrible",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no considero que esto sea satisfactorio.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no entiendes nada so estúpido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "no esta",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no esta bien escrito",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no esta bien para mi",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no estoy contento con este servicio tuyo.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no estoy de acuerdo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no estoy feliz",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no estoy nada contento con lo que estas haciendo",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no estoy seguro de qué hacer aquí",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "no estoy seguro de si me puede hacer feliz.",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no exactamente",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no gracias",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no lo creo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no lo hagas",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no lo se",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no me ha llegado lo que he pedido",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no necesito eso",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no pedi esta mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "no puedes ayudarme",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "no puedes ayudarme con lo que necesito",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "no puedes ayudarme con lo que quiero",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "no puedes hacer nada mas",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no puedo confirmar el pedido 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no puedo confirmar la cesta 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no puedo confirmar la confirmación 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no puedo confirmar la factura 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no puedo encontrar la forma en que necesito ayuda",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "no quiero",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no quiero seguir con la conversación",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "no se ha podido borrar en alfa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no se ha podido borrar rlesa en sigma",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no se ha podido dar de alta en alfa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no se que hacer",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "no señor",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no te entiendo",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "no tengo la menor idea",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no veo el pedido 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no veo la cesta 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no veo la confirmación 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no veo la factura 12345678",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "no, gracias",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no, no fue es el caso",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no, no quiero ser tu amigo. eres pésimo",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "noooo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nooooo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "noooooooooooooooooo",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nooooope",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "nop",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "normalmente debería estar bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "normalmente me llaman jorgen",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "normalmente sí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "nos vemos",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "nos vemos la próxima vez",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "nos vemos más tarde.",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "noticias",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias bancarias",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias de ayer",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias de la india",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias financieras",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias francesas.",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias para españa.",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias sobre banca",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "noticias sobre bots",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "nunca",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "obtener el clima",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "obviamente",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "odio esto !",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "oh no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "ok entonces no puedes ayudarme",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "ok gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "ok supongo que no puedes ayudarme",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "ok, adios",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "ok, gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "ok, pero eso no me ayuda",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "olvida, reinicia",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "olvidalo",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "olvídalo, reinicia",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "oye cuerpo",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "para nada",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "parate",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "pareces tonto!",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "pedido de traslado no genera entrega entrante",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "perfecto, gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "perra",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "pienso que si",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "polla",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "por favor dime como naciste",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "por favor no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "por favor reinicie",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "por favor, ¿podrías servirme un trago ?",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "por favor, ayudame",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "por favor, ayúdame",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "por favor, dime la empresa que te creó",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "por favor, llámame luis",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "por supuesto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "pornografía",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "positividad",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "positivo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "predicción del tiempo",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "problema con dar de alta material rlesa en sigma",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "problema con el pedido y la entrega entrante",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "procedimiento de creación de nuevo centro",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "pues buenas noches",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "que bueno escuchar eso",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "que divertido eres",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "que es esto",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que fecha es hoy?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "que fecha es?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "qué finalidad tienes en la vida?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que gracioso eres",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "qué haces ?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que hay de nuevo en pdiddy",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "qué hay que hacer en el turno de noche?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "qué hora es ahora ?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "que hora es en francia ?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "que hora es en tokio",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "que hora es?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "qué hora es?",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "que lindo eres",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "que malo es este servicio",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "que me puedes decir ?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que pasa ?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "qué puedes hacer ?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "qué puedo hacer?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que sabes hacer",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "que sol hace fuera?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "que tal compañero",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "que temperatura hace",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "que tengas un buen día",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "que tengas un buen día !",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "que tiempo hace?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "qué tiempo se preve?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "que triste es todo esto !",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "quien eres?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "quien es tu creador",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quien es tu padre",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quien te creó ?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quien te hizo",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quién te inventó?",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero añadir un acreedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero añadir un proveedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero arrancar un rpa para extender proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero confirmar mi pedido desde el resumen de compras ¿cómo lo hago?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero conocer a tu dueño",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero conocer el estado del documento",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero conocer la empresa que te diseño",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero conocer la empresa que te genero",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero consultar estado de pedido",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero desplegar proveedores",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero el clima en parís.",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "quiero eliminar necesidades secundarias en planificación",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero empezar de nuevo",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "quiero extender proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero extender un proveedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero hablar con tu creador.",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero incluir un proveedor nuevo",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero lanzar un rpa para extender proveedores",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "quiero leer las noticias en español",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "quiero planificar monitor transporte flexible",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero realizar una confirmación desde el resumen de compras. dispongo del número de cesta ¿cómo lo hago?.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero recuperar una pre factura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero restablecer la conversación",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "quiero revisar el pedido 12345678 de mi compañero",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero revisar la cesta 12345678 de mi compañero",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero revisar la confirmación 12345678 de mi compañero",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero revisar la factura 12345678 de mi compañero",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi cesta 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi cesta 123456788",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi confirmación 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi contrato 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi licitación 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi oferta 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber el estado de mi pedido 01234567",
+      "intent": "invoicestatus",
+      "entities": []
+    },
+    {
+      "text": "quiero saber los materiales y datos del maestro",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero saber los pasos de crear un nuevo centro",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero saber mas de ti",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "quiero saber noticias sobre john",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "quiero saber quien te hizo",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "quiero saber si el acreedor va por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "quiero saber si el proveedor va por adquira",
+      "intent": "providerconsultation",
+      "entities": []
+    },
+    {
+      "text": "quiero un chiste",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "'quiero una pizza'",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero ver el acceso a documentum",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quiero ver las noticias en ingles",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "quiero ver los transportes compraventa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "realmente necesito una bebida",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "realmente no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "rechazar",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "recuperar prefactura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "registrar en geoframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "registrar usuario en geoframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "registrar usuario paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "reiniciar",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "reiniciar el flujo",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "resumen de tareas nocturnas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "resumen tareas nocturnas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "retrasado",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "robot estúpido",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "salud",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "sap compra triangulares",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sap venta triangulares",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "se supone que lloverá el próximo viernes",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "se ve bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "seguro",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "servidor paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sexo",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "shares paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si confirmo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si eres un chatbot, eso significa que alguien tuvo que programarte",
+      "intent": "askcreator",
+      "entities": []
+    },
+    {
+      "text": "si eso es correcto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si genial.",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si gracias",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si lo hice",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si lo puedo confirmar",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí por favor",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí por favor hazlo",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí quiero",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si seguro",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí, lo era",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí, lo hice",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sí, por supuesto",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si, todo bien.",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "si, y no me importa",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sii",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "siii",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sin lugar a duda",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sip",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "sistema de ficheros paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "solicito añadir al ctc la oc 6001",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "solicito la organizacion de compras para el acreedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "solicito la organización de compras para el proveedor",
+      "intent": "robotlaunch",
+      "entities": []
+    },
+    {
+      "text": "solicitud alta de nuevo sw",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "solicitud alta de software",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "solicitud de alta de software",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "solo me gustaría expresar mi descontento",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "solo se divertido",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "soy andres",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "soy consciente de ello",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "soy un alcohólico abstemio y necesito una bebida ahora mismo, carajo.",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "stop",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "suena bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "suena bien para mi",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "suficientemente",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "suicidarse",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "supongo que no puedes ayudarme. ¿que vas ha hacer?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "supongo que si",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "supongo que sí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "tal vez sí",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "tareas nocturnas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "te adoro",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "te amo",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "te amor",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "te dije adiós",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "te esta tratando la vida bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "te lo agradezco!",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "te odio",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "te portas muy bien",
+      "intent": "compliment",
+      "entities": []
+    },
+    {
+      "text": "te sientes bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "te van las cosas bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "te veo luego",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "te veo pronto !",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "te vere",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "tenga un buen día",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "tengo mucha sed",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "tengo mucha sed. quiero una bebida con mucho alcohol",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "tengo muchas ganas de tomar algo ya",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "tengo que irme",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "tengo sed de una bebida intensa.",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "thankssssssssss",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "thnaks",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "thnx",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "thx compañero",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "tiempo en leon",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "tio eres una basura",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "todo bien",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "todo bien?",
+      "intent": "askfeeling",
+      "entities": []
+    },
+    {
+      "text": "tristemente no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "tú apestas!",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "ugh he tenido un día duro, necesito un trago",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "últimas historias de usa",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "últimas noticias",
+      "intent": "getnews",
+      "entities": []
+    },
+    {
+      "text": "un trago, por favor",
+      "intent": "wantdrink",
+      "entities": []
+    },
+    {
+      "text": "una broma por favor",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "una historia divertida",
+      "intent": "askjoke",
+      "entities": []
+    },
+    {
+      "text": "up2",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ups-32",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "usted es tonto",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "usted me podría ayudar",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "va a llover pronto?",
+      "intent": "getweather",
+      "entities": []
+    },
+    {
+      "text": "vale",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "vale adios",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "vale gracias",
+      "intent": "gratitude",
+      "entities": []
+    },
+    {
+      "text": "vale, me tengo que ir",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "vales para algo?",
+      "intent": "gethelp",
+      "entities": []
+    },
+    {
+      "text": "válido",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "vamos a reiniciar",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "vaya mierda. que malo es !",
+      "intent": "isnthappy",
+      "entities": []
+    },
+    {
+      "text": "venga nos vemos",
+      "intent": "goodbye",
+      "entities": []
+    },
+    {
+      "text": "ver quién tiene asignado un documento de factura",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "verificar base de datos de sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "verificar bbdd de sedes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "vete a la mierda",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "vete al infierno",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "volumenes paradigm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "voy a necesitar que me digas la hora ahora.",
+      "intent": "gettime",
+      "entities": []
+    },
+    {
+      "text": "wow es genial.",
+      "intent": "ishappy",
+      "entities": []
+    },
+    {
+      "text": "x12345678",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "y",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "y eso es todo?",
+      "intent": "stop",
+      "entities": []
+    },
+    {
+      "text": "yeees",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yees",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yo no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "yo si",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yo soy jose",
+      "intent": "presentation",
+      "entities": []
+    },
+    {
+      "text": "yo te odio",
+      "intent": "insult",
+      "entities": []
+    },
+    {
+      "text": "yop",
+      "intent": "greetings",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

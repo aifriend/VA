@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: dm-app
+data:
+    endpoint: http://rasa-app-dev/
+    service: RASA

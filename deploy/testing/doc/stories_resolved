@@ -1,0 +1,33 @@
+COMPRAS SAP (invoicestatus)
+= pedido siempre numericos 
+- numero de pedido (numerico siempre (5-10))
+- estado del pedido 
+
+---
+
+AQUIRA-MARKERTPLACE (providerconsultation)
+= aquira palabra clave
+- [indique proveedor/acreedor (5-10: numerico)]NO -> SRM - SAP (mismo cif-nif unico y diferente del codigo proveedor)
+  -> solo preguntar por cif-nif aunque nos vale indistintamente el cifnif o el codigo de proveedor proveedor
+  -> si no hay cifnif -> utter-cifnif y reseteo/reinicio
+- maquina (sub-divisiones de aquira)
+  -> el pedido x de la maquina z factura por aquira
+  -> preguntas posible manteniendo el mismo cifnif con un cambio de maquina
+    -> y en maquinaB tambien factura/configurado/va por aquira?
+-> ante cualquier cambio de cifnif reinicio
+
+---
+
+EXTENSION PROVEEDORES (robotlauch)
+= extender-proveedores palabra clave
+- extender con cifnif(99%) OR (proveedor/acreedor)
+  - el cifnif se pregunta en la mayoria de los casos (95%) 
+  - nos vale indistintamente el cifnif o el codigo de proveedor
+- organizacion de compras: 4(numeros)FIJO -> alfanumericos en un futuro
+  -> si nos dan la grupo de compras (? -> org-compras) 3(numericos)FIJO -> alfanumericos
+    -> preguntarle siempre por la organziación de compras a la que pertenece
+- moneda
+- a060 - condicion de pago
+
+-> orden indistintamente de todos los valores
+

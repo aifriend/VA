@@ -1,0 +1,76 @@
+{
+    "CONTEXT": {
+        "url": "127.0.0.1",
+        "port": "8050"
+    },
+    "DIALOG": {
+        "url": "127.0.0.1",
+        "port": "8090"
+    },
+    "BUSINESS": {
+        "url": "127.0.0.1",
+        "port": "8085"
+    },
+    "SAP_DEV": {
+        "url": "127.0.0.1",
+        "port": "8060",
+        "wsdl": "http://qsoa.repsol.com:8280/services/SRM_ROBOT_FE_ps?wsdl",
+        "user": "USER_DQSOA_ROB001",
+        "password": "xm12TYnpt",
+        "invoice_status_action": "Z_XSRM_ESTADO_CUALQUIER_DOC",
+        "provider_consultation_action": "Z_XSRM_CONFIGURADO_ADQUIRA",
+        "robot_launch_action": "Z_XSRM_EXTENDER_PROVEEDOR"
+    },
+    "MEMORY": {
+        "url": "127.0.0.1",
+        "port": "8020"
+    },
+    "RASA": {
+        "url": "127.0.0.1",
+        "port": "5005",
+        "uri": "webhooks/rasaio/"
+    },
+    "WA": {
+        "url": "127.0.0.1",
+        "port": "8075",
+        "app_id": "f8f48a40-d41d-4491-a269-dfbeb143715f",
+        "app_key": "rV1tS8wY8gQ0sM2iX2iS7yW0xI6dY8tQ5cI6uU1tR6jJ2xH2wJ",
+        "app_token": "9ae20e8102de3aaf0883187ba74452cc",
+        "app_origin": "https://us.apiconnect.ibmcloud.com",
+        "login_server": "api.us.apiconnect.ibmcloud.com",
+        "login_url": "/acit-ds-think-2018/repsol/api/Clients/login",
+        "login_user": "accenture",
+        "login_pwd": "p@ssw0rd",
+        "query_server": "api.us.apiconnect.ibmcloud.com",
+        "query_url": "/acit-ds-think-2018/repsol/api/Messages/assess"
+    },
+    "RPA": {
+        "url": "127.0.0.1",
+        "port": "8095",
+        "sqs_server": "sqs.eu-central-1.amazonaws.com",
+        "sqs_url": "/%s/%s/?Action=SendMessage&MessageBody=%s",
+        "user": "repsolbot@accenture.com",
+        "password": "_Abcd1234",
+        "robot_name": "REPSOL_R000484",
+        "robot_id": "REPSOL_R000484@EC2AMAZ-B8JUESH",
+        "aros_server": "aros.accenture.com",
+        "aros_url_token": "/dashboardws/Token",
+        "aros_url_info": "/dashboardws/api/State/%s",
+        "aros_url_perm": "/dashboardws/api/Permissions/%s",
+        "aros_url_exec": "/dashboardws/api/State/%s",
+        "login_account": "260986212713",
+        "login_queue": "R000486_INPUT"
+    },
+    "CONFIG": {
+        "url": "127.0.0.1",
+        "port": "9000"
+    },
+    "CONFIDENCE": {
+        "url": "127.0.0.1",
+        "port": "8080"
+    },
+    "SECURITY": {
+        "url": "127.0.0.1",
+        "port": "8065"
+    }
+}

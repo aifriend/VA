@@ -1,0 +1,72 @@
+spring: 
+  application: 
+    name: nlu-app
+data:
+  ENTITY_PRIORITY_TABLE:
+    cnn: High
+    paycon: High
+    macsystem: High
+    currency: High
+    sys-number: High
+    pedido: Low
+    adquira: Low
+    organizacion: Low
+    codigo: High
+    proveedor: Low
+  INTENT_PRIORITY_TABLE:
+    invoicestatus: High
+    robotlaunch: High
+    providerconsultation: High
+    greetings: High
+    name: Medium
+    goodbye: High
+    gethelp: High
+    stop: High
+    deny: High
+    isnthappy: High
+    affirm: High
+    thankyou: High
+    compliment: Medium
+    gratitude: High
+    out_of_scope: High
+    human_handoff: High
+    askcreator: Low
+    askfeeling: Low
+    askjoke: Low
+    getnews: Low
+    getweather: Low
+    insult: Low
+    laught: Low
+    wantdrink: Low
+    ask_howold: Low
+    ask_isbot: Low
+    ask_restaurant: Low
+    ask_wherefrom: Low
+    ishappy: Low
+    ask_howbuilt: Low
+    ask_languagesbot: Low
+    ask_howdoing: Low
+    ask_whatspossible: Low
+    ask_whoisit: Low
+    ask_whoami: Low
+    gettime: Low
+
+  THRESHOLD_TABLE:
+    High: 
+      - 
+        INT_lower_threshold: 0.0
+        INT_upper_threshold: 0.0
+        ENT_lower_threshold: 0.0
+        ENT_upper_threshold: 0.0
+    Medium:
+      - 
+        INT_lower_threshold: 0.0
+        INT_upper_threshold: 0.0
+        ENT_lower_threshold: 0.0
+        ENT_upper_threshold: 0.0
+    Low:
+      -
+        INT_lower_threshold: 0.0
+        INT_upper_threshold: 0.0
+        ENT_lower_threshold: 0.0
+        ENT_upper_threshold: 0.0

@@ -1,0 +1,292 @@
+VERSION v3.0
+============
+
+Leyenda: Q. (query); A. (answer); HP. (happy path); HPS (happy path with steps)
+
+
+GREETING
+--------
+Q. Hola
+A. Hola, cual es tu nombre?
+Q1. me llamo Jose
+A1. Un placer hablar contigo, Jose!
+
+
+FAQ
+---
+Q. ¿Cómo confirmar una factura?
+A. Acceder a la ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña de confirmaciones-> clicar en el botón crear confirmación. Para más información ver el siguiente manual ***********adjuntar manual******
+Q. ¿Cómo anulo una confirmación?
+A. En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7BC8D3AAD3-DE90-4CEF-9A16-10EEF5B92538%7D&file=Devolver%20una%20confirmaci%C3%B3n.docx&action=default&mobileredirect=true
+Q. ¿Cómo podría confirmar el pedido de mi compañero?
+A. Se accede a la pestaña compra operativa. https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7B78FBDEA4-9B17-4096-AAEC-AE1B755B8647%7D&file=Confirmar%20pedido%20desde%20la%20pesta%C3%B1a%20Compra%20Operativa.docx&action=default&mobileredirect=true
+Q. ¿Tengo confirmaciones pendientes?
+A. El comprador recibirá de forma automática un mail indicando que tiene un pedido pendiente de ser confirmado, en caso de duda, si cuando buscas la cesta desde la pestaña Cestas aparece el boton en azul crear confirmación indica que aún queda importe por confirmar, tambien puede mirar el siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7B78FBDEA4-9B17-4096-AAEC-AE1B755B8647%7D&file=Confirmar%20pedido%20desde%20la%20pesta%C3%B1a%20Compra%20Operativa.docx&action=default&mobileredirect=true
+
+
+INVOICE STATUS
+--------------
+Q. ¿Cual es el estado de mi pedido 123456789?
+A-HP. El estado de su pedido con referencia 123456789 es CONFIRMADO
+
+Q. ¿Cual es el estado de mi pedido?
+A-HPS. ¿Podrías indicarme el número de referencia?
+Q1. 123456789
+A-HPS1. El estado de su pedido con referencia 123456789 es CONFIRMADO
+
+
+PROVIDER CONSULTATION
+---------------------
+Q. ¿El proveedor con codigo 24256398T y sistema SRM esta gestionado con adquira?
+A-HP. El proveedor con None 24256398T y sistema SRM factura para Adquira
+
+Q. ¿El proveedor está configurado por Adquira?
+A-HPS. Introduzca el cif o nif del acreedor
+Q1. 24256398T
+A-HPS1. Para que maquina o sistema se factura?
+Q1. SRM
+A-HPS2. El proveedor con None 24256398T y sistema SRM factura para Adquira
+
+
+ROBOT LAUNCH
+------------
+Q. Necesito incluir al proveedor con CIF 24256398T en mi organizacion de compras 6001 en EUR y condicion de pago A022
+A-HP. Su proceso con el proveedor y organizacion con CIF 24256398T ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos
+
+Q. Necesito incluir a un nuevo proveedor en mi organizacion de compras
+A-HPS1. Introduzca el cif o nif del acreedor
+Q1. 24256398T
+A-HPS2. Introduzca una organización de compras existente
+Q2. 6001
+A-HPS3. Con que moneda desea realizar esta operación?
+Q3. EUR
+A-HPS4. Introduzca la condicion de pago
+Q4. a060
+A-HPS5. Su proceso con el proveedor y organizacion con None 24256398T ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos
+
+
+VARIANTES CONVERSACIONES (ARTICULADORES)
+----------------------------------------
+Intenciones que articulan todos los HPs:
+- stop ?
+    - cancela
+    - cancelar
+    - creo que no puedes ayudarme
+    - deja de volver atras
+    - hm no creo que puedas hacer lo que quiero
+    - no puedes ayudarme
+    - no puedes ayudarme con lo que necesito
+    - eso no esta bien hecho, dejalo
+    - esta conversacion no es util
+    - no puedes ayudarme con lo que quiero
+    - ok, entonces no puedes ayudarme
+    - ok, supongo que no puedes ayudarme
+    - ok, pero eso no me ayuda
+    - olvidalo
+    - parate
+    - rechazar
+    - stop
+- deny
+    - no
+    - definitivamente no
+    - Nunca
+    - absolutamente no
+    - no lo creo
+    - Me temo que no
+- affirm
+    - si
+    - por supuesto
+    - Por supuesto
+    - si
+    - Okay
+    - guay
+- next_step
+    - llévame al siguiente paso
+    - Próximo paso
+    - Quiero ir al siguiente paso.
+    - Por favor, llévame al siguiente paso.
+- human_handoff
+    - Quiero hablar con un humano
+    - déjame hablar con una persona real por favor
+    - ¿Hay también humanos trabajando para tu empresa?
+    - Dame un humano apropiado
+- greetings
+    - Hola
+    - Oye
+    - Hola bot
+    - Hey bot
+    - Hola
+- goodbye
+    - adiós
+    - buenas noches
+    - adiós
+    - buenas noches
+    - nos vemos
+    - toodle-oo
+- thankyou and gratitude
+    - Gracias
+    - Gracias
+    - Muchas gracias
+    - gracias bot
+- name
+    - Andres
+    - Jaime
+- compliment
+    - ! eso es genial !
+    - ¡ama!
+    - ¡eres genial!
+    - ¡eres lindo!
+- out_of_scope
+    >fallback<
+    - por favor ayuda con mi helado esta goteando
+    - No, espera, vuelve. Quiero un helado que gotee pero un cono que lo atrape para que puedas beber el helado más tarde.
+    - Quiero un helado que no gotee
+    - hey pequeña mamá, déjalos susurrar en tu oído
+    - Alguien llama a la policía, creo que el bot murió.
+- ask_whoami and ask_whatismyname
+    - ¿Cuál es mi nombre?
+    - ¿Puedo saber mi nombre?
+    - ¿Cuál es mi nombre?
+    - ¿Cómo me llamo?
+    - ¿Quién soy?
+    - esta bien quien soy
+    - Quién soy
+    - Dime quien soy yo?
+- gettime
+    - ¿Cuál es la hora actual?
+    - que hora es en sydney
+    - que hora es ahora
+    - Qué hora es ?
+- ask_builder
+    - ¿Puedes compartir tu jefe conmigo?
+    - Quiero conocer a tu dueño
+    - Quiero conocer la empresa que te diseñó.
+    - Quiero conocer la empresa que te generó.
+- gethelp
+    - ok entonces no puedes ayudarme
+    - Eso fue una mierda, no estás ayudando.
+    - No puedes ayudarme con lo que necesito.
+    - supongo que no puedes ayudarme entonces
+    - ok supongo que no puedes ayudarme
+    - eso no es lo que quiero
+    - ok, pero eso no me ayuda
+    - esto no lleva a nada
+    - Esta conversación no es realmente útil.
+    - No puedes ayudarme con lo que quiero.
+    - Creo que no puedes ayudarme
+    - hm no creo que puedas hacer lo que quiero
+    - detener
+    - deja de volver
+    - ¿Tienes algo?
+    - ¿Y te llamas compañía bot? pff
+    - ¿y eso es?
+    - ¿nada más?
+
+
+VARIANTES CONVERSACIONES (SMALLTALKS)
+-------------------------------------
+Intenciones que disparan el intente chitchat:
+- ishappy
+- askcreator
+    - hablame de quien te creo
+    - me encantaria saber quien te hizo
+    - por favor, dime como naciste
+    - quien es tu creador
+- askfeeling
+    - ¡fenomenal! ¿cómo estás?
+    - ¿bien y tú?
+    - ¿cómo te esta llendo?
+    - ¿cómo va tu vida?
+    - ¿en que estás haciendo?
+- askjoke
+    - cuentame un chiste
+    - chiste
+    - di algo gracioso
+    - dime algo divertido
+    - divierteme
+- getnews
+    - ¿cuáles son las noticias de hoy?
+    - ¿cuáles son los titulares de hoy?
+    - ¿me puedes mostrar alguna noticia?
+    - ¿podrías darme alguna noticia?
+    - ¿puedes traerme las noticias?
+- getweather
+    - ¿Cómo está el clima hoy?
+    - ¿Como está el clima?
+    - ¿Qué tiempo hace en tu casa?
+    - ¿Tienes buen tiempo?
+- insult
+    - eres tonto
+    - eres un estúpido!
+    - ¿eres retrasado?
+    - vete a la mierda!
+    - cabron
+- laught
+    - eso es gracioso
+    - so es hilarante
+- wantdrink
+    traeme algo para beber
+- ask_restaurant
+    - ¿Me pueden mostrar un restaurante sin gluten?
+    - quiero un restaurante francés
+    - Estoy buscando un restaurante chino
+    - necesito un nuevo restaurante
+- ask_howold
+    - ¿cual es tu edad?
+    - ¿cuántos años?
+    - ¿cual es tu edad?
+    - ¿Cuando naciste?
+- ask_isbot
+    - ¿Eres un bot?
+    - ¿Eres un bot real?
+    - Eres un bot
+    - ¿Eres realmente un bot?
+- ask_wherefrom
+    - Dónde vives
+    - ¿de donde eres?
+    - Así que de dónde eres
+    - ¿Dónde estás?
+    - ¿Donde naciste?
+- ask_howbuilt
+    - ¿Cómo te construyeron?
+    - ¿Cómo te hicieron?
+    - Dime cómo te hicieron.
+    - Déjame saber cómo te hicieron exactamente
+- ask_languagesbot
+    - ¿Que lenguas hablas?
+    - ¿En qué idiomas puedes hablar?
+    - ¿Qué idiomas sabes?
+    - ¿En qué idiomas hablas con fluidez?
+- ask_howdoing
+    - Ahoy amigo, ¿cómo estás?
+    - Estás bien
+    - estas teniendo un buen dia
+    - ¿Estas bien?
+- ask_whatspossible
+    - ayuda
+    - ayuda por favor
+    - no se lo que quiero
+    - Necesito algo de ayuda
+    - opciones
+    - muéstrame el menú
+    - muéstrame lo que es
+- ask_whoisit
+    - quien es este
+    - Con quién estoy hablando
+    - cuál es tu nombre
+    - con quien estoy hablando
+    - Quién eres
+    - como te llamas bo
+
+Se debe poder insertar dentro de cada step de cada uno de los HPs.
+
+
+LOGICA CONVERSACIONAL
+---------------------
+Un comentario sobre las pruebas. En la versión actual no se puede cambiar entre formularios.
+Si se esta en un formulario, su HP admite desviaciones pero nunca se podrá lanzar un nuevo formulario.
+Por ejemplo, si lanzamos  un RPA y nos falta por introducir dos parámetros no podemos en medio de la conversación
+preguntar por una FAQ o hacer una nueva consulta a SAP. Antes hay que cerrar o concluir el HP actual antes de empezar
+otro nuevo. Aunque siempre existe la posibilidad de cancelar el HP actual lo que libera el dialogo para, ahora,
+hacer otro tipo de consultas tipo SAP o FAQ.
+

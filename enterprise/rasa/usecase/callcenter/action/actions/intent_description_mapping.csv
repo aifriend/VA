@@ -1,0 +1,18 @@
+intent,button
+invoicestatus,Cual es el estado de mi pedido?
+robotlaunch,Me gustaría extender un proveedor
+providerconsultation,El proveedor trabaja por Adquira?
+greetings,Hola
+goodbye,Adios
+gethelp,Puedes ayudarme?
+stop,Parar
+deny,No
+affirm,Si
+next_step,Llévame al siguiente paso
+thankyou,Gracias
+compliment,Eres genial
+gratitude,Gracias
+out_of_scope,Algo incomprensible para mi
+human_handoff,Paseme con un humano
+inform,Introduzca el dato pedido
+chitchat,Algo para lo que aun no tengo respuestas

@@ -1,0 +1,17 @@
+templates:
+  utter_ask_reference:
+    - "¿Podrías indicar el número de referencia?"
+  utter_ask_cif:
+    - "¿Podría indicar el CIF del proveedor?"
+  utter_ask_system:
+    - "¿Podrías indicar un sistema de entre los siguientes (EP2, RP2, QP0, BP5, UP2)?"
+  utter_ask_crednif:
+    - "¿Podrías indicar el número de acreedor o el NIF?"
+  utter_ask_iscreditor:
+    - "¿Podrías indicar el número de acreedor o el NIF?"
+  utter_ask_orgcompras:
+    - "¿Podrías indicar la organización de compras a la que pertenece? (El formato son 4 números)"
+  utter_ask_builtin.currency:
+    - "¿Podrías indicar la divisa? (El formato son 3 caracteres: EUR, USD, GBP...)"
+  utter_ask_paycondition:
+    - "¿Podrías indicar la condición de pago? (Formato A060)"

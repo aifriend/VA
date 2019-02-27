@@ -1,0 +1,36 @@
+version: '3.0'
+
+services:
+
+  mongo:
+    image: mongo
+    networks: ['rasa-network']
+    ports:
+      - 27017:27017
+      - 27027:27027
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rasa
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: rasa
+    volumes:
+      - ./deploy/docker/rasa_core/tracker_store/data/db:/data/db
+
+  mongo-express:
+    image: mongo-express
+    networks: ['rasa-network']
+    ports:
+      - 8081:8081
+    environment:
+      - ME_CONFIG_MONGODB_SERVER = mongo
+      - ME_CONFIG_MONGODB_PORT = 27017
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN = false
+      - ME_CONFIG_MONGODB_AUTH_DATABASE = rasa
+      - ME_CONFIG_MONGODB_AUTH_USERNAME = devroot
+      - ME_CONFIG_MONGODB_AUTH_PASSWORD = devroot
+      - ME_CONFIG_BASICAUTH_USERNAME = dev
+      - ME_CONFIG_BASICAUTH_PASSWORD = dev
+    depends_on:
+      - mongo
+
+networks: {rasa-network: {}}
+

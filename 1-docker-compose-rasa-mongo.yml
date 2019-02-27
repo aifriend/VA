@@ -1,0 +1,22 @@
+version: '3.0'
+
+services:
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    networks:
+      - rasanet
+    ports:
+      - 27017:27017
+      - 27027:27027
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rasa
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: rasa
+    volumes:
+      - ./deploy/docker/rasa_core/tracker_store/data/db:/data/db
+
+networks:
+
+  rasanet: {}

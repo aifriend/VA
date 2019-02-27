@@ -1,0 +1,56 @@
+intents:
+  - greet
+  - thankyou
+  - goodbye
+  - search_concerts
+  - search_venues
+  - compare_reviews
+  - invoicestatus:
+      use_entities: false
+  - inform
+  - gratitude
+  - goodbye
+
+entities:
+  - name
+  - session
+  - status
+  - number
+
+slots:
+  concerts:
+    type: list
+  venues:
+    type: list
+  session:
+    type: text
+    initial_value: "default"
+  reference:
+    type: text
+  status:
+    type: text
+  requested_slot:
+    type: unfeaturized
+
+actions:
+  - utter_default
+  - utter_greet
+  - utter_goodbye
+  - utter_noworries
+  - utter_youarewelcome
+  - utter_wrong_reference
+  - utter_invoicestatus_status
+  - utter_ask_reference
+  - utter_invoice_status
+  - utter_invoice_status_authorization
+  - utter_invoice_status_recorded
+  - utter_invoice_status_deleted
+  - utter_invoice_status_not_registered
+  - utter_invoice_slots_values
+  - action_search_concerts
+  - action_search_venues
+  - action_show_concert_reviews
+  - action_show_venue_reviews
+
+forms:
+  - invoicestatus_form

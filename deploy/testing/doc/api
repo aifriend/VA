@@ -1,0 +1,36 @@
+hello                                              HEAD, GET, OPTIONS             /
+list_trackers                                      HEAD, GET, OPTIONS             /conversations
+execute_action                                     OPTIONS, POST                  /conversations/[sender_id]/execute
+log_message                                        OPTIONS, POST                  /conversations/[sender_id]/messages
+predict                                            OPTIONS, POST                  /conversations/[sender_id]/predict
+respond                                            HEAD, GET, POST, OPTIONS       /conversations/[sender_id]/respond
+retrieve_story                                     HEAD, GET, OPTIONS             /conversations/[sender_id]/story
+retrieve_tracker                                   HEAD, GET, OPTIONS             /conversations/[sender_id]/tracker
+replace_events                                     PUT, OPTIONS                   /conversations/[sender_id]/tracker/events
+get_domain                                         HEAD, GET, OPTIONS             /domain
+evaluate_stories                                   OPTIONS, POST                  /evaluate
+continue_training                                  OPTIONS, POST                  /finetune
+load_model                                         OPTIONS, POST                  /model
+tracker_predict                                    OPTIONS, POST                  /predict
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+status                                             HEAD, GET, OPTIONS             /status
+version                                            HEAD, GET, OPTIONS             /version
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rasaio/
+
+-----------------
+
+- checkpoints para chitchat
+- condicionales en el slot-filling
+    * self.from_entity(entity=entity_name, intent=intent_name) will look for an entity called entity_name to fill a slot
+       slot_name regardless of user intent if intent_name is None else only if the users intent is intent_name.
+    * self.from_intent(intent=intent_name, value=value) will fill slot slot_name with value if user intent is intent_name.
+       To make a boolean slot, take a look at the definition of outdoor_seating above.
+    * self.from_text(intent=intent_name) will use the next user utterance to fill the text slot slot_name regardless of
+       user intent if intent_name is None else only if user intent is intent_name.
+    * If you want to allow a combination of these, provide them as a list as in the example above
+- unhappy-paths -> en los stories
+- condicional logic
+    if tracker.get_slot('cuisine') == 'greek':
+      return ["cuisine", "num_people", "outdoor_seating", "preferences", "feedback"]
+    else:
+      return ["cuisine", "num_people", "preferences", "feedback"]

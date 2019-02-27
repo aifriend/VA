@@ -1,0 +1,68 @@
+intents:
+  - request_restaurant:
+      use_entities: false
+  - request_hotel:
+      use_entities: false
+  - chitchat:
+      use_entities: false
+  - inform
+  - affirm
+  - deny
+  - stop
+  - thankyou
+
+entities:
+  - cuisine
+  - brand
+  - num_people
+  - number
+  - feedback
+  - seating
+
+templates:
+  utter_default:
+    - text: "sorry, I didn't understand you, please try input something else"
+
+slots:
+  cuisine:
+    type: unfeaturized
+    auto_fill: false
+  brand:
+    type: unfeaturized
+    auto_fill: false
+  num_people:
+    type: unfeaturized
+    auto_fill: false
+  outdoor_seating:
+    type: unfeaturized
+    auto_fill: false
+  preferences:
+    type: unfeaturized
+    auto_fill: false
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+actions:
+  - utter_ask_cuisine
+  - utter_ask_num_people
+  - utter_ask_outdoor_seating
+  - utter_ask_preferences
+  - utter_ask_feedback
+  - utter_submit
+  - utter_wrong_cuisine
+  - utter_wrong_num_people
+  - utter_wrong_outdoor_seating
+  - utter_default
+  - utter_slots_values
+  - utter_noworries
+  - utter_chitchat
+  - utter_ask_continue
+  - utter_restart
+  - utter_ask_brand
+
+forms:
+  - restaurant_form
+  - hotel_form

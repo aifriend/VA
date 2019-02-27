@@ -1,0 +1,29 @@
+USER CASE
+
+FORMULACION
+If a NLU prediction has a low confidence score, the user is asked to affirm the classification of the intent.
+If they affirm, the story continues as if the intent was classified with high confidence from the beginning.
+If they deny, the user is asked to rephrase their message.
+
+REFORMULACION
+If the classification of the rephrased intent was confident, the story continues as if the user had this intent from the beginning.
+If the rephrased intent was not classified with high confidence, the user is asked to affirm the classified intent.
+If the user affirms the intent, the story continues as if the user had this intent from the beginning.
+If the user denies, an ultimate fallback action is triggered (e.g. a handoff to a human).
+
+FORMULACION
+/providerconsultation@0.2{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+    *affirm
+    *deny
+/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+/inform{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+
+REFORMULACION
+/robotlaunch@0.9{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+    *affirm
+    *deny
+/inform@0.1{"orgcompras":"1234", "session": "j.b.lopez@accenture.com"}
+/inform{"currency":"EUR", "session": "j.b.lopez@accenture.com"}
+/inform{"paycon":"a060", "session": "j.b.lopez@accenture.com"}
+

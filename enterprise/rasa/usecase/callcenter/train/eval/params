@@ -1,0 +1,12 @@
+#############################
+FALLBACK_THRESHOLD = 0.2
+#############################
+KERAS_SPLIT_VALIDATION = 0.1
+KERAS_EPOCHS = 100
+KERAS_BATCH_SIZE = 256
+KERAS_MAX_HISTORY = 15
+#############################
+MEMO_MAX_HISTORY = 7
+#############################
+AUGMENTATION_FACTOR = 0
+#############################

@@ -1,0 +1,7 @@
+action_endpoint:
+  url: http://127.0.0.1:5055/webhook
+
+nlg:
+  url: http://127.0.0.1:5056/nlg
+
+

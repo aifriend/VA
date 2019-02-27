@@ -1,0 +1,19 @@
+Collect requirements
+--------------------
+pip install pipreqs
+pipreqs /path/to/home/project
+
+Command install
+---------------
+pip install -U spacy
+python -m spacy download es
+
+Requirements
+------------
+spacy==2.0.18
+es-core-news-sm==2.0.0
+https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-2.0.0/es_core_news_sm-2.0.0.tar.gz#es_core_news_sm
+
+Dockerfile
+----------
+RUN python -m spacy download es_core_news_sm

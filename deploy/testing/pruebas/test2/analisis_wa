@@ -1,0 +1,30 @@
+Os envío las acciones que han resultado de la reunión:
+
+Incorporar a Watson intents (tabla adjunta)
+Diego.a.jarillo
+19/02/2019
+
+Revisar que ocurre cuando creas una entidad que contiene sinónimos y patrones al mismo tiempo?
+Diego.a.jarillo
+19/02/2019
+
+Revisar el tratamiento de expresiones (quiero / no sé cómo), las aislamos de las utterance?
+j.b.lopez
+19/02/2019
+
+Como se define las patterns y los sinonimos
+j.b.lopez
+19/02/2019
+
+Qué hacemos con todas las preguntas que llevan asociadas una entidad y un pattern.
+j.b.lopez
+19/02/2019
+Revisar si la forma de expresar en Watson los valores posibles de las entities se hace a través de sinónimos. (@paycon, @cnn).
+
+Diego.a.jarillo
+19/02/2019
+Intents a devolver respuesta estándar
+j.b.lopez
+
+CAMBIAR
+robotlaunch -> extendprovider

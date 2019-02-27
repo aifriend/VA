@@ -1,0 +1,5 @@
+requests==2.18.4
+redis==2.10.6
+Flask==0.12.2
+PyYAML==3.12
+gunicorn==19.7.1

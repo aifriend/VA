@@ -1,0 +1,309 @@
+templates:
+  ###################################################### DEFAULT
+  utter_default:
+    - text: "Lo siento, no te he entendido. ¿Podrías reformularlo?"
+    - text: "No te he entendido. ¿Podrías reformularlo?"
+    - text: "Lo siento pero no te he entendido. ¿Podrías reformular lo que acabas de preguntar?"
+    - text: "Creo que no he entendido tu pregunta. ¿Podrías reformularla?"
+    - text: "Creo que no te he entendido, podrías preguntarmelo de nuevo?"
+    - text: "¿Me puedes reformular tu pregunta? No la he entendido"
+  utter_ask_affirmation:
+    - text: "Lo siento, no estoy seguro de haberte entendido bien 🤔 Has querido decir..."
+  utter_ask_rephrase:
+    - text: "Podrías volver a hacer la pregunta de otra manera?"
+  utter_greetings:
+    - text: "Hola"
+    - text: "Hola, soy REPSOLBOT"
+    - text: "Hola, Bienvenido"
+  utter_goodbye:
+    - text: "Adios"
+    - text: "Ciao"
+    - text: "Hasta pronto"
+    - text: "Hasta la vista"
+  utter_out_of_scope:
+    - text: "Lo siento, no puedo manejar esa solicitud. ¿Podrías explicar con mas detalle que necesitas?"
+  utter_possibilities:
+    - text: "Dentro de mis capacidades puedo a) responder a  preguntas relacionadas con los pedidos y confirmaciones en SRM, b) extender un proveedor en RP2,  c) ver el estado de un documento en SRM o d) consultar si un acreedor factura por el flijo logístico de Marketplace"
+    - text: "Te puedo ser de ayuda si lo que quieres es a) responder a  preguntas relacionadas con los pedidos y confirmaciones en SRM, b) extender un proveedor en RP2,  c) ver el estado de un documento en SRM o d) consultar si un acreedor factura por el flijo logístico de Marketplace"
+    - text: "He sido entrenado para ayudarte a extender un proveedor en RP2,  ver el estado de algún documento (cesta, factura, pedido, licitación…) en SRM, consultar si un acreedor está dado de alta en Adquira o hacerme alguna pregunta relacionada con pedidos y confirmaciones en SRM"
+  utter_not_implemented:
+    - text: "No se ha implementado todavía esta funcionalidad"
+  utter_noworries:
+    - text: "De nada 😄"
+    - text: "No hay de qué 😄!"
+  utter_youarewelcome:
+    - text: "De nada"
+  utter_stop:
+    - text: "¿Realmente quieres cancelar la solicitud en curso?"
+  utter_stop_followup:
+    - text: "Quieres hacer otro tipo de consulta?"
+  utter_compliment:
+    - text: "Gracias"
+  utter_gethelp:
+    - text: "¿En que puedo ayudarte?"
+    - text: "¿Puedo ayudarte en algo?"
+    - text: "¿Como puedo puedo ayudarte?"
+  utter_canthelp:
+    - text: "Lo siento, no puedo ayudarte con tu consulta. Próximamente podré ayudarte creando una petición a tu nombre en Unity pero mientras tanto, puedes utilizar tu canal habitual de soporte. Gracias"
+  utter_thumbsup:
+    - text: "👍"
+    - text: "ok"
+  utter_anything_else:
+    - text: "¿Hay algo más en lo que pueda ayudarte?"
+  utter_no_guide_for_switch:
+    - text: "Lo sentimos, pero aún no tenemos una guía para esto"
+  utter_getstarted:
+    - text: "Necesito hacer algunas preguntas más para determinar cómo ayudarte"
+  utter_ask_describe_problem:
+    - text: "¿Puedes describir el problema que estás teniendo?"
+  utter_ask_if_problem:
+    - text: "¿Tienes un problema?"
+  utter_not_sure:
+    - text: "No estoy seguro de lo que quieres decir, podrías reformular tu pregunta?"
+  utter_continue_step:
+    - text: "Si quieres seguir con la consulta, falta el/la {step} para continuar con tu solicitud"
+  utter_no_more_steps:
+    - text: "Parece que ya has completado todos los pasos de tu solicitud!"
+  utter_reset_form:
+    - text: "Cuando dispongas de la informacion requerida podremos continuar con tu solicitud"
+  utter_intro:
+    - text: "Le voy a pedir datos. Cancele el proceso en cualquier momento diciendo 'PARAR'"
+  utter_action_handoff:
+    - text: "No ha sido posible tramitar su petición, por favor, inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+
+  ###################################################### INVOICE STATUS
+  utter_ask_reference:
+    - text: "¿Podrías indicarme el número de documento?"
+  utter_wrong_reference:
+    - text: "El número de {pedido} introducido {reference} no es válido. Se espera un valor numérico de 1 a 10 dígitos"
+  utter_invoicestatus_status:
+    - text: "El estado de su {pedido} con referencia {reference} es: {status}"
+  utter_invoice_status_confirmation:
+    - text: "El estado de su {pedido} {reference} esta pedido y confirmado"
+  utter_invoice_status_authorization:
+    - text: "El estado de su {pedido} {reference} esta pendiente de confirmación"
+  utter_invoice_status_recorded:
+    - text: "El estado de su {pedido} {reference} esta grabado"
+  utter_invoice_status_deleted:
+    - text: "El estado de su {pedido} {reference} esta borrado"
+  utter_invoice_status_not_registered:
+    - text: "El {pedido} con referencia {reference} no se encuentra dada de alta en nuestro sistema. Por favor, contacte con nuestro soporte para gestionar este asunto"
+  utter_invoicestatus_form_error:
+    - text: "En este momento no es posible la comunicación con SAP, por lo tanto ha sido posible tramitar su petición, por favor inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+
+  ###################################################### PROVIDER CONSULTATION
+  utter_ask_provider_id:
+    - text: "Introduzca el cif o nif del acreedor"
+    - text: "Introduzca el cif o nif del proveedor"
+  utter_wrong_provider_id:
+    - text: "Por favor, introduzca un código cif o nif válido para el proveedor o acreedor solicitado"
+  utter_ask_system:
+    - text: "Para que máquina o sistema se factura?"
+  utter_wrong_system:
+    - text: "Por favor, introduzca el sistema o máquina donde se vaya a realizar la factura"
+  utter_providerconsultation_status:
+    - text: "El proveedor con codigo {provider_id} y sistema {system} factura para {adquira}: {status}"
+  utter_providerconsultation_default_status:
+    - text: "El proveedor con codigo {provider_id} y sistema {system} factura para Adquira"
+  utter_providerconsultation_form_error:
+    - text: "En este momento no es posible la comunicación con SAP, por lo tanto no se pueden hacer consultas de proveedor, por favor inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+
+  ###################################################### ROBOT LAUNCH
+  utter_ask_robot_id:
+    - text: "Introduzca el cif o nif del acreedor"
+    - text: "Introduzca el cif o nif del proveedor"
+  utter_wrong_robot_id:
+    - text: "Por favor, introduzca el cif or nif del proveedor o acreedor"
+  utter_ask_orgcompras:
+    - text: "Organización de compras incorrecta (Valor numérico de 4 digitos)"
+  utter_wrong_orgcompras:
+    - text: "El código de organización de compras introducido {orgcompras} no es válido. Se espera un valor numérico de 4 dígitos"
+  utter_ask_currency:
+    - text: "Con qué moneda desea realizar esta operación?"
+  utter_wrong_currency:
+    - text: "Por favor, introduzca un tipo de moneda de curso legal"
+  utter_ask_paycondition:
+    - text: "Introduzca la condicion de pago"
+  utter_robotlaunch_status:
+    - text: "Su proceso con el {proveedor} y {organizacion} con {codigo} {robot_id} ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos: {status}"
+  utter_rpalaunch_form_error:
+    - text: "En este momento no es posible la comunicación con SAP, por lo tanto no ha sido posible tramitar su petición, por favor inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+
+intents:
+  # forms
+  - invoicestatus:
+      use_entities: true
+  - robotlaunch:
+      use_entities: true
+  - providerconsultation:
+      use_entities: true
+  # stories
+  - greetings
+  - goodbye
+  - gethelp
+  - stop
+  - deny
+  - next_step
+  # alone
+  - affirm
+  - thankyou
+  - compliment
+  - gratitude
+  - out_of_scope
+  - human_handoff
+  # internal
+  - inform
+  - chitchat
+
+entities:
+  # internal
+  - session
+  # dialog flow
+  - cnn
+  - macsystem
+  - currency
+  - sys-number
+  - paycon
+  # dialog helper
+  - sys-time
+  - pedido
+  - adquira
+  - organizacion
+  - codigo
+  - proveedor
+  - person
+
+# featurized: value not important (Policy: 0 - 1)
+# categorical: value important (Policy: value)
+# unfeaturized: do not affect dialog flow (No Policy)
+slots:
+  session:
+    type: text
+    initial_value: "default"
+  place:
+    type: text
+  data:
+    type: text
+  pedido:
+    type: text
+  adquira:
+    type: text
+  organizacion:
+    type: text
+  codigo:
+    type: text
+  proveedor:
+    type: text
+  status:
+    type: text
+  robot_id:
+    type: unfeaturized
+    auto_fill: false
+  provider_id:
+    type: unfeaturized
+    auto_fill: false
+  reference:
+    type: unfeaturized
+    auto_fill: false
+  orgcompras:
+    type: unfeaturized
+    auto_fill: false
+  currency:
+    type: unfeaturized
+    auto_fill: false
+  paycondition:
+    type: unfeaturized
+    auto_fill: false
+  system:
+    type: unfeaturized
+    auto_fill: false
+  step:
+    type: unfeaturized
+    initial_value: "0"
+  requested_slot:
+    type: unfeaturized
+
+actions:
+  # utters
+  - utter_default
+  - utter_greetings
+  - utter_goodbye
+  - utter_noworries
+  - utter_youarewelcome
+  - utter_not_implemented
+  - utter_stop
+  - utter_stop_followup
+  - utter_compliment
+  - utter_gethelp
+  - utter_out_of_scope
+  - utter_possibilities
+  - utter_canthelp
+  - utter_thank_usecase
+  - utter_have_you_used_repsolbot_before
+  - utter_anything_else
+  - utter_encourage_building_bot
+  - utter_no_guide_for_switch
+  - utter_offer_recommendation
+  - utter_getstarted
+  - utter_not_sure
+  - utter_continue_step
+  - utter_no_more_steps
+  - utter_reset_form
+  - utter_intro
+  - utter_ask_which_product
+  - utter_ask_describe_problem
+  - utter_ask_if_problem
+  - utter_action_handoff
+  - utter_ask_rephrase
+  - utter_ask_affirmation
+  # actions
+  - action_chitchat
+  - action_greetings
+  - action_goodbye
+  - action_reset_form
+  - action_reset_history
+  - action_reset_history_and_form
+  - action_default_ask_affirmation
+  - action_default_ask_rephrase
+  - action_default_nlu_fallback
+  - action_default_core_fallback
+  - action_invoicestatus_next_step
+  - action_providerconsultation_next_step
+  - action_robotlaunch_next_step
+  # shared
+  - utter_insist
+  # invoice status
+  - utter_ask_reference
+  - utter_wrong_reference
+  - utter_invoice_status
+  - utter_invoice_status_authorization
+  - utter_invoice_status_recorded
+  - utter_invoice_status_deleted
+  - utter_invoice_status_not_registered
+  - utter_invoicestatus_form_error
+  # provider consultation
+  - utter_ask_provider_id
+  - utter_wrong_provider_id
+  - utter_ask_system
+  - utter_wrong_system
+  - utter_providerconsultation_status
+  - utter_providerconsultation_default_status
+  - utter_providerconsultation_form_error
+  - utter_providerconsultation_sap_response
+  # robot launch
+  - utter_ask_robot_id
+  - utter_wrong_robot_id
+  - utter_ask_currency
+  - utter_wrong_currency
+  - utter_ask_orgcompras
+  - utter_wrong_orgcompras
+  - utter_ask_paycondition
+  - utter_wrong_paycondition
+  - utter_rpalaunch_form_error
+  - utter_robotlaunch_status
+
+forms:
+  - invoicestatus_form
+  - robotlaunch_form
+  - providerconsultation_form
+

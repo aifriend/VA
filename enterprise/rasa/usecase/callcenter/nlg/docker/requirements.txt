@@ -1,0 +1,4 @@
+coloredlogs==10.0
+rasa_core==0.13.2
+gevent==1.4.0
+Flask==1.0.2

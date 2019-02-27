@@ -1,0 +1,118 @@
+paths:
+  /Messages/assess:
+    post:
+      tags:
+        - Message
+      operationId: Message.assess
+      parameters:
+        - name: query
+          in: formData
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              result:
+                type: object
+      deprecated: false
+  /Clients/login:
+    post:
+      tags:
+        - Client
+      summary: Login a user with username/email and password.
+      operationId: Client.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: Related objects to include in the response. See the description of return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              El cuerpo de respuesta contiene propiedades de la AccessToken
+              creada durante el inicio de la sesión.
+
+              Dependiendo del valor del parámetro `include`, el cuerpo puede
+              contener propiedades adicionales:
+
+
+
+
+
+
+
+                - `user` - `U+007BUserU+007D` - Datos del usuario conectado
+
+              actualmente. (`include=user`)
+
+
+            type: object
+      deprecated: false
+  /Clients/logout:
+    post:
+      tags:
+        - Client
+      summary: Logout a user with access token.
+      operationId: Client.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+definitions: {}
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: repsol-finder
+  version: 1.0.0
+  title: repsol-finder
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: 'http://localhost:4001'
+  assembly:
+    execute:
+      - invoke:
+          target-url: 'http://repsol-lb.mybluemix.net$(request.path)$(request.search)'
+          cache-response: time-to-live
+          verb: keep

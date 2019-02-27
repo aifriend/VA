@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: nlu-app
+data:
+    endpoint: http://cognitivecallcenternlu.azurewebsites.net/api/nlu?query=
+    service: LUIS

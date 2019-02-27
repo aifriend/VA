@@ -1,0 +1,4 @@
+Flask==0.12.2
+requests==2.14.2
+PyYAML==3.12
+gunicorn==19.7.1

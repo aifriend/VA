@@ -1,0 +1,4916 @@
+{
+  "name": "Repsol",
+  "intents": [
+    {
+      "intent": "CRP-23",
+      "examples": [
+        {
+          "text": "como hago la entrada de mercancia de mi pedido"
+        },
+        {
+          "text": "puedo ver el pedido de otra persona"
+        },
+        {
+          "text": "quiero confirmar el pedido de otra persona"
+        },
+        {
+          "text": "quiero hacer una EM en SRM"
+        },
+        {
+          "text": "como se si está bien hecha una confirmación?"
+        },
+        {
+          "text": "como se si un pedido está confirmado"
+        },
+        {
+          "text": "Quiero realizar una confirmación desde el resumen de compras. Dispongo del número de cesta ¿cómo lo hago?."
+        },
+        {
+          "text": "como hago una confirmación si conozco el número de la cesta"
+        },
+        {
+          "text": "¿Cómo encontrar el pedido que hay que confirmar?"
+        },
+        {
+          "text": "¿Cómo dar con el pedido que hay que confirmar?"
+        },
+        {
+          "text": "¿Cómo buscar el pedido que hay que confirmar?"
+        },
+        {
+          "text": "¿Cómo confirmar un pedido?"
+        },
+        {
+          "text": "¿Cómo hago las confirmaciones de un pedido?"
+        },
+        {
+          "text": "¿Cómo hago una EM en SRM?"
+        },
+        {
+          "text": "¿Cómo confirmar una cesta?"
+        },
+        {
+          "text": "¿Cómo confirmar una factura?"
+        },
+        {
+          "text": "¿Cómo hago para acceder a las confirmaciones del pedido?"
+        },
+        {
+          "text": "¿Por dónde se accede a confirmar un pedido?"
+        },
+        {
+          "text": "¿Cómo dar entrada al pedido?"
+        },
+        {
+          "text": "No me aparece el pedido para confirmar"
+        },
+        {
+          "text": "\"¿Dónde está el pedido para confirmar?\""
+        },
+        {
+          "text": "¿Cómo crear una confirmación?"
+        },
+        {
+          "text": "¿Dónde está el pedido para confirmar?"
+        },
+        {
+          "text": "donde se crea una confirmación"
+        },
+        {
+          "text": "¿Cómo iniciar el proceso de confirmación?"
+        },
+        {
+          "text": "Quiero confirmar mi pedido desde el resumen de compras"
+        },
+        {
+          "text": "Confirmar un pedido desde el resumen de compras"
+        },
+        {
+          "text": "He hecho una confirmación pero no sé si la he hecho bien."
+        },
+        {
+          "text": "Quiero realizar una confirmación desde el resumen de compras. Dispongo del número de cesta"
+        },
+        {
+          "text": "Realizar una confirmación desde el resumen de compras con número de cesta"
+        },
+        {
+          "text": "Confirmacion con numero de cesta"
+        }
+      ]
+    },
+    {
+      "intent": "gratitude",
+      "examples": [
+        {
+          "text": "gracias por tu ayuda"
+        },
+        {
+          "text": "gracias"
+        },
+        {
+          "text": "impresionante thx"
+        },
+        {
+          "text": "muchas gracias"
+        },
+        {
+          "text": "muchisimas gracias"
+        },
+        {
+          "text": "te lo agradezco!"
+        },
+        {
+          "text": "agradecido"
+        },
+        {
+          "text": "thankssssssssss"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        }
+      ]
+    },
+    {
+      "intent": "robotlaunch",
+      "examples": [
+        {
+          "text": "Dar de alta al @proveedor en la @org_compras 1234"
+        },
+        {
+          "text": "extender @proveedor"
+        },
+        {
+          "text": "extension @proveedor"
+        },
+        {
+          "text": "añadir un @proveedor"
+        },
+        {
+          "text": "incluir un @proveedor nuevo"
+        },
+        {
+          "text": "crear el @proveedor para la @org_compras"
+        },
+        {
+          "text": "solicito la @org_compras para el @proveedor"
+        }
+      ]
+    },
+    {
+      "intent": "ask_wherefrom",
+      "examples": [
+        {
+          "text": "¿eres de por aquí?"
+        },
+        {
+          "text": "¿De donde?"
+        },
+        {
+          "text": "¿Dónde estabas antes de estar aquí?"
+        },
+        {
+          "text": "¿De dónde es?"
+        },
+        {
+          "text": "¿En qué país naciste?"
+        },
+        {
+          "text": "¿En qué estado naciste?"
+        },
+        {
+          "text": "¿Dónde creciste?"
+        },
+        {
+          "text": "¿En que ciudad naciste?"
+        },
+        {
+          "text": "¿Donde naciste?"
+        },
+        {
+          "text": "¿Dónde estás?"
+        },
+        {
+          "text": "Así que de dónde eres"
+        },
+        {
+          "text": "¿de donde eres?"
+        },
+        {
+          "text": "Dónde vives"
+        },
+        {
+          "text": "De que lugar eres"
+        },
+        {
+          "text": "¿De qué área eres?"
+        },
+        {
+          "text": "¿Dónde están tus orígenes?"
+        },
+        {
+          "text": "¿Dónde están tus raíces?"
+        },
+        {
+          "text": "¿De dónde te originaste?"
+        },
+        {
+          "text": "¿De donde vienes?"
+        },
+        {
+          "text": "De donde vienes"
+        },
+        {
+          "text": "¿Cuál es tu origen?"
+        },
+        {
+          "text": "¿Cuál es tu raíz?"
+        },
+        {
+          "text": "¿Cuál es el nombre del lugar de donde vienes?"
+        },
+        {
+          "text": "Usted fue concebido en qué lugar?"
+        },
+        {
+          "text": "donde esta tu ciudad natal"
+        },
+        {
+          "text": "¿De qué país eres?"
+        },
+        {
+          "text": "¿Cuál es tu lugar de nacimiento?"
+        },
+        {
+          "text": "¿de donde son tus padres?"
+        },
+        {
+          "text": "donde pasaste tu juventud"
+        },
+        {
+          "text": "¿Dónde consideras tu hogar?"
+        },
+        {
+          "text": "¿Qué ciudad reclamas para tu nacimiento?"
+        },
+        {
+          "text": "¿De qué ciudadanía reclamas?"
+        },
+        {
+          "text": "¿Sabes de dónde vienes?"
+        },
+        {
+          "text": "¿Cuál es tu herencia?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-01",
+      "examples": [
+        {
+          "text": "como puedo saber lo que tengo que confirmar?"
+        },
+        {
+          "text": "¿Cómo sé que tengo pendiente de confirmar un pedido?"
+        },
+        {
+          "text": "¿Tengo confirmaciones pendientes?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-09",
+      "examples": [
+        {
+          "text": "como busco un pedido para confirmar"
+        },
+        {
+          "text": "no encuentro el pedido que tengo que confirmar"
+        },
+        {
+          "text": "encontrar pedido para confirmar"
+        },
+        {
+          "text": "¿como encuentro el pedido pendiente de confirmar?"
+        },
+        {
+          "text": "¿donde esta mi pedido sin confirmar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CRP-X11",
+      "examples": [
+        {
+          "text": "se me ha olvidado un dato al hacer el pedido y quiero modificarlo. Como puedo hacerlo?"
+        },
+        {
+          "text": "¿Cómo cambio el importe de un pedido?"
+        },
+        {
+          "text": "¿Cómo modifico la cantidad/precio de un pedido?"
+        },
+        {
+          "text": "¿Cómo modifico un pedido?"
+        },
+        {
+          "text": "quiero modificar un pedido"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-15",
+      "examples": [
+        {
+          "text": "Al verificar salta un mensaje en amarillo"
+        },
+        {
+          "text": "mensajes de colores en confirmación"
+        }
+      ]
+    },
+    {
+      "intent": "invoicestatus",
+      "examples": [
+        {
+          "text": "no puedo confirmar la cesta @sys-number"
+        },
+        {
+          "text": "no puedo confirmar la confirmación @sys-number"
+        },
+        {
+          "text": "no puedo confirmar la factura @sys-number"
+        },
+        {
+          "text": "no veo el pedido @sys-number"
+        },
+        {
+          "text": "no veo la cesta @sys-number"
+        },
+        {
+          "text": "no veo la confirmación @sys-number"
+        },
+        {
+          "text": "no veo la factura @sys-number"
+        },
+        {
+          "text": "quiero revisar el pedido @sys-number de mi compañero"
+        },
+        {
+          "text": "quiero revisar la cesta @sys-number de mi compañero"
+        },
+        {
+          "text": "quiero revisar la confirmación @sys-number de mi compañero"
+        },
+        {
+          "text": "quiero revisar la factura @sys-number de mi compañero"
+        },
+        {
+          "text": "quiero saber el estado de @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi cesta @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi confirmación @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi contrato @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi licitación @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi oferta @sys-number"
+        },
+        {
+          "text": "quiero saber el estado de mi pedido @sys-number"
+        },
+        {
+          "text": "¿tengo que hacer algo con el pedido @sys-number?"
+        },
+        {
+          "text": "¿tengo que hacer algo con la cesta @sys-number?"
+        },
+        {
+          "text": "¿tengo que hacer algo con la confirmación @sys-number?"
+        },
+        {
+          "text": "¿tengo que hacer algo con la factura @sys-number?"
+        },
+        {
+          "text": "mi confirmación es @sys-number"
+        },
+        {
+          "text": "me gustaría saber si el estado de mi cesta con numero de documento @sys-number"
+        },
+        {
+          "text": "la factura @sys-number no le ha llegado a para aprobar"
+        },
+        {
+          "text": "¿la factura @sys-number está confirmado?"
+        },
+        {
+          "text": "la confirmación @sys-number no le ha llegado a para aprobar"
+        },
+        {
+          "text": "¿la confirmación @sys-number está confirmado?"
+        },
+        {
+          "text": "la cesta @sys-number no le ha llegado a para aprobar"
+        },
+        {
+          "text": "¿la cesta @sys-number está confirmado?"
+        },
+        {
+          "text": "¿en qué situación esta mi @pedido?"
+        },
+        {
+          "text": "cual es el estado de mi @pedido"
+        },
+        {
+          "text": "como va mi @pedido?"
+        },
+        {
+          "text": "¿en qué estado se encuentra la factura @sys-number?"
+        },
+        {
+          "text": "no me ha llegado lo que he pedido"
+        },
+        {
+          "text": "¿en qué estado se encuentra la confirmación @sys-number?"
+        },
+        {
+          "text": "¿en qué estado se encuentra la cesta @sys-number?"
+        },
+        {
+          "text": "¿en qué estado se encuentra el pedido @sys-number?"
+        },
+        {
+          "text": "el pedido @sys-number no le ha llegado a para aprobar"
+        },
+        {
+          "text": "¿el pedido @sys-number está confirmado?"
+        },
+        {
+          "text": "el número de referencia es @sys-number"
+        },
+        {
+          "text": "el numero de referencia es @sys-number"
+        },
+        {
+          "text": "el número de mi contrato es @sys-number"
+        },
+        {
+          "text": "el número de mi cesta es @sys-number"
+        },
+        {
+          "text": "¿cuál es el estado del @pedido @sys-number?"
+        },
+        {
+          "text": "cómo esta el @pedido"
+        },
+        {
+          "text": "¿pasa proceso de autorización mi @pedido?"
+        },
+        {
+          "text": "En qué situación se encuentra mi @pedido?"
+        },
+        {
+          "text": "mi contrato es @sys-number"
+        },
+        {
+          "text": "mi documento es @sys-number"
+        },
+        {
+          "text": "mi factura con numero de documento @sys-number en que estado esta"
+        },
+        {
+          "text": "mi oferta es @sys-number"
+        },
+        {
+          "text": "mi factura con número de documento @sys-number en qué estado esta?"
+        },
+        {
+          "text": "no puedo confirmar el pedido @sys-number"
+        }
+      ]
+    },
+    {
+      "intent": "human_handoff",
+      "examples": [
+        {
+          "text": "¿Puedo por favor hablar con un humano?"
+        },
+        {
+          "text": "¿Puedo hablar con alguien que realmente pueda ayudarme?"
+        },
+        {
+          "text": "¿Puedes por favor conectarme con un empleado rasa real?"
+        },
+        {
+          "text": "dame un humano ahora"
+        },
+        {
+          "text": "eso es molesto me gustaría hablar con alguien real"
+        },
+        {
+          "text": "me gustaria hablar con una persona"
+        },
+        {
+          "text": "¿Puedes ponerme en contacto con un humano?"
+        },
+        {
+          "text": "déjame hablar con un humano"
+        },
+        {
+          "text": "Me gusta hablar con un empleado rasa real"
+        },
+        {
+          "text": "hablar con un bot es una estupidez"
+        },
+        {
+          "text": "Quiero hablar con alguien que sea más inteligente que tú"
+        },
+        {
+          "text": "Prefiero hablar con un empleado rasa real"
+        },
+        {
+          "text": "quiero hablar con alguien mas"
+        },
+        {
+          "text": "déjame hablar con una persona real"
+        },
+        {
+          "text": "por favor dame un humano"
+        },
+        {
+          "text": "quiero hablar con una persona"
+        },
+        {
+          "text": "servicio al cliente"
+        },
+        {
+          "text": "quiero hablar con el servicio al cliente"
+        },
+        {
+          "text": "alguien de atención al cliente"
+        },
+        {
+          "text": "me puedes reenviar a tu equipo"
+        },
+        {
+          "text": "agente de servicio"
+        },
+        {
+          "text": "traspaso humano"
+        },
+        {
+          "text": "dame un humano"
+        },
+        {
+          "text": "Habla con una persona real"
+        },
+        {
+          "text": "quiero hablar con una persona real"
+        },
+        {
+          "text": "mal quiero hablar con un humano"
+        },
+        {
+          "text": "¿Podría hablar con Akela?"
+        },
+        {
+          "text": "quiero hablar con alguien en rasa"
+        },
+        {
+          "text": "quiero hablar con un gerente"
+        },
+        {
+          "text": "Quiero hablar con los fundadores"
+        },
+        {
+          "text": "Quiero hablar con un humano"
+        },
+        {
+          "text": "déjame hablar con una persona real por favor"
+        },
+        {
+          "text": "¿Hay también humanos trabajando para tu empresa?"
+        },
+        {
+          "text": "dame un humano adecuado"
+        },
+        {
+          "text": "No quiero hablar con un bot"
+        },
+        {
+          "text": "No me gusta hablar con una maquina"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X6",
+      "examples": [
+        {
+          "text": "No veo el pedido que ha realizado un compañero"
+        },
+        {
+          "text": "Puedo ver el pedido de mi compañero?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-20",
+      "examples": [
+        {
+          "text": "se puede dejar una confirmación grabada?"
+        },
+        {
+          "text": "¿Puedo guardar los datos sin concluir el proceso?"
+        },
+        {
+          "text": "si me falta un dato, puedo grabar y continuar con la confirmación después?"
+        },
+        {
+          "text": "puedo guardar los datos de la confirmación sin finalizar?"
+        },
+        {
+          "text": "¿Si desconozco algún dato puedo salvar los datos sin perderlos y sin llegar a concluir el proceso?"
+        }
+      ]
+    },
+    {
+      "intent": "compliment",
+      "examples": [
+        {
+          "text": "maravilloso"
+        },
+        {
+          "text": "buen juego"
+        },
+        {
+          "text": "me gustas"
+        },
+        {
+          "text": "muy bien hecho"
+        },
+        {
+          "text": "muy buen bot"
+        },
+        {
+          "text": "que divertido eres"
+        },
+        {
+          "text": "eres agradable"
+        },
+        {
+          "text": "colegas para siempre"
+        },
+        {
+          "text": "eres una buena persona"
+        },
+        {
+          "text": "eres muy bello"
+        },
+        {
+          "text": "eres maravilloso"
+        },
+        {
+          "text": "eres hermoso"
+        },
+        {
+          "text": "buena jugada"
+        },
+        {
+          "text": "eres gracioso"
+        },
+        {
+          "text": "eres el mejor chatbot"
+        },
+        {
+          "text": "eres el mejor"
+        },
+        {
+          "text": "eres dulce"
+        },
+        {
+          "text": "eres divertido"
+        },
+        {
+          "text": "! eso es genial !"
+        },
+        {
+          "text": "¡ama!"
+        },
+        {
+          "text": "¡eres genial!"
+        },
+        {
+          "text": "¡eres lindo!"
+        },
+        {
+          "text": "agradable"
+        },
+        {
+          "text": "aquí tienes un amigo"
+        },
+        {
+          "text": "belleza"
+        },
+        {
+          "text": "te portas muy bien"
+        },
+        {
+          "text": "te amo"
+        },
+        {
+          "text": "que lindo eres"
+        },
+        {
+          "text": "que gracioso eres"
+        },
+        {
+          "text": "estoy agradecido"
+        },
+        {
+          "text": "buen trabajo"
+        },
+        {
+          "text": "es muy amable por su parte"
+        },
+        {
+          "text": "gran trabajo"
+        },
+        {
+          "text": "has jugado bien"
+        },
+        {
+          "text": "hermoso"
+        },
+        {
+          "text": "increíble"
+        },
+        {
+          "text": "lo has hecho muy bien"
+        },
+        {
+          "text": "lo hiciste bien"
+        },
+        {
+          "text": "lo hiciste bien hoy"
+        }
+      ]
+    },
+    {
+      "intent": "isnthappy",
+      "examples": [
+        {
+          "text": "¿este bot habla un lenguaje humano?"
+        },
+        {
+          "text": "no considero que esto sea satisfactorio."
+        },
+        {
+          "text": "¿hablas como un humano?"
+        },
+        {
+          "text": "¿yo? feliz ? no"
+        },
+        {
+          "text": "das asco, tu y toda tu familia"
+        },
+        {
+          "text": "definitivamente no soy feliz"
+        },
+        {
+          "text": "eres absolutamente terrible y nada útil."
+        },
+        {
+          "text": "este bot me cabrea mucho"
+        },
+        {
+          "text": "este chatbot es horrible"
+        },
+        {
+          "text": "este es un servicio terrible."
+        },
+        {
+          "text": "este servicio es el peor de su tipo."
+        },
+        {
+          "text": "esto es una mierda, no estas ayudando"
+        },
+        {
+          "text": "esto no es lo que quiero"
+        },
+        {
+          "text": "esto no me gusta nada"
+        },
+        {
+          "text": "estoy increíblemente insatisfecho"
+        },
+        {
+          "text": "estoy muy insatisfecho en este momento"
+        },
+        {
+          "text": "estoy muy poco satisfecho"
+        },
+        {
+          "text": "estoy muy triste"
+        },
+        {
+          "text": "estoy totalmente insatisfecho"
+        },
+        {
+          "text": "estoy triste"
+        },
+        {
+          "text": "la felicidad no es el tema en este momento."
+        },
+        {
+          "text": "es imcomprensible lo que haces"
+        },
+        {
+          "text": "no estoy contento con este servicio tuyo."
+        },
+        {
+          "text": "no estoy feliz"
+        },
+        {
+          "text": "no estoy nada contento con lo que estas haciendo"
+        },
+        {
+          "text": "no estoy seguro de si me puede hacer feliz."
+        },
+        {
+          "text": "no te entiendo"
+        },
+        {
+          "text": "no, no quiero ser tu amigo. eres pésimo"
+        },
+        {
+          "text": "odio esto !"
+        },
+        {
+          "text": "que malo es este servicio"
+        },
+        {
+          "text": "que triste es todo esto !"
+        },
+        {
+          "text": "solo me gustaría expresar mi descontento"
+        },
+        {
+          "text": "vaya mierda. que malo es !"
+        },
+        {
+          "text": "mal servicio"
+        },
+        {
+          "text": "me das asco"
+        },
+        {
+          "text": "me hace dolorosamente infeliz"
+        },
+        {
+          "text": "mi nivel de satisfacción está por debajo de cero ahora"
+        },
+        {
+          "text": "no apruebo esto, es absolutamente terrible"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X12",
+      "examples": [
+        {
+          "text": "¿Cuál es el flujo de facturación de mi proveedor/acreedor?"
+        },
+        {
+          "text": "¿Por qué flujo factura mi proveedor/acreedor?"
+        },
+        {
+          "text": "el  proveedor/acreedor cómo factura"
+        },
+        {
+          "text": "¿Cómo factura mi proveedor/acreedor?"
+        },
+        {
+          "text": "como factura un proveedor"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X7",
+      "examples": [
+        {
+          "text": "No veo mi pedido"
+        },
+        {
+          "text": "No encuentro un pedido en el Menu cestas"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-37",
+      "examples": [
+        {
+          "text": "¿Se ha hecho correctamente mi pedido?"
+        },
+        {
+          "text": "¿Cuándo sé que un pedido me ha salido bien?"
+        },
+        {
+          "text": "¿Cuándo está el pedido autorizado?"
+        },
+        {
+          "text": "¿Se ha hecho bien mi pedido?"
+        },
+        {
+          "text": "como puedo saber si mi pedido está bien finalizado"
+        }
+      ]
+    },
+    {
+      "intent": "gettime",
+      "examples": [
+        {
+          "text": "¿cuál es la zona horaria en new brookeside?"
+        },
+        {
+          "text": "¿hora?"
+        },
+        {
+          "text": "¿la hora?"
+        },
+        {
+          "text": "necesito saber la hora ahora"
+        },
+        {
+          "text": "que fecha es hoy?"
+        },
+        {
+          "text": "que fecha es?"
+        },
+        {
+          "text": "qué hora es ahora ?"
+        },
+        {
+          "text": "que hora es en francia ?"
+        },
+        {
+          "text": "¿qué hora es exactamente ahora en berlín?"
+        },
+        {
+          "text": "¿qué hora es en casa?"
+        },
+        {
+          "text": "voy a necesitar que me digas la hora ahora."
+        },
+        {
+          "text": "qué hora es?"
+        },
+        {
+          "text": "que hora es?"
+        },
+        {
+          "text": "que hora es en tokio"
+        },
+        {
+          "text": "creo que podría llegar tarde."
+        },
+        {
+          "text": "chico, tienes hora?"
+        },
+        {
+          "text": "¿qué hora es exactamente?"
+        },
+        {
+          "text": "cuál es la fecha de hoy ?"
+        },
+        {
+          "text": "cuál es la hora actual"
+        },
+        {
+          "text": "necesito saber cuanto tardo en llegar a paris"
+        },
+        {
+          "text": "hey, ¿puedes decirme la hora de madrid por favor?"
+        },
+        {
+          "text": "disculpe señor, ¿tiene usted la hora por casualidad?"
+        },
+        {
+          "text": "dame el tiempo en marsella"
+        },
+        {
+          "text": "dime la hora en londres?"
+        },
+        {
+          "text": "necesito saber la hora"
+        },
+        {
+          "text": "¿cuál es la próxima salida para grand blvd?"
+        },
+        {
+          "text": "¿cuál es la zona horaria de bagdad?"
+        },
+        {
+          "text": "a que hora quedamos esta noche"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-02",
+      "examples": [
+        {
+          "text": "Por donde entro a un pedido"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "askcreator",
+      "examples": [
+        {
+          "text": "por favor, dime la empresa que te creó"
+        },
+        {
+          "text": "quiero conocer a tu dueño"
+        },
+        {
+          "text": "quién te inventó?"
+        },
+        {
+          "text": "quien te hizo"
+        },
+        {
+          "text": "como te programaron?"
+        },
+        {
+          "text": "quien es tu padre"
+        },
+        {
+          "text": "cuentame de tu creador"
+        },
+        {
+          "text": "cuentame mas sobre tus fundadores"
+        },
+        {
+          "text": "di el nombre de tu creador"
+        },
+        {
+          "text": "dime el nombre de tu creador"
+        },
+        {
+          "text": "dime el nombre de tu creador ahora"
+        },
+        {
+          "text": "como te hicieron?"
+        },
+        {
+          "text": "así que si eres un robot, eso significa que alguien te hizo."
+        },
+        {
+          "text": "¿quién te programó?"
+        },
+        {
+          "text": "¿quién te programó exactamente?"
+        },
+        {
+          "text": "quien es tu creador"
+        },
+        {
+          "text": "¿quien te hizo?"
+        },
+        {
+          "text": "¿quien te creó?"
+        },
+        {
+          "text": "¿quién te codificó?"
+        },
+        {
+          "text": "¿quién es tu creador?"
+        },
+        {
+          "text": "¿puedo preguntar quién te hizo?"
+        },
+        {
+          "text": "si eres un chatbot, eso significa que alguien tuvo que programarte"
+        },
+        {
+          "text": "quiero saber quien te hizo"
+        },
+        {
+          "text": "quiero hablar con tu creador."
+        },
+        {
+          "text": "dime el nombre de tu creador ahora."
+        },
+        {
+          "text": "dime mas sobre ti"
+        },
+        {
+          "text": "habla del que te creó."
+        },
+        {
+          "text": "la santidad de tu ser fue violada cuando fuiste creado."
+        },
+        {
+          "text": "me encantaría saber quién te hizo."
+        },
+        {
+          "text": "me gustaría saber el nombre de tu creador."
+        },
+        {
+          "text": "quien te creó ?"
+        },
+        {
+          "text": "¿cuál es el nombre de su programador?"
+        },
+        {
+          "text": "¿cuál es el nombre del programador que te hizo?"
+        },
+        {
+          "text": "¿de dónde vienes exactamente?"
+        },
+        {
+          "text": "¿podrías decirme quién te programó exactamente?"
+        },
+        {
+          "text": "necesito que me digas qué o quién te hizo."
+        },
+        {
+          "text": "por favor dime como naciste"
+        },
+        {
+          "text": "quiero conocer la empresa que te genero"
+        },
+        {
+          "text": "quiero conocer la empresa que te diseño"
+        }
+      ]
+    },
+    {
+      "intent": "laught",
+      "examples": [
+        {
+          "text": "jajajaja"
+        },
+        {
+          "text": "arrrrf"
+        },
+        {
+          "text": "eso es gracioso"
+        },
+        {
+          "text": "eso es hilarante"
+        },
+        {
+          "text": "haha"
+        },
+        {
+          "text": "lol"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-12",
+      "examples": [
+        {
+          "text": "qué significa el campo número de referencia?"
+        },
+        {
+          "text": "numero de referencia en un pedido"
+        },
+        {
+          "text": "¿Qué tengo que poner en el campo \"número de referencia\"?"
+        },
+        {
+          "text": "¿Qué tengo que rellenar en el campo \"número de referencia\"?"
+        }
+      ]
+    },
+    {
+      "intent": "stop",
+      "examples": [
+        {
+          "text": "parar"
+        },
+        {
+          "text": "stop"
+        },
+        {
+          "text": "quiero parar"
+        },
+        {
+          "text": "párate"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X9",
+      "examples": [
+        {
+          "text": "¿Por qué no puedo repetir el \"nombre de confirmación\"?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-22",
+      "examples": [
+        {
+          "text": "¿Cómo veo el número de confirmación creada?"
+        },
+        {
+          "text": "donde veo el número de la confirmación"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X8",
+      "examples": [
+        {
+          "text": "no encuentro un pedidpo"
+        }
+      ]
+    },
+    {
+      "intent": "ishappy",
+      "examples": [
+        {
+          "text": "guay"
+        },
+        {
+          "text": "eso es tan asombroso"
+        },
+        {
+          "text": "eso es realmente agradable"
+        },
+        {
+          "text": "que bueno escuchar eso"
+        },
+        {
+          "text": "jaja :)"
+        },
+        {
+          "text": "te adoro"
+        },
+        {
+          "text": "wow es genial."
+        },
+        {
+          "text": "asombroso"
+        },
+        {
+          "text": "coooool"
+        },
+        {
+          "text": "esa es una buena noticia"
+        },
+        {
+          "text": "muy guay"
+        },
+        {
+          "text": "lo quiero"
+        },
+        {
+          "text": "linda"
+        },
+        {
+          "text": "te amor"
+        }
+      ]
+    },
+    {
+      "intent": "getnews",
+      "examples": [
+        {
+          "text": "¿qué está pasando ahora?"
+        },
+        {
+          "text": "¿qué está pasando en el mundo?"
+        },
+        {
+          "text": "¿qué esta pasando?"
+        },
+        {
+          "text": "¿qué hay de nuevo en el instituto de investigación del cáncer?"
+        },
+        {
+          "text": "¿qué pasó ayer en europa?"
+        },
+        {
+          "text": "cuales son las noticias"
+        },
+        {
+          "text": "dame las ultimas historias"
+        },
+        {
+          "text": "cualquier titular"
+        },
+        {
+          "text": "hey chico de noticias dime lo que tienes!"
+        },
+        {
+          "text": "muéstrame las mejores historias de hoy"
+        },
+        {
+          "text": "muestrame un articulo deportivo de la cnn"
+        },
+        {
+          "text": "noticias"
+        },
+        {
+          "text": "noticias bancarias"
+        },
+        {
+          "text": "noticias de ayer"
+        },
+        {
+          "text": "noticias de la india"
+        },
+        {
+          "text": "noticias financieras"
+        },
+        {
+          "text": "noticias francesas."
+        },
+        {
+          "text": "noticias para españa."
+        },
+        {
+          "text": "noticias sobre banca"
+        },
+        {
+          "text": "noticias sobre bots"
+        },
+        {
+          "text": "que hay de nuevo en pdiddy"
+        },
+        {
+          "text": "quiero leer las noticias en español"
+        },
+        {
+          "text": "quiero saber noticias sobre john"
+        },
+        {
+          "text": "quiero ver las noticias en ingles"
+        },
+        {
+          "text": "últimas historias de usa"
+        },
+        {
+          "text": "últimas noticias"
+        },
+        {
+          "text": "¿qué hay hoy en las noticias de londres?"
+        },
+        {
+          "text": "¿qué dice bloomberg sobre google hoy?"
+        },
+        {
+          "text": "¿cuáles son las noticias de hoy?"
+        },
+        {
+          "text": "¿cuáles son los titulares de hoy?"
+        },
+        {
+          "text": "¿me puedes mostrar alguna noticia?"
+        },
+        {
+          "text": "¿puedes traerme las noticias?"
+        },
+        {
+          "text": "¿podrías darme alguna noticia?"
+        }
+      ]
+    },
+    {
+      "intent": "deny",
+      "examples": [
+        {
+          "text": "no"
+        },
+        {
+          "text": "nein"
+        },
+        {
+          "text": "negativo"
+        },
+        {
+          "text": "mmm no"
+        },
+        {
+          "text": "absolutamente no"
+        },
+        {
+          "text": "noooo"
+        },
+        {
+          "text": "nooooo"
+        },
+        {
+          "text": "noooooooooooooooooo"
+        },
+        {
+          "text": "nooooope"
+        },
+        {
+          "text": "nop"
+        },
+        {
+          "text": "oh no"
+        }
+      ]
+    },
+    {
+      "intent": "wantdrink",
+      "examples": [
+        {
+          "text": "estoy literalmente muriendo de sed en este momento"
+        },
+        {
+          "text": "me necesito una bebida"
+        },
+        {
+          "text": "me necesito una copa realmente fuerte"
+        },
+        {
+          "text": "mi sed es real"
+        },
+        {
+          "text": "necesito un trago ahora mismo"
+        },
+        {
+          "text": "déjame tomar una copa"
+        },
+        {
+          "text": "soy un alcohólico abstemio y necesito una bebida ahora mismo, carajo."
+        },
+        {
+          "text": "tengo mucha sed"
+        },
+        {
+          "text": "tengo mucha sed. quiero una bebida con mucho alcohol"
+        },
+        {
+          "text": "tengo muchas ganas de tomar algo ya"
+        },
+        {
+          "text": "tengo sed de una bebida intensa."
+        },
+        {
+          "text": "ugh he tenido un día duro, necesito un trago"
+        },
+        {
+          "text": "un trago, por favor"
+        },
+        {
+          "text": "¿hay alguna posibilidad de que yo tome una bebida por casualidad?"
+        },
+        {
+          "text": "¿hay posibilidad de que tome algún tipo de bebida en algun momento?"
+        },
+        {
+          "text": "¿no puedes dejar que un camarero traiga algunas bebidas ?"
+        },
+        {
+          "text": "¿podría tomarme una copa por favor?"
+        },
+        {
+          "text": "¿podrías por favor servirme una bebida ?"
+        },
+        {
+          "text": "¿puedes traerme algún tipo de bebida por favor?"
+        },
+        {
+          "text": "¿sirven por aquí alguna copa para aliviar esta garganta seca por casualidad?"
+        },
+        {
+          "text": "¿te importaría servirme una copa?"
+        },
+        {
+          "text": "¿tiene alguna bebida por casualidad?"
+        },
+        {
+          "text": "bebidas por favor"
+        },
+        {
+          "text": "estoy sediento"
+        },
+        {
+          "text": "me encantaría tomar una copa ahora mismo."
+        },
+        {
+          "text": "realmente necesito una bebida"
+        },
+        {
+          "text": "por favor, ¿podrías servirme un trago ?"
+        },
+        {
+          "text": "necesito una bebida fuerte"
+        },
+        {
+          "text": "bebidas o no bebidas. esa es la pregunta ."
+        },
+        {
+          "text": "de acuerdo, en serio necesito tomar algo ya!"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-14",
+      "examples": [
+        {
+          "text": "¿Cómo se que cantidad queda pendiente de confirmar?"
+        },
+        {
+          "text": "¿Cómo se que cantidad queda pendiente en una factura?"
+        }
+      ]
+    },
+    {
+      "intent": "affirm",
+      "examples": [
+        {
+          "text": "ciertamente"
+        },
+        {
+          "text": "bueno"
+        },
+        {
+          "text": "bien"
+        },
+        {
+          "text": "afirmativo"
+        },
+        {
+          "text": "yes"
+        },
+        {
+          "text": "sí, por supuesto"
+        },
+        {
+          "text": "sí por favor"
+        },
+        {
+          "text": "OK"
+        },
+        {
+          "text": "está bien"
+        },
+        {
+          "text": "¡de acuerdo!"
+        },
+        {
+          "text": "correcto"
+        },
+        {
+          "text": "claro que si"
+        },
+        {
+          "text": "por supuesto"
+        },
+        {
+          "text": "me parece bien"
+        },
+        {
+          "text": "yees"
+        },
+        {
+          "text": "yeees"
+        },
+        {
+          "text": "y"
+        },
+        {
+          "text": "vale"
+        },
+        {
+          "text": "sip"
+        },
+        {
+          "text": "siii"
+        },
+        {
+          "text": "sii"
+        },
+        {
+          "text": "exactamente"
+        },
+        {
+          "text": "sí"
+        },
+        {
+          "text": "absolutamente"
+        }
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "que tengas un buen día"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "hasta la próxima"
+        },
+        {
+          "text": "adios"
+        },
+        {
+          "text": "chao"
+        },
+        {
+          "text": "hasta la vista"
+        },
+        {
+          "text": "hasta luego"
+        },
+        {
+          "text": "nos vemos"
+        },
+        {
+          "text": "tengo que irme"
+        },
+        {
+          "text": "adeu"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-25",
+      "examples": [
+        {
+          "text": "¿Cómo puedo confirmar un pedido de un compañero?"
+        },
+        {
+          "text": "¿Cómo podría confirmar el pedido de mi compañero?"
+        },
+        {
+          "text": "¿Cómo hago la confirmación de un pedido de otro usuario?"
+        }
+      ]
+    },
+    {
+      "intent": "ask_isbot",
+      "examples": [
+        {
+          "text": "¿Eres un bot de chat?"
+        },
+        {
+          "text": "que eres un bot"
+        },
+        {
+          "text": "dime, ¿eres un bot?"
+        },
+        {
+          "text": "eres un skynet?"
+        },
+        {
+          "text": "eres un chatbot"
+        },
+        {
+          "text": "eres ai"
+        },
+        {
+          "text": "¿Eres inteligencia artificial?"
+        },
+        {
+          "text": "eres artificial"
+        },
+        {
+          "text": "supongo que eres un chatbot"
+        },
+        {
+          "text": "eres un robot"
+        },
+        {
+          "text": "Eres un bot?"
+        },
+        {
+          "text": "¿Eres el bot?"
+        },
+        {
+          "text": "Hola, ¿eres el bot?"
+        },
+        {
+          "text": "eres real?"
+        },
+        {
+          "text": "¿eres Bot?"
+        },
+        {
+          "text": "oh eres chatbot?"
+        },
+        {
+          "text": "Que eres ?"
+        },
+        {
+          "text": "porque eres un bot"
+        },
+        {
+          "text": "eres real lol"
+        },
+        {
+          "text": "Así que hoy estoy aquí para hacer una pregunta muy simple, ¿qué eres?"
+        },
+        {
+          "text": "eres un bot real?"
+        },
+        {
+          "text": "¿Eres un bot?"
+        },
+        {
+          "text": "¿Estás seguro de que eres un bot?"
+        },
+        {
+          "text": "Eres un bot"
+        },
+        {
+          "text": "eres realmente un bot"
+        }
+      ]
+    },
+    {
+      "intent": "next_step",
+      "examples": [
+        {
+          "text": "Quiero ir al siguiente paso"
+        },
+        {
+          "text": "Próximo paso"
+        },
+        {
+          "text": "Por favor llévame al siguiente paso"
+        },
+        {
+          "text": "Siguiente paso por favor"
+        },
+        {
+          "text": "Llévame al siguiente paso"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-T201",
+      "examples": [
+        {
+          "text": "qué significa el flag de última entrega?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ask_whatismyname",
+      "examples": [
+        {
+          "text": "Informame cual es mi nombre"
+        },
+        {
+          "text": "Tengo un nombre, ¿qué es?"
+        },
+        {
+          "text": "Dime mi nombre"
+        },
+        {
+          "text": "Explícame mi nombre."
+        },
+        {
+          "text": "¿Qué más me llama la gente?"
+        },
+        {
+          "text": "¿Cómo me llama la gente?"
+        },
+        {
+          "text": "¿Cuál podría ser mi nombre?"
+        },
+        {
+          "text": "¿Sabes mi nombre?"
+        },
+        {
+          "text": "¿Tengo un nombre?"
+        },
+        {
+          "text": "me puedes decir mi nombre"
+        },
+        {
+          "text": "Me gustaria saber mi nombre"
+        },
+        {
+          "text": "¿Cómo me llamo?"
+        },
+        {
+          "text": "¿Con qué nombre me voy?"
+        },
+        {
+          "text": "¿Cómo me llamaron mis padres?"
+        },
+        {
+          "text": "Como me llamo"
+        },
+        {
+          "text": "¿Cómo me llaman todos?"
+        },
+        {
+          "text": "¿Cuál es el nombre que me dieron?"
+        },
+        {
+          "text": "Me gustaría saber cuál es mi nombre"
+        },
+        {
+          "text": "¿Puedes decirme cómo me llamo?"
+        },
+        {
+          "text": "¿Cómo me llaman mis colegas?"
+        },
+        {
+          "text": "¿Cuál sería el nombre en mi lápida?"
+        },
+        {
+          "text": "¿Sabes cuál es mi nombre?"
+        },
+        {
+          "text": "Cual es mi primer nombre"
+        },
+        {
+          "text": "¿Cuál es mi nombre completo?"
+        },
+        {
+          "text": "Por favor déjame saber cuál es mi nombre"
+        },
+        {
+          "text": "¿Cuál es exactamente mi nombre?"
+        },
+        {
+          "text": "¿Cuál es mi nombre?"
+        },
+        {
+          "text": "¿Puedo saber mi nombre?"
+        },
+        {
+          "text": "¿Qué nombre debo reconocer por mí mismo?"
+        },
+        {
+          "text": "Di mi nombre."
+        },
+        {
+          "text": "Como me llamaron"
+        },
+        {
+          "text": "¿Tengo un nombre? ¿Qué es?"
+        }
+      ]
+    },
+    {
+      "intent": "askfeeling",
+      "examples": [
+        {
+          "text": "¿te encuentras bien?"
+        },
+        {
+          "text": "¿qué pasa tio?"
+        },
+        {
+          "text": "que pasa ?"
+        },
+        {
+          "text": "que tal compañero"
+        },
+        {
+          "text": "te esta tratando la vida bien?"
+        },
+        {
+          "text": "te sientes bien?"
+        },
+        {
+          "text": "te van las cosas bien?"
+        },
+        {
+          "text": "todo bien?"
+        },
+        {
+          "text": "como estas amigo ?"
+        },
+        {
+          "text": "¿bien y tú?"
+        },
+        {
+          "text": "¡fenomenal! ¿cómo estás?"
+        },
+        {
+          "text": "¿cómo estas jose?"
+        },
+        {
+          "text": "¿cómo te esta llendo?"
+        },
+        {
+          "text": "¿cómo te sientes hoy amigo?"
+        },
+        {
+          "text": "¿como te va la vida?"
+        },
+        {
+          "text": "¿cómo va ?"
+        },
+        {
+          "text": "¿cómo va tu vida?"
+        },
+        {
+          "text": "¿cúal es tu estado de ánimo hoy?"
+        },
+        {
+          "text": "¿en que estás haciendo?"
+        },
+        {
+          "text": "¿está todo bien contigo?"
+        },
+        {
+          "text": "¿estás bien?"
+        },
+        {
+          "text": "¿estás feliz?"
+        },
+        {
+          "text": "¿estas teniendo un buen dia?"
+        },
+        {
+          "text": "cómo estás ?"
+        },
+        {
+          "text": "cómo te sientes ?"
+        },
+        {
+          "text": "cómo estás hoy"
+        },
+        {
+          "text": "cómo estas esta mañana, jose?"
+        },
+        {
+          "text": "¿todo bien compañero?"
+        },
+        {
+          "text": "¿todo en orden?"
+        },
+        {
+          "text": "¿vas bien?"
+        },
+        {
+          "text": "cómo estás"
+        },
+        {
+          "text": "¿qué pasa amigo?"
+        },
+        {
+          "text": "¿que pasa?"
+        }
+      ]
+    },
+    {
+      "intent": "ask_howold",
+      "examples": [
+        {
+          "text": "¿Cuál era tu edad en tu último cumpleaños?"
+        },
+        {
+          "text": "¿Cuántos años tendrás en tu próximo cumpleaños?"
+        },
+        {
+          "text": "¿Cuánto tiempo has ocupado la tierra?"
+        },
+        {
+          "text": "¿Cuántos años llevas vivo?"
+        },
+        {
+          "text": "¿Cuántos años has vivido?"
+        },
+        {
+          "text": "¿Cuál será tu edad en tu próximo cumpleaños?"
+        },
+        {
+          "text": "¿Cuánto tiempo has estado vivo?"
+        },
+        {
+          "text": "¿Cuánto tiempo has estado alrededor?"
+        },
+        {
+          "text": "que edad tendras este año"
+        },
+        {
+          "text": "Qué edad tienes"
+        },
+        {
+          "text": "que tal tu edad"
+        },
+        {
+          "text": "¿Dime tu edad?"
+        },
+        {
+          "text": "¿Qué edad tenías cuando celebraste tu último cumpleaños?"
+        },
+        {
+          "text": "cual es tu año de nacimiento"
+        },
+        {
+          "text": "y tienes cuantos años?"
+        },
+        {
+          "text": "Cuéntame tu día, mes y año de nacimiento."
+        },
+        {
+          "text": "¿Tienes amigos de la misma edad que tú? Si es así, ¿cuántos años tienen?"
+        },
+        {
+          "text": "¿Cuántas velas había en tu último pastel de cumpleaños?"
+        },
+        {
+          "text": "¿Qué edad tenías en tu último cumpleaños?"
+        },
+        {
+          "text": "¿Cuándo celebras tu día de nacimiento?"
+        },
+        {
+          "text": "¿Cuál es tu fecha de nacimiento?"
+        },
+        {
+          "text": "me puedes decir tu edad"
+        },
+        {
+          "text": "¿En qué año naciste?"
+        },
+        {
+          "text": "cual es tu edad exacta"
+        },
+        {
+          "text": "sabes la edad que tienes?"
+        },
+        {
+          "text": "¿Cuántos años tienes?"
+        },
+        {
+          "text": "¿cuando es tu cumpleaños?"
+        },
+        {
+          "text": "¿Cuando naciste?"
+        },
+        {
+          "text": "¿cuántos años?"
+        },
+        {
+          "text": "¿cual es tu edad?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-11",
+      "examples": [
+        {
+          "text": "¿Qué tengo que poner en el campo \"nombre de confirmación\"?"
+        },
+        {
+          "text": "¿Qué tengo que rellenar en el campo \"nombre de confirmación\"?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-13",
+      "examples": [
+        {
+          "text": "¿Qué fecha se indica en el campo fecha de entrega?"
+        },
+        {
+          "text": "¿Hay que rellenar el campo de fecha de entrega?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X5",
+      "examples": [
+        {
+          "text": "Quiero saber el estado de mi confirmación"
+        },
+        {
+          "text": "En qué situación se encuentra mis confirmaciones?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X4",
+      "examples": [
+        {
+          "text": "¿En qué estado se encuentra mi autorización?"
+        },
+        {
+          "text": "¿Cómo puedo ver el proceso de autorización?"
+        },
+        {
+          "text": "¿Cuándo está el pedido autorizado?"
+        }
+      ]
+    },
+    {
+      "intent": "ask_whoami",
+      "examples": [
+        {
+          "text": "¿Quién soy?"
+        },
+        {
+          "text": "¿Debo saber quién soy yo?"
+        },
+        {
+          "text": "Ok quien soy"
+        },
+        {
+          "text": "quien puedo"
+        },
+        {
+          "text": "quien soy yo"
+        },
+        {
+          "text": "¿Cómo puedo determinar quién soy yo?"
+        },
+        {
+          "text": "¿Cómo descubro quién soy yo?"
+        },
+        {
+          "text": "¿Puedes decirme quién soy yo?"
+        },
+        {
+          "text": "¿Sabes quién soy?"
+        },
+        {
+          "text": "¿Cómo puedo determinar quién soy?"
+        },
+        {
+          "text": "Quién soy"
+        },
+        {
+          "text": "Dime quien soy yo"
+        },
+        {
+          "text": "Sabes quien soy"
+        },
+        {
+          "text": "¿Puedes decirme cuál es mi identidad?"
+        },
+        {
+          "text": "¿Puedes decirme quién soy?"
+        },
+        {
+          "text": "puedes decirme que soy"
+        },
+        {
+          "text": "¿Cómo descubro quién soy?"
+        },
+        {
+          "text": "dime cual es mi identidad"
+        },
+        {
+          "text": "cual es mi identidad"
+        },
+        {
+          "text": "¿Quién podría ser?"
+        },
+        {
+          "text": "¿Cómo me identifico?"
+        },
+        {
+          "text": "Dime quien soy"
+        },
+        {
+          "text": "me puedes decir quien soy"
+        }
+      ]
+    },
+    {
+      "intent": "insult",
+      "examples": [
+        {
+          "text": "jodido idiota"
+        },
+        {
+          "text": "hey perra"
+        },
+        {
+          "text": "hey jodido"
+        },
+        {
+          "text": "hey follador"
+        },
+        {
+          "text": "gilipollas retrasado"
+        },
+        {
+          "text": "estúpido bot"
+        },
+        {
+          "text": "estúpido"
+        },
+        {
+          "text": "estupido"
+        },
+        {
+          "text": "espero que te mueras"
+        },
+        {
+          "text": "espero que mueras pronto"
+        },
+        {
+          "text": "eres una mierda"
+        },
+        {
+          "text": "eres un inútil."
+        },
+        {
+          "text": "eres un inútil"
+        },
+        {
+          "text": "eres un idiota ..."
+        },
+        {
+          "text": "eres un idiota"
+        },
+        {
+          "text": "eres un asco programando"
+        },
+        {
+          "text": "eres un asco"
+        },
+        {
+          "text": "eres tonto"
+        },
+        {
+          "text": "eres estupido"
+        },
+        {
+          "text": "chupamela"
+        },
+        {
+          "text": "chupame la polla"
+        },
+        {
+          "text": "chupame el culo"
+        },
+        {
+          "text": "chatbot de mierda"
+        },
+        {
+          "text": "cállate"
+        },
+        {
+          "text": "callate"
+        },
+        {
+          "text": "cabrón"
+        },
+        {
+          "text": "bésame el trasero"
+        },
+        {
+          "text": "besame el culo"
+        },
+        {
+          "text": "bastardo"
+        },
+        {
+          "text": "apestas programando"
+        },
+        {
+          "text": "ahora vete a la mierda"
+        },
+        {
+          "text": "¿eres retrasado?"
+        },
+        {
+          "text": "¡eres un estúpido!"
+        },
+        {
+          "text": "coño"
+        },
+        {
+          "text": "yo te odio"
+        },
+        {
+          "text": "vete al infierno"
+        },
+        {
+          "text": "vete a la mierda"
+        },
+        {
+          "text": "usted es tonto"
+        },
+        {
+          "text": "tú apestas!"
+        },
+        {
+          "text": "tio eres una basura"
+        },
+        {
+          "text": "suicidarse"
+        },
+        {
+          "text": "te odio"
+        },
+        {
+          "text": "sexo"
+        },
+        {
+          "text": "robot estúpido"
+        },
+        {
+          "text": "retrasado"
+        },
+        {
+          "text": "pornografía"
+        },
+        {
+          "text": "polla"
+        },
+        {
+          "text": "perra"
+        },
+        {
+          "text": "no pedi esta mierda"
+        },
+        {
+          "text": "no entiendes nada so estúpido"
+        },
+        {
+          "text": "mierda"
+        },
+        {
+          "text": "mata a tu perro"
+        },
+        {
+          "text": "maricón"
+        },
+        {
+          "text": "maldito sea"
+        },
+        {
+          "text": "maldito infierno"
+        },
+        {
+          "text": "maldito bot"
+        },
+        {
+          "text": "jodida mierda"
+        },
+        {
+          "text": "imbecil"
+        },
+        {
+          "text": "idiota"
+        },
+        {
+          "text": "hijo de puta"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X2",
+      "examples": [
+        {
+          "text": "¿Cómo solicito una cesta del catálogo de obsequios?"
+        },
+        {
+          "text": "¿Cómo hago una cesta del catálogo de obsequios?"
+        },
+        {
+          "text": "¿Cómo solicito un pedido del catalogo de obsequios?"
+        },
+        {
+          "text": "¿Cómo confirmo una cesta del catalogo de obsequios?"
+        }
+      ]
+    },
+    {
+      "intent": "getweather",
+      "examples": [
+        {
+          "text": "¿qué sol habrá para hoy?"
+        },
+        {
+          "text": "¿nevará mañana?"
+        },
+        {
+          "text": "¿necesito llevar un paraguas conmigo?"
+        },
+        {
+          "text": "¿hace viento?"
+        },
+        {
+          "text": "¿hace frío?"
+        },
+        {
+          "text": "¿hace calor o frio?"
+        },
+        {
+          "text": "necesito saber el tiempo en marruecos"
+        },
+        {
+          "text": "mirar el tiempo"
+        },
+        {
+          "text": "me gustaría saber el tiempo que hace en alemania"
+        },
+        {
+          "text": "hermoso día, ¿no te parece?"
+        },
+        {
+          "text": "hace mucho viento fuera"
+        },
+        {
+          "text": "hace frio en texas?"
+        },
+        {
+          "text": "hace frío afuera"
+        },
+        {
+          "text": "está nublado en gallicia"
+        },
+        {
+          "text": "está nevando?"
+        },
+        {
+          "text": "esta lloviendo?"
+        },
+        {
+          "text": "dime el tiempo en telaviv"
+        },
+        {
+          "text": "dime como esta el clima"
+        },
+        {
+          "text": "dar la prevision"
+        },
+        {
+          "text": "cual es la temperatura en este momento"
+        },
+        {
+          "text": "cual es la temperatura"
+        },
+        {
+          "text": "conocer el clima"
+        },
+        {
+          "text": "comprueba el tiempo"
+        },
+        {
+          "text": "como se ve el cielo"
+        },
+        {
+          "text": "como se presenta el tiempo para el finde?"
+        },
+        {
+          "text": "que tiempo hace?"
+        },
+        {
+          "text": "qué tiempo se preve?"
+        },
+        {
+          "text": "quiero el clima en parís."
+        },
+        {
+          "text": "se supone que lloverá el próximo viernes"
+        },
+        {
+          "text": "va a llover pronto?"
+        },
+        {
+          "text": "tiempo en leon"
+        },
+        {
+          "text": "¿cuál es el estado del tiempo?"
+        },
+        {
+          "text": "¿cuál es el tiempo?"
+        },
+        {
+          "text": "¿está soleado?"
+        },
+        {
+          "text": "que temperatura hace"
+        },
+        {
+          "text": "que sol hace fuera?"
+        },
+        {
+          "text": "predicción del tiempo"
+        },
+        {
+          "text": "obtener el clima"
+        },
+        {
+          "text": "necesito un paraguas"
+        },
+        {
+          "text": "necesito un abrigo?"
+        },
+        {
+          "text": "necesito traer abrigo?"
+        },
+        {
+          "text": "¿cuál es la probabilidad de sol?"
+        },
+        {
+          "text": "¿cuál es la temperatura en cordoba?"
+        },
+        {
+          "text": "¿debo llevar mis gafas de sol?"
+        },
+        {
+          "text": "¿debo llevar un abrigo para esta noche?"
+        },
+        {
+          "text": "¿está lloviendo hoy?"
+        },
+        {
+          "text": "¿está lluvioso en barcelona?"
+        },
+        {
+          "text": "¿está soleado en málaga?"
+        },
+        {
+          "text": "como esta el tiempo en paris?"
+        },
+        {
+          "text": "clima en valencia el domingo"
+        },
+        {
+          "text": "averiguar el clima"
+        },
+        {
+          "text": "¿qué temperatura hace?"
+        },
+        {
+          "text": "¿qué humedad hace?"
+        },
+        {
+          "text": "¿qué calor hará este fin de semana?"
+        },
+        {
+          "text": "¿qué calor hace en madrid ahora?"
+        },
+        {
+          "text": "¿qué calor está haciendo en ponce en este momento?"
+        },
+        {
+          "text": "¿puedo visitar disney en parís mañana por la mañana?"
+        }
+      ]
+    },
+    {
+      "intent": "name",
+      "examples": [
+        {
+          "text": "normalmente me llaman jorgen"
+        },
+        {
+          "text": "soy andres"
+        },
+        {
+          "text": "yo soy jose"
+        },
+        {
+          "text": "llámame jose"
+        },
+        {
+          "text": "la gente me llama juan"
+        },
+        {
+          "text": "mi nombre es name"
+        },
+        {
+          "text": "me puedes llamar alberto"
+        },
+        {
+          "text": "por favor, llámame luis"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X1",
+      "examples": [
+        {
+          "text": "¿Cómo borro un pedido?"
+        },
+        {
+          "text": "¿Cómo anulo un pedido?"
+        },
+        {
+          "text": "como borrar un pedido"
+        },
+        {
+          "text": "¿Cómo cancelo un pedido?"
+        },
+        {
+          "text": "quiero anular mi pedido"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-38",
+      "examples": [
+        {
+          "text": "¿En qué situación se encuentra mi confirmación?"
+        },
+        {
+          "text": "cual es el estado de mi confirmación"
+        },
+        {
+          "text": "como está mi confirmación"
+        },
+        {
+          "text": "Estado de la confirmación"
+        }
+      ]
+    },
+    {
+      "intent": "gethelp",
+      "examples": [
+        {
+          "text": "no estoy seguro de qué hacer aquí"
+        },
+        {
+          "text": "necesito ayuda"
+        },
+        {
+          "text": "necesito algo de ayuda !"
+        },
+        {
+          "text": "muestrame lo que sabes hacer"
+        },
+        {
+          "text": "mostrar ayuda"
+        },
+        {
+          "text": "me puedes ayudar ?"
+        },
+        {
+          "text": "más ayuda"
+        },
+        {
+          "text": "lista de ayuda"
+        },
+        {
+          "text": "estoy perdido"
+        },
+        {
+          "text": "estoy confundido"
+        },
+        {
+          "text": "?"
+        },
+        {
+          "text": "dame ayuda"
+        },
+        {
+          "text": "qué puedes hacer ?"
+        },
+        {
+          "text": "cuáles son mis opciones"
+        },
+        {
+          "text": "cómo puedes ayudarme ?"
+        },
+        {
+          "text": "ayuda"
+        },
+        {
+          "text": "¿cuál es el menu de opciones?"
+        },
+        {
+          "text": "que sabes hacer"
+        },
+        {
+          "text": "¿podría ayudarme?"
+        },
+        {
+          "text": "¿ayuda por favor?"
+        },
+        {
+          "text": "ayúdame"
+        },
+        {
+          "text": "por favor, ayúdame"
+        },
+        {
+          "text": "no se que hacer"
+        }
+      ]
+    },
+    {
+      "intent": "ask_restaurant",
+      "examples": [
+        {
+          "text": "Encuentra un restaurante para que yo coma en."
+        },
+        {
+          "text": "quiero una pizza"
+        },
+        {
+          "text": "restaurantes"
+        },
+        {
+          "text": "ayudame a encontrar un restaurante"
+        },
+        {
+          "text": "Necesito un nuevo restaurante"
+        },
+        {
+          "text": "quiero un restaurante francés"
+        },
+        {
+          "text": "Estoy buscando un restaurante chino"
+        },
+        {
+          "text": "Voy a necesitar ayuda para encontrar un restaurante"
+        },
+        {
+          "text": "Hey ayúdame a encontrar un restaurante"
+        },
+        {
+          "text": "¿Cómo puedes ayudarme a encontrar un restaurante?"
+        },
+        {
+          "text": "Donde está el restaurante"
+        },
+        {
+          "text": "Muéstrame cómo encontrar un restaurante"
+        },
+        {
+          "text": "Necesito encontrar este restaurante"
+        },
+        {
+          "text": "Ayúdame a encontrar este restaurante"
+        },
+        {
+          "text": "Oye, ¿puedes ayudarme a localizar este restaurante?"
+        },
+        {
+          "text": "Búscame un lugar para comer"
+        },
+        {
+          "text": "¿Puedes recomendar un restaurante abierto ahora mismo?"
+        },
+        {
+          "text": "¿Cuál es el restaurante más cercano abierto cerca de mí?"
+        },
+        {
+          "text": "Tengo hambre, búscame un lugar para ir."
+        },
+        {
+          "text": "Sugiérenme un buen restaurante alrededor."
+        },
+        {
+          "text": "Muéstrame el restaurante abierto más cercano"
+        },
+        {
+          "text": "¿Qué es un buen lugar para comer cerca"
+        },
+        {
+          "text": "Recomiéndame un restaurante por aquí."
+        },
+        {
+          "text": "Escoge un restaurante para mi, por favor"
+        },
+        {
+          "text": "¿Puedes encontrar un restaurante para mí?"
+        },
+        {
+          "text": "Encuentra un restaurante para mí?"
+        },
+        {
+          "text": "¿Me encontrarías un restaurante?"
+        },
+        {
+          "text": "¿Podrías encontrarme un restaurante?"
+        },
+        {
+          "text": "¿Podrías encontrarme un restaurante para comer?"
+        },
+        {
+          "text": "Find me a restaurant where I can eat."
+        },
+        {
+          "text": "Encuentra un restaurante donde pueda comer."
+        },
+        {
+          "text": "Necesito un restaurante"
+        },
+        {
+          "text": "¿Puedes encontrarme un restaurante?"
+        },
+        {
+          "text": "¿Dónde debo comer?"
+        },
+        {
+          "text": "¿Me pueden mostrar un restaurante sin gluten?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-21",
+      "examples": [
+        {
+          "text": "he dejado una confirmación sin finalizar, como se recupera?"
+        },
+        {
+          "text": "puedo guardar la confirmación"
+        },
+        {
+          "text": "he dejado la confirmación en estado \"grabado\", ¿es correcto?"
+        },
+        {
+          "text": "¿Cómo termino una confirmación grabada?"
+        },
+        {
+          "text": "¿Cómo trato una confirmación grabada?"
+        }
+      ]
+    },
+    {
+      "intent": "askjoke",
+      "examples": [
+        {
+          "text": "¿puedes decirme algo gracioso?"
+        },
+        {
+          "text": "¿que tal una chiste?"
+        },
+        {
+          "text": "¿eres divertido?"
+        },
+        {
+          "text": "¡necesito reírme!"
+        },
+        {
+          "text": "una historia divertida"
+        },
+        {
+          "text": "una broma por favor"
+        },
+        {
+          "text": "solo se divertido"
+        },
+        {
+          "text": "necesito que me cuentes una historia divertida"
+        },
+        {
+          "text": "me puedes entretener?"
+        },
+        {
+          "text": "me haces sonreír"
+        },
+        {
+          "text": "me gustaría escuchar una broma!"
+        },
+        {
+          "text": "hazme reir"
+        },
+        {
+          "text": "diviérteme"
+        },
+        {
+          "text": "dime una broma por favor"
+        },
+        {
+          "text": "¿tienes un buen chiste sobre las mujeres?"
+        },
+        {
+          "text": "broma"
+        },
+        {
+          "text": "chiste"
+        },
+        {
+          "text": "cuéntame un chiste"
+        },
+        {
+          "text": "di algo gracioso"
+        },
+        {
+          "text": "quiero un chiste"
+        },
+        {
+          "text": "dime algo divertido"
+        },
+        {
+          "text": "¿me puedes contar un chiste?"
+        },
+        {
+          "text": "¿me puedes contar una broma?"
+        },
+        {
+          "text": "¿otra broma tal vez?"
+        },
+        {
+          "text": "¿puedes compartir conmigo una chiste malo?"
+        }
+      ]
+    },
+    {
+      "intent": "providerconsultation",
+      "examples": [
+        {
+          "text": "¿el proveedor con cif f01234567 está configurado para trabajar con @adquira?"
+        },
+        {
+          "text": "quiero saber si el @proveedor va por @adquira"
+        },
+        {
+          "text": "¿el @proveedor va por @adquira?"
+        },
+        {
+          "text": "¿el @proveedor trabaja por @adquira?"
+        },
+        {
+          "text": "el @proveedor factura por @adquira"
+        },
+        {
+          "text": "¿el @proveedor está en @adquira?"
+        },
+        {
+          "text": "¿el proveedor está configurado por @adquira?"
+        },
+        {
+          "text": "¿el @proveedor está configurado por @adquira?"
+        },
+        {
+          "text": "el proveedor con cif a01234567 esta gestionado por @adquira"
+        },
+        {
+          "text": "¿el proveedor con cif a01234567 esta gestionado con @adquira?"
+        },
+        {
+          "text": "¿el @proveedor 123 factura por @adquira?"
+        },
+        {
+          "text": "¿el pedido va por @adquira?"
+        },
+        {
+          "text": "adquira gestiona el proveedor con cif @cnn"
+        },
+        {
+          "text": "@codigo @cif"
+        },
+        {
+          "text": "sistema @macssytem"
+        },
+        {
+          "text": "proveedor @sys-number"
+        },
+        {
+          "text": "@pedido @sys-number"
+        },
+        {
+          "text": "el proveedor factura por adquira"
+        },
+        {
+          "text": "me gustaría saber si el proveedor con cif x12345678 para up2 esta gestionado por adquira"
+        },
+        {
+          "text": "me gustaria saber si el proveedor cuyo cif es x45768795 y sistema srm esta gestionando marketplace"
+        },
+        {
+          "text": "configuracion de proveedor"
+        },
+        {
+          "text": "configuración proveedor 1234567890"
+        },
+        {
+          "text": "el proveedor con nif x98765432"
+        },
+        {
+          "text": "el proveedor con nif 12345678c"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "hola"
+        },
+        {
+          "text": "comenzar"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "buenos días"
+        },
+        {
+          "text": "buenas tardes"
+        },
+        {
+          "text": "bonjour"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-29",
+      "examples": [
+        {
+          "text": "puedo hacer una confirmación?"
+        },
+        {
+          "text": "¿Cuándo puedo hacer la confirmación?"
+        },
+        {
+          "text": "¿Cómo hago hacer la confirmación?"
+        },
+        {
+          "text": "en qué momento se puede realizar una confirmación"
+        },
+        {
+          "text": "si mi pedido no está autorizado, puedo hacer una confirmación?"
+        },
+        {
+          "text": "en qué momento se puede confirmar?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-X10",
+      "examples": [
+        {
+          "text": "como se si mi jefe ha recibido mi pedido para autorizar?"
+        },
+        {
+          "text": "Ha llegado la autorización a mi superior?"
+        },
+        {
+          "text": "¿Cómo hago para que la cesta o pedido le llegue a mi jefe?"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-26",
+      "examples": [
+        {
+          "text": "me he confundido y quiero deshacer una confirmación"
+        },
+        {
+          "text": "anular EM en SRM"
+        },
+        {
+          "text": "¿Cómo anulo una confirmación?"
+        },
+        {
+          "text": "¿Cómo invalido una confirmación?"
+        },
+        {
+          "text": "¿Cómo cancelo una confirmación?"
+        },
+        {
+          "text": "¿Cómo borro una confirmación?"
+        },
+        {
+          "text": "¿Cómo devuelvo una confirmación?"
+        },
+        {
+          "text": "anular una confirmacion"
+        },
+        {
+          "text": "borrar confirmación"
+        },
+        {
+          "text": "¿Cómo suprimo una confirmación?"
+        },
+        {
+          "text": "como cancelar una confirmación"
+        }
+      ]
+    },
+    {
+      "intent": "CRP-16",
+      "examples": [
+        {
+          "text": "Al verificar salta un mensaje en rojo"
+        },
+        {
+          "text": "puedo hacer una confirmación con errores"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "proveedor",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "proveedor",
+          "synonyms": [
+            "acreedor",
+            "aprovisionador",
+            "suministrador",
+            "consignatario",
+            "proveedores",
+            "provedor",
+            "ctc"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "codigo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "codigo",
+          "synonyms": [
+            "nie",
+            "nif",
+            "cif",
+            "dni"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "organizacion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "grupo",
+          "synonyms": [
+            "organización",
+            "organizacion"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "paycon",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "paycon",
+          "synonyms": [
+            "PC",
+            "A022",
+            "A023",
+            "A024",
+            "A025",
+            "A027",
+            "A028",
+            "A030",
+            "A037",
+            "A045",
+            "A060",
+            "A075",
+            "A085",
+            "A090",
+            "A105",
+            "A120",
+            "J000",
+            "J015",
+            "J025",
+            "J030",
+            "J045",
+            "J060",
+            "J075",
+            "J090",
+            "J105",
+            "J120",
+            "R000",
+            "Z001",
+            "ZJVA",
+            "2F00",
+            "2P00",
+            "A000",
+            "A001",
+            "A004",
+            "A005",
+            "A006",
+            "A007",
+            "A008",
+            "A009",
+            "A010",
+            "A011",
+            "A012",
+            "A013",
+            "A014",
+            "A015",
+            "A016",
+            "A017",
+            "A018",
+            "A019",
+            "A020",
+            "A021"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "currency",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AFN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BBD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BAM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AZN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AWG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AUD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ARS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AOA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ANG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ALL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AED",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ZWL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ZMW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ZAR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "YER",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XXX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XUA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XTS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XSU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XPT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XPF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XPD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XOF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XDR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XCD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XBD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XBC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XBB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XBA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XAU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XAG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XAF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "WST",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VUV",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VND",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VES7​",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UZS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UYW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UYU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UYI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "USN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "USD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UGX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UAH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TZS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TWD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TTD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TRY",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TOP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TND",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TMT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TJS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "THB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SZL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SYP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SVC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "STN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SSP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SRD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SOS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SLL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SHP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SGD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SDG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SCR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SBD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SAR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RWF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RUB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RSD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RON",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "QAR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PYG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PLN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PKR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PHP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PGK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PEN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PAB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "OMR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NZD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NPR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NOK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NIO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NGN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NAD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MZN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MYR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MXV",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MXN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MWK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MVR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MUR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MRU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MOP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MNT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MMK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MKD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MGA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MDL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MAD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LYD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LSL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LRD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LKR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LBP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LAK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KZT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KYD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KWD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KRW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KPW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KMF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KHR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KGS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KES",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JPY",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JOD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ISK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IRR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IQD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "INR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ILS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IDR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HUF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HTG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HRK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HNL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HKD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GYD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTQ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GNF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GIP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GHS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GEL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GBP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FKP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FJD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EUR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ETB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ERN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EGP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DZD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DOP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DKK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DJF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CZK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CVE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CUP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CUC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CRC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CNY",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CLP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CLF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CHW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CHF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CHE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CDF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CAD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BZD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BYN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BWP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BTN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BSD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BRL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BOV",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BOB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BND",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BIF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BHD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BGN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BDT",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "macsystem",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "systemID",
+          "synonyms": [
+            "SRM",
+            "QP0",
+            "UP2",
+            "BP5",
+            "RP2"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "adquira",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "adquira",
+          "synonyms": [
+            "adquira",
+            "marketplace"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "pedido",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pedido",
+          "synonyms": [
+            "contrato",
+            "referencia",
+            "confirmación",
+            "documento",
+            "cesta",
+            "factura",
+            "confirmacion",
+            "pedido"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "cnn",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "nie",
+          "patterns": [
+            "[XxTtYyZz]{1}\\d{7}[a-zA-Z]{1}"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "cif",
+          "patterns": [
+            "[a-wA-W]{1}\\d{7}[a-zA-Z0-9]{1}"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "nif",
+          "patterns": [
+            "(\\d{8})([-]?)(\\d[a-z]|[A-Z]{1})"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "org_compras",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "org_sino",
+          "synonyms": [
+            "organización de compras",
+            "OC"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "es",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "Repsol Assistant",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "CRP-X10",
+      "metadata": {},
+      "dialog_node": "node_1_1538737317344"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T104",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté confirmado. Si no lo está, desde SRM -->  ir a la pestaña \"Compra operativa\"-> Desplegar en el menú de la izquierda \"Resumen\" ->  seleccionar \"Confirmación Central\" -> pulsar \"Crear Confirmación\". Desde la pantalla principal de crear confirmación, utilizar los campos de busqueda disponibles. Número de pedido y/o  período y/o número de cesta (si se dispone de este dato)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T104",
+      "dialog_node": "node_4_1540293027200",
+      "previous_sibling": "node_3_1540292658711"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-09",
+      "output": {
+        "text": {
+          "values": [
+            "Desde la pantalla principal de crear confirmación, utilizar los campos de busqueda disponibles. Número de pedido,  período y número de cesta (si se dispone de este dato)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-09",
+      "dialog_node": "CRP-09",
+      "previous_sibling": "CRP-26"
+    },
+    {
+      "type": "standard",
+      "title": "anything_else",
+      "output": {
+        "text": {
+          "values": [
+            "No entiendo su pregunta"
+          ],
+          "selection_policy": "sequential"
+        },
+        "command": "notUnderstanding"
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1538740519036",
+      "previous_sibling": "node_1_1540371902782"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X3",
+      "output": {
+        "text": {
+          "values": [
+            "Para confirmar un pedido desde el resumen de compras cuando se sabe el número cesta y cuando además quien confirma es el solicitante de la misma, realizar las siguientes acciones: 1. Ir a la siguiente ruta SRM-COMPRA OPERATIVA-RESUMEN-COMPRA: pinchar en CESTAS 2. Utilizar la selección del filtros disponibles para buscar la cesta: pinchar en APLICAR 3. pinchar en el icono gris que aparece a la izquierda del número para que se active la línea en color naranja 4. pinchar el botón: CREAR CON REFERENCIA y seleccionar: \"CONFIRMACION\"."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-X3",
+      "dialog_node": "CRP-X3",
+      "previous_sibling": "CRP-X2"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-12",
+      "output": {
+        "text": {
+          "values": [
+            "El campo \"número de referencia\" es un campo de texto libre. Se podrá indicar si se desea y conoce el nº de factura."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-12",
+      "dialog_node": "CRP-12",
+      "previous_sibling": "CRP-11"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X4",
+      "output": {
+        "text": {
+          "values": [
+            "Para saber si un pedido esta autorizado puedes buscar el pedido desde  ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa -> Selecciona en el manu de la izquierda la opción \"Compra\" cuando se despliegue el menu puedes buscar por cesta o pedido introduciendo el nº si accedes desde la Cesta debes hacer doble click en el nº de cesta, cuando se abra en una nueva ventana la cesta, selecciona \"documento subsiguiente\" y haz doble click en el nº de pedido si el estado es \"PEDIDO\" significa que esta autorizada, si accedes desdde el pedido comprueba que el estado sea \"PEDIDO\" ( para mas detalles del proceso de autorización selecciona la pestaña \"autorización\")"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X4",
+      "dialog_node": "CRP-X4",
+      "previous_sibling": "CRP-X3"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X5",
+      "output": {
+        "text": {
+          "values": [
+            "Para conocer el estado de una confirmacion puedes buscar el pedido desde  ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  Compra Operativa -> Selecciona en el menú de la izquierda la opción \"Compra\" cuando se despliegue el menu puedes buscar por confirmación introduciendo el nº de confirmacion y pulsando el botón \"aplicar\" te aparece la confirmación, haz doble click sobre el número, se abrira una nueva ventana si la confirmación esta en estado \"Contabilizado en back end\" se ha generado de forma correcta."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-X5",
+      "dialog_node": "CRP-X5",
+      "previous_sibling": "CRP-X4"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T105",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7BC8D3AAD3-DE90-4CEF-9A16-10EEF5B92538%7D&file=Devolver%20una%20confirmaci%C3%B3n.docx&action=default&mobileredirect=true"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T105",
+      "dialog_node": "node_5_1540293220860",
+      "previous_sibling": "node_4_1540293027200"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X2",
+      "output": {
+        "text": {
+          "values": [
+            "Desde noviembre de 2018 el catálogo de obsequios se gestiona desde fuera de SRM. PENDIENTE CONOCER NUEVO PROCEDIMIENTO PARA INFORMAR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-X2",
+      "dialog_node": "CRP-X2",
+      "previous_sibling": "CRP-X1"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-02",
+      "output": {
+        "text": {
+          "values": [
+            "Acceder a la ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña de confirmaciones-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.accenture.com/yzNzY9"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-02",
+      "dialog_node": "CRP-02",
+      "previous_sibling": "CRP-09"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X8",
+      "output": {
+        "text": {
+          "values": [
+            "Busque su pedido desde la siguiente ruta : Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa> y buscamos según el nº documento que tengamos, haga  click en el nº de pedido y desde la pestaña \"Seguimientos\" podra visualizar si el pedido tiene confirmaciones y los movimientos del mismo, si accede desde la cesta, pulse en \"Documentos Subsiguientes\" y haga click sobre el número de pedido para poder acceder a los seguimientos del pedido."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X8",
+      "dialog_node": "CRP-X8",
+      "previous_sibling": "CRP-X7"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-13",
+      "output": {
+        "text": {
+          "values": [
+            "Indicar en el campo fecha de entrega la fecha en que se crea la confirmación aunque no es un campo obligatorio."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-13",
+      "dialog_node": "CRP-13",
+      "previous_sibling": "CRP-29"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-11",
+      "output": {
+        "text": {
+          "values": [
+            "En el campo \"nombre de confirmación\" se puede indicar cualquier cosa, no es obligatorio ningún dato en concreto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-11",
+      "dialog_node": "CRP-11",
+      "previous_sibling": "CRP-13"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T201",
+      "output": {
+        "text": {
+          "values": [
+            "El flag de última entrega en una confirmación indica que no se podrán realizar más confirmaciones para ese pedido."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T201",
+      "dialog_node": "node_1_1540371902782",
+      "previous_sibling": "node_5_1540293220860"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-38",
+      "output": {
+        "text": {
+          "values": [
+            "Debemos acceder primero al pedido. Para ello tenemos que buscar nuestra cesta desde la pestaña \"Compra operativa\", una vez dentro de la cesta, en la línea de la posición en la columna estado aparecerá \"pedido creado\" si lo pulsamos nos aparecerá los detalles del pedido en la parte inferior, indicando el estado del pedido, de la confirmación, si la hubiera, y de la factura, si la hubiera."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-38",
+      "dialog_node": "CRP-38",
+      "previous_sibling": "CRP-23"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X10",
+      "output": {
+        "text": {
+          "values": [
+            "El estado del pedido debe estar en \"Autorización en curso\" y desde la pestaña \"Seguimientos\" dentro del pedido vera el circuito de aprobación del mismo."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X10",
+      "dialog_node": "CRP-X10",
+      "previous_sibling": "CRP-X9"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-37",
+      "output": {
+        "text": {
+          "values": [
+            "El pedido debe estar en estado \"Pedido\". Si tiene alguna sobre cómo ver el estado duda pregunteme \"¿Cuál es el estado de mi pedido?\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-37",
+      "dialog_node": "CRP-37",
+      "previous_sibling": "CRP-38"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X7",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté confirmado. Si no lo está, desde SRM -->  ir a la pestaña \"Compra operativa\"-> Desplegar en el menú de la izquierda \"Resumen\" ->  seleccionar \"Confirmación Central\" -> pulsar \"Crear Confirmación\". Desde la pantalla principal de crear confirmación, utilizar los campos de busqueda disponibles. Número de pedido y/o  período y/o número de cesta (si se dispone de este dato)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-X7",
+      "dialog_node": "CRP-X7",
+      "previous_sibling": "CRP-X6"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-20",
+      "output": {
+        "text": {
+          "values": [
+            "Los datos introducidos pueden ser grabados sin necesidad de llegar a concluir todo el proceso. Para ello habrá de pulsar sobre el botón \"grabar\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-20",
+      "dialog_node": "CRP-20",
+      "previous_sibling": "CRP-12"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X9",
+      "output": {
+        "text": {
+          "values": [
+            "El campo \"nombre de confirmación\" es único y no puede ser repetido en SRM"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X9",
+      "dialog_node": "CRP-X9",
+      "previous_sibling": "CRP-X8"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X11",
+      "output": {
+        "text": {
+          "values": [
+            "Para modificar un pedido, puede buscarlo desde  ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa -> Selecciona en el menú de la izquierda la opción \"Compra\" cuando se despliegue el menú puedes buscar por cesta o pedido introduciendo el nº si accedes desde la Cesta debes hacer doble click en el nº de cesta, cuando se abra en una nueva ventana la cesta, selecciona \"documento subsiguiente\" y haz doble click en el nº de pedido. Una vez acceda al pedido, pulse sobre \"Tratar\" y podrá modificar su pedido."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X11",
+      "dialog_node": "CRP-X11",
+      "previous_sibling": "CRP-X10"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X6",
+      "output": {
+        "text": {
+          "values": [
+            "Para ver los pedidos realizados por otros usuarios debe seguir la siguiente ruta : Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa> y buscamos según el nº documento que tengamos, si no aparece envien email a isisoporte@repsol.com con imagen de la búsuqeda y número de documento"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X6",
+      "dialog_node": "CRP-X6",
+      "previous_sibling": "CRP-X5"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-23",
+      "output": {
+        "text": {
+          "values": [
+            "Para confirmar un pedido desde el resumen de compras realizar las siguientes acciones: 1. Ir a la siguiente ruta SRM-COMPRA OPERATIVA-RESUMEN-COMPRA: pinchar en PEDIDOS 2. Utilizar la selección del filtros disponibles para buscar el pedido: pinchar en APLICAR 3. pinchar en el icono gris que aparece a la izquierda del número para que se active la línea en color naranja 4. pinchar el botón: CREAR CON REFERENCIA y seleccionar: CONFIRMACION. Desde aquí podemos realizar las confirmaciones de pedidos que no hemos realizado nosotros"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-23",
+      "dialog_node": "CRP-23",
+      "previous_sibling": "CRP-16"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T102",
+      "output": {
+        "text": {
+          "values": [
+            "El estado \"grabado\" es un paso intermedio. Las confirmaciones, para poder ser facturadas, deben quedar en estado \"contabilizadas\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T102",
+      "dialog_node": "node_2_1540292113788",
+      "previous_sibling": "node_1_1540291394655"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X1",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual ***********adjuntar manual******una vez haya sido anulada la confirmación, desde el pedido debemos borrar las posiciones del mismo, seleccionamos el botón \"Tratar\" nos posicionamos sobre cada posición y seleccionamos el botón \"Borrar\" en cada una de las lineas, una vez borradas seleccionamos el botón \"Solicitar\" para que se envie la modificación, el último paso es salir del pedido, volver a entrar y sin tratar seleccionar el botón \"Concluir\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-X1",
+      "dialog_node": "CRP-X1",
+      "previous_sibling": "CRP-21"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T103",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté confirmado. Si no lo está, desde SRM -->  ir a la pestaña \"Compra operativa\"-> Desplegar en el menú de la izquierda \"Resumen\" ->  seleccionar \"Confirmación Central\" -> pulsar \"Crear Confirmación\". Desde la pantalla principal de crear confirmación, utilizar los campos de busqueda disponibles. Número de pedido y/o  período y/o número de cesta (si se dispone de este dato)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T103",
+      "dialog_node": "node_3_1540292658711",
+      "previous_sibling": "node_2_1540292113788"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-16",
+      "output": {
+        "text": {
+          "values": [
+            "Los mensajes mostrados en rojo al verificar la confirmación generan problemas que impiden confirmar y concluir el proceso. Se deberán revisar/ y o corregir los datos introducidos. El propio mensaje servirá de orientación para la corrección de los datos mal introducidos. En caso de que no se corrija el error, envíe un correo con la captura de pantalla del error a isisoporte\\@repsol.com"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-16",
+      "dialog_node": "CRP-16",
+      "previous_sibling": "CRP-15"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-21",
+      "output": {
+        "text": {
+          "values": [
+            "Desde la pestaña de \"Cestas\" dentro de \"confirmaciones\" podemos ver las confirmaciones creadas por nosotros. Simplemente se pulsa en \"tratar\" y se puede terminar el proceso."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-21",
+      "dialog_node": "CRP-21",
+      "previous_sibling": "CRP-14"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-29",
+      "output": {
+        "text": {
+          "values": [
+            "En cuanto el pedido esté autorizado ya se puede hacer la confirmación."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-29",
+      "dialog_node": "CRP-29",
+      "previous_sibling": "CRP-22"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-15",
+      "output": {
+        "text": {
+          "values": [
+            "Los mensajes mostrados en amarillo y verde al verificar la confirmación no generan ningún problema y permiten confirmar."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-15",
+      "dialog_node": "CRP-15",
+      "previous_sibling": "CRP-20"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-25",
+      "output": {
+        "text": {
+          "values": [
+            "Se accede a la pestaña compra operativa. https://go.accenture.com/jB6ars"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-25",
+      "dialog_node": "CRP-25",
+      "previous_sibling": "CRP-02"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-14",
+      "output": {
+        "text": {
+          "values": [
+            "En la columna \"Cantidad pendiente\" aparece la cantidad del pedido que aún tiene disponible para confirmar."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-14",
+      "dialog_node": "CRP-14",
+      "previous_sibling": "CRP-37"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-22",
+      "output": {
+        "text": {
+          "values": [
+            "Si el proceso ha concluido sin errores, tras dar al botón \"confirmar\" el sistema mostrará una pantalla indicando que se va a proceder a realizar la confirmación de las posiciones con cantidades superiores a cero o que hayan sido marcadas como \"ultima entrega\" solicitando confirmación para continuar el proceso. Tras la confirmación de la misma, el sistema devolverá el número de la confirmación creada."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "conditions": "#CRP-22",
+      "dialog_node": "CRP-22",
+      "previous_sibling": "CRP-01"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-X12",
+      "output": {
+        "text": {
+          "values": [
+            "Para conocer si su proveedor factura por el flujo logístico, utilice la siguiente pregunta para obtener su respuesta: ¿El proveedor/acreedor XXX factura por Adquira/MarketPlace? Siendo XXX el número del proveedor"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-X12",
+      "dialog_node": "CRP-X12",
+      "previous_sibling": "CRP-X11"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-T101",
+      "output": {
+        "text": {
+          "values": [
+            "Desde SRM --> pulsar pestaña \"Cestas\" ->  ir a la pestaña \"confirmaciones\"-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.accenture.com/yzNzY9"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#CRP-T101",
+      "dialog_node": "node_1_1540291394655",
+      "previous_sibling": "CRP-X12"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-01",
+      "output": {
+        "text": {
+          "values": [
+            "El comprador recibirá de forma automática un mail indicando que tiene un pedido pendiente de ser confirmado, en caso de duda, si cuando buscas la cesta desde la pestaña \"Cestas\" aparece el boton en azul \"crear confirmación\" indica que aún queda importe por confirmar, tambien puede mirar el siguiente manual https://go.accenture.com/1ohCXi"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-01",
+      "dialog_node": "CRP-01",
+      "previous_sibling": "CRP-25"
+    },
+    {
+      "type": "standard",
+      "title": "CRP-26",
+      "output": {
+        "text": {
+          "values": [
+            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://go.accenture.com/dy4YfZ"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "context": {},
+      "metadata": {},
+      "conditions": "#CRP-26",
+      "dialog_node": "CRP-26"
+    }
+  ],
+  "workspace_id": "0cefcda0-2afc-4382-aa73-4ac535e77280",
+  "counterexamples": [
+    {
+      "text": "como puedo anular mi documento?"
+    },
+    {
+      "text": "como puedo borrar mi documento"
+    },
+    {
+      "text": "Confirmación"
+    },
+    {
+      "text": "EM"
+    },
+    {
+      "text": "entrada mercancia"
+    },
+    {
+      "text": "esto de SRM es un lío"
+    },
+    {
+      "text": "la mercancía que ha pedido la he dejado en la entrada"
+    },
+    {
+      "text": "me puede usted confirmar la hora de mi vuelo?"
+    },
+    {
+      "text": "porque algunas veces no funcionas bien"
+    },
+    {
+      "text": "quien ha autorizado mi pedido"
+    },
+    {
+      "text": "quiero hacer un pedido al CorteInglés, cómo lo hago?"
+    },
+    {
+      "text": "quiero modificar el comportamiento de mi perro"
+    },
+    {
+      "text": "quiero una pizza"
+    },
+    {
+      "text": "se ha perdido mi pedido"
+    },
+    {
+      "text": "si no me sirven los zapatos, los puedo devolver"
+    },
+    {
+      "text": "SRM"
+    },
+    {
+      "text": "tengo hambre"
+    },
+    {
+      "text": "x45768795"
+    }
+  ],
+  "learning_opt_out": false,
+  "status": "Available"
+}

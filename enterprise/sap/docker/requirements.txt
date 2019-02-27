@@ -1,0 +1,4 @@
+requests==2.20.0
+zeep==3.2.0
+Flask==1.0.2
+gunicorn==19.7.1

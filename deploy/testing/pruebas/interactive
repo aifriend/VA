@@ -1,0 +1,49 @@
+adquira: None, codigo: None, currency: None, organizacion: None, org_compras: None,
+paycondition: a060, pedido: None, place: None, proveedor: None,
+provider_id: None, reference: None, requested_slot: None, robot_id: None,
+session: default, status: None, system: None
+
+----
+
+/invoicestatus{"pedido":"factura", "sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
+/invoicestatus{"pedido":"factura", "session": "j.b.lopez@accenture.com"}
+/inform{"sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
+
+----
+
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "cnn":"A45768795", "macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+/inform{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+
+----
+
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "cnn":"A45768795", "currency":"EUR", "paycon":"a060", "sys-number":"1234"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+/inform{"orgcompras":"1234", "session": "j.b.lopez@accenture.com"}
+/inform{"currency":"EUR", "session": "j.b.lopez@accenture.com"}
+/inform{"paycon":"a060", "session": "j.b.lopez@accenture.com"}
+
+----
+
+/greetings
+
+/chitchat
+/stop
+/name
+/thankyou
+/gratitude
+/gethelp
+/compliment
+/deny
+/affirm
+/location
+/next_step
+/out_of_scope
+/human_handoff
+
+/goodbye
+
+
+

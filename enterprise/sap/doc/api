@@ -1,0 +1,98 @@
+Método Z_XSRM_CONFIGURADO_ADQUIRA
+=================================
+Caso 1:
+-------
+Entrada
+PI_USUARIO      DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_NIF          A08134249
+PI_SISTEMA      EP2
+
+Salida
+PE_DATOS_SRM    OBJID    FECHA
+
+		        60000019 01.01.2000
+                60000034 19.12.2017
+                60000037 01.01.2000
+                60000045 19.12.2017
+                60000052 01.01.2000
+                60001412 01.01.2000
+
+Caso 2:
+-------
+Entrada
+PI_USUARIO              DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_NIF                  A59202861
+PI_SISTEMA              RP2
+
+Salida
+PE_DATOS_BACKEND        BUKR EKOR FECH_ENVIO
+
+                        0176 1001 27.02.2015
+                        0176 1013 27.02.2015
+
+Caso 3:
+-------
+Entrada
+PI_USUARIO                      DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_NIF                          AAAAAAAA
+PI_SISTEMA                      RP2
+
+Salida
+PE_MENSAJE                      No existe ningún proveedor con ese NIF
+
+
+Método Z_XSRM_ESTADO_CUALQUIER_DOC
+==================================
+Caso 1:
+-------
+Entrada
+PI_USUARIO                      DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_DOCUMENTO                    15638284
+
+Salida
+PE_MENSAJE                      La Cesta 0015638284 est· en estado Autorizados
+
+Caso 2:
+-------
+Entrada
+PI_USUARIO                      DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_DOCUMENTO                    50258782
+
+Salida
+PE_MENSAJE                      El Pedido 0050258782 est· en estado Pedido
+
+Caso 3:
+-------
+Entrada
+PI_USUARIO                      DAVID.TABOAS@SERVEXTERNOS.REPSOL.COM
+PI_DOCUMENTO                    15555555
+
+Salida
+PE_MENSAJE                      No se ha encontrado ningún documento con ese cÛdigo
+
+
+Método Z_XSRM_EXTENDER_PROVEEDOR
+================================
+Nos han configurado en desarrollo el WS con el método nuevo de extender proveedores (Z_XSRM_EXTENDER_PROVEEDOR).
+
+https://dsoa.repsol.com:8243/services/SRM_ROBOT_FE_ps.SRM_ROBOT_FE_psHttpsSoap11Endpoint
+
+WSDL: http://dsoa.repsol.com:8280/services/SRM_ROBOT_FE_ps?wsdl)
+
+Usuario: USER_DQSOA_ROB001
+Password: xm12TYnpt
+
+Caso 1:
+-------
+{
+	"session":"s.gomez.oliver@accenture.com",
+	"action":"Z_XSRM_EXTENDER_PROVEEDOR",
+	"params": {
+		"PI_CONDICION": "",
+		"PI_MONEDA": "EUR",
+		"PI_NIF": "A28240752",
+		"PI_ORGANIZACION": "6006",
+		"PI_PROVEEDOR": "",
+		"PI_USUARIO": "SE47139"
+	}
+}

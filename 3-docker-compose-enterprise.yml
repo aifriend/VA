@@ -1,0 +1,109 @@
+version: '3.0'
+
+services:
+
+  configuration_service:
+    container_name: configuration_service
+    image: core/configuration_service:init
+    build:
+      context: core/configuration
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 9000:9000
+    volumes:
+      - ./deploy/docker/configuration_service/logs:/app/logs
+
+  sap_service:
+    container_name: sap_service
+    image: enterprise/sap_service:init
+    build:
+      context: enterprise/sap
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8060:8060
+    volumes:
+      - ./deploy/docker/sap_service/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+  watson_assistant:
+    container_name: watson_assistant
+    image: enterprise/watson_service:init
+    build:
+      context: enterprise/watson
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 8075:8075
+    volumes:
+      - ./deploy/docker/watson_assistant/logs:/app/logs
+    depends_on:
+      - configuration_service
+
+  action_server:
+    container_name: action_server
+    image: rasa/action_server:init
+    build:
+      context: enterprise/rasa/usecase/callcenter/action/
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 5055:5055
+    volumes:
+      - ./deploy/docker/rasa_core/action_server:/app/logs
+
+  nlg_server:
+    container_name: nlg_server
+    image: rasa/nlg_server:init
+    build:
+      context: enterprise/rasa/usecase/callcenter/nlg/
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 5056:5056
+    volumes:
+      - ./deploy/docker/rasa_core/nlg_server:/app/logs
+
+  rasa_core:
+    container_name: rasa_core
+    image: enterprise/rasa_core:init
+    build:
+      context: enterprise/rasa
+      dockerfile: docker/Dockerfile
+    networks:
+      - rasanet
+    ports:
+      - 5005:5005
+    volumes:
+      - ./deploy/docker/rasa_core/core:/app/logs
+    depends_on:
+      - mongo
+      - action_server
+      - nlg_server
+      - configuration_service
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    networks:
+      - rasanet
+    ports:
+      - 27017:27017
+      - 27027:27027
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rasa
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: rasa
+    volumes:
+      - ./deploy/docker/rasa_core/tracker_store/data/db:/data/db
+
+networks:
+
+  rasanet: {}

@@ -1,0 +1,215 @@
+VARIANTES CONVERSACIONES (ARTICULADORES)
+----------------------------------------
+Intenciones que articulan todos los HPs:
+* gethelp
+    - ok entonces no puedes ayudarme
+    - Eso fue una mierda, no estás ayudando.
+    - no puedes ayudarme
+    - No puedes ayudarme con lo que necesito.
+    - supongo que no puedes ayudarme entonces
+    - ok supongo que no puedes ayudarme
+    - eso no es lo que quiero
+    - ok, pero eso no me ayuda
+    - esto no lleva a nada
+    - Esta conversación no es realmente útil.
+    - No puedes ayudarme con lo que quiero.
+    - Creo que no puedes ayudarme
+    - hm no creo que puedas hacer lo que quiero
+    - detener
+    - deja de volver
+    - ¿Tienes algo?
+    - ¿Y te llamas compañía bot? pff
+    - ¿y eso es?
+    - ¿nada más?
+- stop
+    - cancela
+    - cancelar
+    - creo que no puedes ayudarme
+    - deja de volver atras
+    - hm no creo que puedas hacer lo que quiero
+    - no puedes ayudarme
+    - no puedes ayudarme con lo que necesito
+    - eso no esta bien hecho, dejalo
+    - esta conversacion no es util
+    - no puedes ayudarme con lo que quiero
+    - ok, entonces no puedes ayudarme
+    - ok, supongo que no puedes ayudarme
+    - ok, pero eso no me ayuda
+    - olvidalo
+    - parate
+    - rechazar
+    - stop
+    - y eso no es todo
+- deny
+    - no
+    - definitivamente no
+    - Nunca
+    - absolutamente no
+    - no lo creo
+    - Me temo que no
+- affirm
+    - si
+    - por supuesto
+    - Por supuesto
+    - si
+    - Okay
+    - guay
+- next_step
+    - llévame al siguiente paso
+    - Próximo paso
+    - Quiero ir al siguiente paso.
+    - Por favor, llévame al siguiente paso.
+- human_handoff
+    - Quiero hablar con un humano
+    - déjame hablar con una persona real por favor
+    - ¿Hay también humanos trabajando para tu empresa?
+    - Dame un humano apropiado
+- greetings
+    - Hola
+    - Oye
+    - Hola bot
+    - Hey bot
+    - Hola
+- goodbye
+    - adiós
+    - buenas noches
+    - adiós
+    - buenas noches
+    - nos vemos
+    - toodle-oo
+- thankyou and gratitude
+    - Gracias
+    - Gracias
+    - Muchas gracias
+    - gracias bot
+- name
+    - Andres
+    - Jaime
+- compliment
+    - ! eso es genial !
+    - ¡ama!
+    - ¡eres genial!
+    - ¡eres lindo!
+- out_of_scope
+    >fallback<
+    - Quiero pizza
+    - por favor ayuda con mi helado esta goteando
+    - No, espera, vuelve. Quiero un helado que gotee pero un cono que lo atrape para que puedas beber el helado más tarde.
+    - Quiero un helado que no gotee
+    - hey pequeña mamá, déjalos susurrar en tu oído
+    - Alguien llama a la policía, creo que el bot murió.
+- ask_whoami and ask_whatismyname
+    - ¿Cuál es mi nombre?
+    - ¿Puedo saber mi nombre?
+    - ¿Cuál es mi nombre?
+    - ¿Cómo me llamo?
+    - ¿Quién soy?
+    - esta bien quien soy
+    - Quién soy
+    - Dime quien soy yo?
+- ask_time
+    - ¿Cuál es la hora actual?
+    - que hora es en sydney
+    - que hora es ahora
+    - Qué hora es ?
+- ask_builder
+    - ¿Puedes compartir tu jefe conmigo?
+    - Quiero conocer a tu dueño
+    - Quiero conocer la empresa que te diseñó.
+    - Quiero conocer la empresa que te generó.
+
+
+VARIANTES CONVERSACIONES (SMALLTALKS)
+-------------------------------------
+Intenciones que disparan el intente chitchat:
+- ishappy
+- askcreator
+    - hablame de quien te creo
+    - me encantaria saber quien te hizo
+    - por favor, dime como naciste
+    - quien es tu creador
+- askfeeling
+    - ¡fenomenal! ¿cómo estás?
+    - ¿bien y tú?
+    - ¿cómo te esta llendo?
+    - ¿cómo va tu vida?
+    - ¿en que estás haciendo?
+- askjoke
+    - cuentame un chiste
+    - chiste
+    - di algo gracioso
+    - dime algo divertido
+    - divierteme
+- getnews
+    - ¿cuáles son las noticias de hoy?
+    - ¿cuáles son los titulares de hoy?
+    - ¿me puedes mostrar alguna noticia?
+    - ¿podrías darme alguna noticia?
+    - ¿puedes traerme las noticias?
+- getweather
+    - ¿Cómo está el clima hoy?
+    - ¿Como está el clima?
+    - ¿Qué tiempo hace en tu casa?
+    - ¿Tienes buen tiempo?
+- insult
+    - eres tonto
+    - eres un estúpido!
+    - ¿eres retrasado?
+    - vete a la mierda!
+    - cabron
+- laught
+    - eso es gracioso
+    - so es hilarante
+- wantdrink
+    traeme algo para beber
+- ask_restaurant
+    - ¿Me pueden mostrar un restaurante sin gluten?
+    - quiero un restaurante francés
+    - Estoy buscando un restaurante chino
+    - necesito un nuevo restaurante
+- ask_howold
+    - ¿cual es tu edad?
+    - ¿cuántos años?
+    - ¿cual es tu edad?
+    - ¿Cuando naciste?
+- ask_isbot
+    - ¿Eres un bot?
+    - ¿Eres un bot real?
+    - Eres un bot
+    - ¿Eres realmente un bot?
+- ask_wherefrom
+    - Dónde vives
+    - ¿de donde eres?
+    - Así que de dónde eres
+    - ¿Dónde estás?
+    - ¿Donde naciste?
+- ask_howbuilt
+    - ¿Cómo te construyeron?
+    - ¿Cómo te hicieron?
+    - Dime cómo te hicieron.
+    - Déjame saber cómo te hicieron exactamente
+- ask_languagesbot
+    - ¿Que lenguas hablas?
+    - ¿En qué idiomas puedes hablar?
+    - ¿Qué idiomas sabes?
+    - ¿En qué idiomas hablas con fluidez?
+- ask_howdoing
+    - Ahoy amigo, ¿cómo estás?
+    - Estás bien
+    - estas teniendo un buen dia
+    - ¿Estas bien?
+- ask_whatspossible
+    - ayuda
+    - ayuda por favor
+    - no se lo que quiero
+    - Necesito algo de ayuda
+    - opciones
+    - muéstrame el menú
+    - muéstrame lo que es
+- ask_whoisit
+    - quien es este
+    - Con quién estoy hablando
+    - cuál es tu nombre
+    - con quien estoy hablando
+    - Quién eres
+    - como te llamas bot
