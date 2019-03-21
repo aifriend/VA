@@ -3,16 +3,8 @@
 Help:
 	@echo "    clean-upload"
 	@echo "        Clean project to be uploaded to production"
-	@echo "    clean-logs"
-	@echo "        Clean all proyect logs"
-	@echo "    copy-config"
-	@echo "        Copy config.py to its original places"
-	@echo "    clean-model"
-	@echo "        Clean project rasa model"
 	@echo "    clean-mongo"
 	@echo "        Clean mongo data base"
-	@echo "    clean-model"
-	@echo "        Clean rasa trained model"
 	@echo "    show-process"
 	@echo "        Show network PORT taken"
 
