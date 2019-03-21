@@ -17,6 +17,7 @@ logger = ACNLogger(name="SecurityService", file="logs/app-secu.log")
 class Action(Enum):
     AUTH_BACKEND = "backend"
     AUTH_SAP = "sap"
+    NONE = "not_allowed"
 
 
 @app.route('/authorization', methods=['POST'])
@@ -52,23 +53,23 @@ def _get_action_flow(intent, level):
 
     action = _get_flow(intent, level)
 
-    res['result'] = "OK" if action in Action else "NOT_ACTION_AVAILABLE"
-    res['response'] = action
+    res['result'] = "OK" if action == Action.AUTH_SAP else "NOK"
+    res['response'] = action.value
 
     return res
 
 
 def _get_flow(intent, level):
     # Check SAP access authorization
-    sap_auth = True if intent == ('robotlaunch' or 'robotbegin') and level['sap'] == 'yes' else False
+    sap_auth = True if level['sap'] == 'yes' else False
 
     # Select action type
     if sap_auth:
         # call client backend service with Rasa
-        return Action.AUTH_SAP.value
-
-    # Access allowed to backend except SAP Service
-    return Action.AUTH_BACKEND.value
+        return Action.AUTH_SAP
+    else:
+        # Access not allowed to backend
+        return Action.AUTH_BACKEND
 
 
 def _get_module_config():

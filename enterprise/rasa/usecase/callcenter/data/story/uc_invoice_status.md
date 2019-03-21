@@ -1,10 +1,17 @@
 ## invoice + happy path
-* invoicestatus{"pedido": "pedido", "sys-number": "sys-number"}
+* invoicestatus{"session": "session", "pedido": "pedido", "sys-number": "sys-number"}
+    - slot{"session": "session"}
     - slot{"pedido": "pedido"}
     - invoicestatus_form
     - form{"name": "invoicestatus_form"}
     - slot{"reference": "sys-number"}
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"reference": null}
+    - slot{"status": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
 
 ## provider + happy path x followup
     - utter_anything_else
@@ -18,9 +25,14 @@
     - form{"name": "invoicestatus_form"}
     - slot{"requested_slot": "reference"}
 * form: inform{"sys-number": "sys-number"}
-    - slot{"session": "session"}
     - form: invoicestatus_form
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"reference": null}
+    - slot{"status": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
 
 ## invoice + step by step + followup
     - utter_anything_else

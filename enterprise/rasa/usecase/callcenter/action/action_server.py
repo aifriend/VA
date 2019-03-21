@@ -82,7 +82,7 @@ if __name__ == '__main__':
     logging.addLevelName(logging.ERROR, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
 
     # Logs
-    # configure_colored_logging("DEBUG")  # --verbose --quiet
+    configure_colored_logging("DEBUG")  # --verbose --quiet
     configure_file_logging("DEBUG", "logs/app-action.log")
 
     logger.info("Starting action endpoint server...")

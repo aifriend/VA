@@ -13,7 +13,8 @@ from tools.response_utils import \
     make_dialog_error_auth_response, \
     make_dialog_response, \
     make_dialog_error_response, \
-    make_faq_dialog_response
+    make_faq_dialog_response, \
+    make_default_dialog_response
 from tools.ACNLogger import ACNLogger
 
 app = Flask(__name__)
@@ -46,7 +47,7 @@ def get_repo_answer():
             _ = security_manager.get_answer(context_data)
             if context_data.authorization != "OK":
                 return make_dialog_error_auth_response(context_data.authorization,
-                                                       session=session, status_code=200)
+                                                       session=session, status_code=400)
 
             # call Repository Service first (FAQ request)
             faq_response = repo_manager.get_answer(context_data)
@@ -54,22 +55,25 @@ def get_repo_answer():
             # main control loop
             if not faq_response:
 
-                # NLU intent/entities extraction
+                # Level authorization
+                flow_allowed = security_manager.get_answer(context_data, SecurityService.GET_FLOW)
+                if flow_allowed["result"] != "OK":
+                    return make_dialog_error_auth_response(context_data.authorization,
+                                                           session=session, status_code=400)
+
+                # NLU intent/entities confidence thresholding filter (remove intent/entity below threshold)
                 _ = nlu_manager.get_answer(context_data)
 
-                # Level authorization
-                _ = security_manager.get_answer(context_data, SecurityService.GET_FLOW)
-
-                # Context resolver for not intent
+                # Context intent resolver
                 _ = context_manager.get_answer(context_data, ContextActionMode.RESOLVER)
 
-                # Call rasa core dialog control service
+                # Call dialog control manager
                 payload = dialog_controller.get_answer(context_data)
-                res = make_dialog_response(payload, status_code=200)
+                res = make_dialog_response(payload)
 
             else:
                 # FAQ response
-                res = make_faq_dialog_response(context_data, status_code=200)
+                res = make_faq_dialog_response(context_data)
 
             # Track context
             _ = context_manager.get_answer(context_data)
@@ -80,7 +84,7 @@ def get_repo_answer():
             return make_dialog_error_response("Ups! Querías decirme algo?")
 
     except Exception as exc:
-        return make_dialog_error_response("Ups! Me pillas distraido! Que me estabas diciendo?")
+        return make_dialog_error_response("Ups! Me pillas distraido! Que me estabas diciendo? ... ".format(exc))
 
 
 def _get_module_config():

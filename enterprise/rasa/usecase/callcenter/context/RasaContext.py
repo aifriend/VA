@@ -2,9 +2,12 @@ from typing import Text, List
 from context.Entity import Entity
 from context.Intent import Intent
 
-local_twofallback_request = ""
+local_twofallback_request = None
 
 RASA_FALLBACK_THRESHOLD = 0.2
+USER_INTENT_AFFIRM = 'affirm'
+USER_INTENT_DENY = 'deny'
+USER_INTENT_OUT_OF_SCOPE = 'out_of_scope'
 
 
 class RasaContext:
@@ -28,6 +31,9 @@ class RasaContext:
                 self.intent = Intent("")
         if entity_cls is not None:
             self.entities.extend(entity_cls)
+
+        global local_twofallback_request
+        local_twofallback_request = self
 
     @classmethod
     def from_request(cls, request):
@@ -58,18 +64,28 @@ class RasaContext:
         if self._is_float(self.intent.confidence):
             intent_confidence = round(self.intent.confidence, 2)
 
-        if self.intent.name.lower() == 'affirm' and \
+        intent_requested = self.intent.name.lower()
+        if intent_requested == USER_INTENT_AFFIRM and \
                 local_twofallback_request.intent.confidence <= RASA_FALLBACK_THRESHOLD:
-            return local_twofallback_request._get_rasa_request(1.0)
+            return local_twofallback_request._get_rasa_request(intent_requested, 1.0)
         else:
-            rasa_request = self._get_rasa_request(intent_confidence)
+            rasa_request = self._get_rasa_request(intent_requested, intent_confidence)
 
         local_twofallback_request = self
 
         return rasa_request
 
-    def _get_rasa_request(self, confidence):
-        request = "/" + self.intent.name.lower() + '@' + str(confidence)
+    def _get_rasa_request(self, intent_requested, confidence):
+        # Build intent request
+        default_intent_confidence = str(1.0)
+        if intent_requested is None:
+            request = "/" + USER_INTENT_OUT_OF_SCOPE + '@' + default_intent_confidence
+        elif intent_requested == USER_INTENT_AFFIRM or intent_requested == USER_INTENT_DENY:
+            request = "/" + intent_requested + '@' + default_intent_confidence
+        else:
+            request = "/" + intent_requested + '@' + str(confidence)
+
+        # Build entity request
         if self.entities.__len__() > 0:
             request = request + "{"
             for i in range(len(self.entities)):

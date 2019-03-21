@@ -1,6 +1,7 @@
 ################################################ REGULAR ACTIONS
 ## chitchat
 * chitchat{"session": "session"}
+    - slot{"session": "session"}
     - action_chitchat
 
 ################################################ PARTICULAR RESPONSES                  

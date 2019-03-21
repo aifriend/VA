@@ -46,7 +46,7 @@ def run_callcenter():
     logging.addLevelName(logging.ERROR, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
 
     # Logs
-    # utils.configure_colored_logging("DEBUG")  # --verbose --quiet
+    utils.configure_colored_logging("DEBUG")  # --verbose --quiet
     utils.configure_file_logging("DEBUG", "logs/app-run.log")
 
     # End points

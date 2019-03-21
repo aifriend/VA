@@ -1,23 +1,3 @@
-## invoice + chitchat + stop
-* invoicestatus{"session": "session", "pedido": "factura"}
-    - slot{"session": "session"}
-    - slot{"pedido": "factura"}
-    - utter_intro
-    - invoicestatus_form
-    - form{"name": "invoicestatus_form"}
-    - slot{"requested_slot": "reference"}
-* chitchat
-    - action_chitchat
-    - action_invoicestatus_next_step
-* stop
-    - utter_stop
-* affirm
-    - action_reset_history_and_form
-    - utter_stop_followup
-
-## invoice + chitchat^2 + stop + followup
-    - utter_anything_else
-
 ## invoice + chitchat^2 + stop + inform
 * invoicestatus{"pedido": "confirmacion"}
     - slot{"pedido": "confirmacion"}
@@ -46,7 +26,12 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"reference": null}
+    - slot{"status": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## invoice + chitchat^2 + stop + inform + followup

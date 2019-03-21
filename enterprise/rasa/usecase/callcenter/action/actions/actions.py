@@ -644,9 +644,10 @@ class RobotlaunchForm(FormAction):
             codigo_entity = codigo_entity if codigo_entity else ""
             proveedor_entity = proveedor_entity if proveedor_entity else "proveedor"
             organizacion_entity = organizacion_entity if organizacion_entity else "organizacion"
-            dispatcher.utter_template("utter_robotlaunch_status", tracker,
+            dispatcher.utter_template("utter_robotlaunch_resume", tracker,
                                       proveedor=proveedor_entity, organizacion=organizacion_entity,
-                                      codigo=codigo_entity, robot_id=robot_id, status=backend_res['response'])
+                                      codigo=codigo_entity, robot_id=robot_id, orgcompras=orgcompras,
+                                      currency=currency, paycon=pay_condition)
         else:
             if backend_res['response'] != "":
                 logger.debug("ActionServer - Robotlaunch - SAP response: '{}'".format(backend_res['response']))
@@ -658,6 +659,25 @@ class RobotlaunchForm(FormAction):
 
 
 ##################################################### NEXT-STEP
+
+class ActionNextStep(Action):
+    """Follows the action with the next step action of the active form"""
+    def name(self):
+        return "action_next_step"
+
+    def run(self, dispatcher, tracker, domain):
+        if tracker.active_form.get('name') == "invoicestatus_form":
+            followup_action = "action_invoicestatus_next_step"
+        elif tracker.active_form.get('name') == "providerconsultation_form":
+            followup_action = "action_providerconsultation_next_step"
+        elif tracker.active_form.get('name') == "robotlaunch_form":
+            followup_action = "action_robotlaunch_next_step"
+        else:
+            dispatcher.utter_template("utter_next_step_none", tracker)
+            return []
+
+        return [FollowupAction(followup_action)]
+
 
 class ActionInvoiceStatusNextStep(Action):
 
@@ -743,28 +763,27 @@ class ActionRobotLaunchNextStep(Action):
 
 
 ##################################################### DESAMBIGUATION
-"""
-utter_low (ask)
-    affirm
-        go
-    deny
-        utter_low (ask)
-              deny
-                  refrasing
-                      utter_low (ask)
-                          deny
-                              default
-                          affirm
-                              go
-                      utter_high
-                          go
-              affirm
-                  go
-"""
-
 
 class ActionDefaultAskAffirmation(Action):
-    """Asks for an affirmation of the intent if NLU threshold is not met."""
+    """Asks for an affirmation of the intent if NLU threshold is not met.
+
+    utter_low (ask)
+        affirm
+            go
+        deny
+            utter_low (ask)
+                  deny
+                      refrasing
+                          utter_low (ask)
+                              deny
+                                  default
+                              affirm
+                                  go
+                          utter_high
+                              go
+                  affirm
+                      go
+    """
 
     def name(self) -> Text:
 
@@ -897,65 +916,31 @@ class ActionDefaultNluFallback(Action):
             domain: Dict[Text, Any]
             ) -> List['Event']:
 
-        dispatcher.utter_template('utter_default', tracker, silent_fail=False)
-        return []
-
-
-# class ActionDefaultNluFallback(Action):
-#
-#     def name(self) -> Text:
-#
-#         return "action_default_nlu_fallback"
-#
-#     def run(self,
-#             dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]
-#             ) -> List['Event']:
-#
-#         # Fallback caused by TwoStageFallbackPolicy
-#         if (len(tracker.events) >= 4 and
-#                 (tracker.events[-4].get('name') == 'action_default_ask_affirmation')):
-#             return []
-#         elif (len(tracker.events) >= 5 and
-#                 (tracker.events[-5].get('name') == 'action_default_ask_affirmation')):
-#             return []
-#         elif (len(tracker.events) >= 6 and
-#                 (tracker.events[-6].get('name') == 'action_default_ask_affirmation')):
-#             return []
-#         elif (len(tracker.events) >= 7 and
-#                 (tracker.events[-7].get('name') == 'action_default_ask_affirmation')):
-#             return []
-#         elif (len(tracker.events) >= 8 and
-#                 (tracker.events[-8].get('name') == 'action_default_ask_affirmation')):
-#             return []
-#         # Fallback caused by Core
-#         else:
-#             dispatcher.utter_template('utter_default', tracker, silent_fail=False)
-#             return [ActionReverted()]
-
-# class ActionDefaultNluFallback(Action):
-#
-#     def name(self) -> Text:
-#
-#         return "action_default_nlu_fallback"
-#
-#     def run(self,
-#             dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]
-#             ) -> List['Event']:
-#
-#         # Fallback caused by TwoStageFallbackPolicy
-#         if (len(tracker.events) >= 5 and
-#                 (tracker.events[-5].get('name') == 'action_default_ask_affirmation') or
-#                 (tracker.events[-5].get('name') == 'action_default_ask_rephrase')):
-#             return []
-#
-#         # Fallback caused by Core
-#         else:
-#             dispatcher.utter_template('utter_default', tracker, silent_fail=False)
-#             return [ActionReverted()]
+        # Fallback caused by TwoStageFallbackPolicy
+        if (len(tracker.events) >= 4 and
+                (tracker.events[-4].get('name') == 'action_default_ask_affirmation') or
+                (tracker.events[-4].get('name') == 'action_default_ask_rephrase')):
+            return []
+        elif (len(tracker.events) >= 5 and
+                (tracker.events[-5].get('name') == 'action_default_ask_affirmation') or
+                (tracker.events[-5].get('name') == 'action_default_ask_rephrase')):
+            return []
+        elif (len(tracker.events) >= 6 and
+                (tracker.events[-6].get('name') == 'action_default_ask_affirmation') or
+                (tracker.events[-6].get('name') == 'action_default_ask_rephrase')):
+            return []
+        elif (len(tracker.events) >= 7 and
+                (tracker.events[-7].get('name') == 'action_default_ask_affirmation') or
+                (tracker.events[-7].get('name') == 'action_default_ask_rephrase')):
+            return []
+        elif (len(tracker.events) >= 8 and
+                (tracker.events[-8].get('name') == 'action_default_ask_affirmation') or
+                (tracker.events[-8].get('name') == 'action_default_ask_rephrase')):
+            return []
+        # Fallback caused by Core
+        else:
+            dispatcher.utter_template('utter_default', tracker, silent_fail=False)
+            return [ActionReverted()]
 
 
 ##################################################### GREETINGS
@@ -990,7 +975,7 @@ class ActionGoodbye(Action):
 
         Restarted()
 
-        dispatcher.utter_template('action_goodbye', tracker)
+        dispatcher.utter_template('utter_goodbye', tracker)
 
         return [Form(None), SlotSet(REQUESTED_SLOT, None), SlotSet("step", "0")]
 

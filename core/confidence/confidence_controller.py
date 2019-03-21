@@ -5,68 +5,12 @@ import requests
 
 from config import Config
 from flask import Flask, request
-from tools.response_utils import make_confidence_response, make_confidence_error_logic_response
+from tools.response_utils import make_confidence_response, make_confidence_error_response
 from tools.ACNLogger import ACNLogger
 
 app = Flask(__name__)
 logger = ACNLogger(name="ConfidenceController", file="logs/app-confid.log")
 config_data = []
-
-
-@app.route('/entity_upper_confidence', methods=['POST'])
-def entity_upper_confidence():
-    content = request.json
-
-    if isinstance(content, str):
-        content = json.loads(content)
-
-    confidence = content["confidence"]
-    entity = content["entity"]
-
-    priority = config_data["data"]
-    try:
-        try:
-            entity_priority = priority["ENTITY_PRIORITY_TABLE"][entity]
-        except:
-            entity_priority = "Low"
-
-        threshold = priority["THRESHOLD_TABLE"][entity_priority]
-        res = confidence >= float(threshold[0]["ENT_upper_threshold"])
-
-        return make_confidence_response(res, 200)
-
-    except:
-        response = {"threshold": False, "reason": "Entity upper confidence"}
-        logger.exception("Exception: {0}".format(response))
-        return make_confidence_error_logic_response(response, 400)
-
-
-@app.route('/entity_lower_confidence', methods=['POST'])
-def entity_lower_confidence():
-    content = request.json
-
-    if isinstance(content, str):
-        content = json.loads(content)
-
-    confidence = content["confidence"]
-    entity = content["entity"]
-
-    priority = config_data["data"]
-    try:
-        try:
-            entity_priority = priority["ENTITY_PRIORITY_TABLE"][entity]
-        except:
-            entity_priority = "Low"
-
-        threshold = priority["THRESHOLD_TABLE"][entity_priority]
-        res = confidence <= float(threshold[0]["ENT_lower_threshold"])
-
-        return make_confidence_response(res, 200)
-
-    except:
-        response = {"threshold": False, "reason": "Entity lower confidence"}
-        logger.exception("Exception: {0}".format(response))
-        return make_confidence_error_logic_response(response, 400)
 
 
 @app.route('/intent_upper_confidence', methods=['POST'])
@@ -89,12 +33,40 @@ def intent_upper_confidence():
         threshold = priority["THRESHOLD_TABLE"][intent_priority]
         res = confidence >= float(threshold[0]["INT_upper_threshold"])
 
-        return make_confidence_response({"threshold": res}, 200)
+        return make_confidence_response({"threshold": res, "reason": "Intent upper threshold"}, 200)
 
     except:
         response = {"threshold": False, "reason": "Intent upper confidence"}
         logger.exception("Exception: {0}".format(response))
-        return make_confidence_error_logic_response(response, 400)
+        return make_confidence_error_response(response, 400)
+
+
+@app.route('/entity_upper_confidence', methods=['POST'])
+def entity_upper_confidence():
+    content = request.json
+
+    if isinstance(content, str):
+        content = json.loads(content)
+
+    confidence = content["confidence"]
+    entity = content["entity"]
+
+    priority = config_data["data"]
+    try:
+        try:
+            entity_priority = priority["ENTITY_PRIORITY_TABLE"][entity]
+        except:
+            entity_priority = "Low"
+
+        threshold = priority["THRESHOLD_TABLE"][entity_priority]
+        res = confidence >= float(threshold[0]["ENT_upper_threshold"])
+
+        return make_confidence_response({"threshold": res, "reason": "Entity upper threshold"}, 200)
+
+    except:
+        response = {"threshold": False, "reason": "Entity upper confidence"}
+        logger.exception("Exception: {0}".format(response))
+        return make_confidence_error_response(response, 400)
 
 
 @app.route('/intent_lower_confidence', methods=['POST'])
@@ -117,12 +89,40 @@ def intent_lower_confidence():
         threshold = priority["THRESHOLD_TABLE"][intent_priority]
         res = confidence <= float(threshold[0]["INT_lower_threshold"])
 
-        return make_confidence_response({"threshold": res}, 200)
+        return make_confidence_response({"threshold": res, "reason": "Intent lower threshold"}, 200)
 
     except:
         response = {"threshold": False, "reason": "Intent lower confidence"}
         logger.exception("Exception: {0}".format(response))
-        return make_confidence_error_logic_response(response, 400)
+        return make_confidence_error_response(response, 400)
+
+
+@app.route('/entity_lower_confidence', methods=['POST'])
+def entity_lower_confidence():
+    content = request.json
+
+    if isinstance(content, str):
+        content = json.loads(content)
+
+    confidence = content["confidence"]
+    entity = content["entity"]
+
+    priority = config_data["data"]
+    try:
+        try:
+            entity_priority = priority["ENTITY_PRIORITY_TABLE"][entity]
+        except:
+            entity_priority = "Low"
+
+        threshold = priority["THRESHOLD_TABLE"][entity_priority]
+        res = confidence <= float(threshold[0]["ENT_lower_threshold"])
+
+        return make_confidence_response({"threshold": res, "reason": "Entity lower threshold"}, 200)
+
+    except:
+        response = {"threshold": False, "reason": "Entity lower confidence"}
+        logger.exception("Exception: {0}".format(response))
+        return make_confidence_error_response(response, 400)
 
 
 def _get_confidence_config():

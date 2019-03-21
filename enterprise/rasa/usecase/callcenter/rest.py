@@ -29,7 +29,6 @@ class HttpInputComponent(InputChannel):
                 "session": session,
                 "response": response
             }
-
         """
         rasa_webhook = Blueprint('rasa_webhook', __name__)
 
@@ -55,7 +54,7 @@ class HttpInputComponent(InputChannel):
 
             except ValueError as e:
                 logging.exception(e)
-                return make_rasa_error_logic_response("RASA Value Error", 400)
+                return make_rasa_error_response("RASA Value Error", 400)
 
             except Exception as exc:
                 logging.exception(exc)

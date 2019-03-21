@@ -8,7 +8,15 @@
     - form{"name": "providerconsultation_form"}
     - slot{"provider_id": "cnn"}
     - slot{"system": "macsystem"}
-    - action_reset_history_and_form
+    - slot{"adquira": null}
+    - slot{"codigo": null}
+    - slot{"proveedor": null}
+    - slot{"provider_id": null}
+    - slot{"system": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
 
 ## provider + happy path x followup
     - utter_anything_else
@@ -26,44 +34,23 @@
 * form: inform{"cnn": "cnn"}
     - providerconsultation_form
     - slot{"provider_id": "cnn"}
-    - slot{"session": "session"}
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * form: inform{"macsystem": "macsystem"}
     - providerconsultation_form
     - slot{"system": "macsystem"}
     - utter_anything_else
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"adquira": null}
+    - slot{"codigo": null}
+    - slot{"proveedor": null}
+    - slot{"provider_id": null}
+    - slot{"system": null}
+    - form{"name": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
 
 ## provider + happy path x followup
     - utter_anything_else
 
-## provider + happy path
-* providerconsultation{"cnn": "cnn", "proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"provider_id": "cnn"}
-    - slot{"requested_slot": "system"}
-* form: inform{"macsystem": "macsystem"}
-    - providerconsultation_form
-    - slot{"system": "macsystem"}
-    - utter_anything_else
-    - action_reset_history_and_form
-
-## provider + happy path
-* providerconsultation{"macsystem": "macsystem", "proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"system": "macsystem"}
-    - slot{"requested_slot": "provider_id"}
-* form: inform{"cnn": "cnn"}
-    - providerconsultation_form
-    - slot{"provider_id": "cnn"}
-    - utter_anything_else
-    - action_reset_history_and_form

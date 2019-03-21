@@ -20,7 +20,7 @@ class ContextData:
         self.locale = locale
         self.authorization = authorization
         self.authorization_level = level
-        self.authorization_role = role
+        self.authorization_flow = role
         self.intent = Intent()
         self.entities = []
 
@@ -41,7 +41,7 @@ class ContextData:
 
     def update_from_flow_security_response(self, response):
         try:
-            self.authorization_role = response
+            self.authorization_flow = response
         except:
             pass
 
@@ -79,10 +79,12 @@ class ContextData:
         return legend + " - {0}".format(self)
 
     def has_intent(self):
-        return isinstance(self.intent, Intent) and len(self.intent.name) > 0 and not self.intent.name.isspace()
+        return isinstance(self.intent, Intent) \
+               and len(self.intent.name) > 0 \
+               and not self.intent.name.isspace()
 
     def has_entities(self):
-        return len(self.entities) > 0
+        return self.entities is not None and len(self.entities) > 0
 
     def has_response(self):
         boolean = False

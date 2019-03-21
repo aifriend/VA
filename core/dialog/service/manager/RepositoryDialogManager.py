@@ -48,7 +48,7 @@ class RepositoryDialogManager(IDialogManager):
                     return True
                 elif len(repo_response["entities"]) == 0 and not repo_response["intent"]:
                     # Watson Assistant empty
-                    self.logger.debug(context_result.session, "Watson Assistant empty!")
+                    context_result.update_answer("Watson Assistant empty!")
                     return False
 
                 # Get FAQ answer if any

@@ -9,7 +9,13 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"reference": null}
+    - slot{"status": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## invoice + stop x followup

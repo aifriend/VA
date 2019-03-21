@@ -8,9 +8,9 @@ templates:
     - text: "Creo que no te he entendido, podrías preguntarmelo de nuevo?"
     - text: "¿Me puedes reformular tu pregunta? No la he entendido"
   utter_ask_affirmation:
-    - text: "Lo siento, no estoy seguro de haberte entendido bien 🤔 Has querido decir..."
+    - text: "Lo siento, no estoy seguro de haberte entendido bien 🤔 Quieres decir..."
   utter_ask_rephrase:
-    - text: "Podrías volver a hacer la pregunta de otra manera?"
+    - text: "Podrías formular la pregunta de otra manera?"
   utter_greetings:
     - text: "Hola"
     - text: "Hola, soy REPSOLBOT"
@@ -40,9 +40,9 @@ templates:
   utter_compliment:
     - text: "Gracias"
   utter_gethelp:
-    - text: "¿En que puedo ayudarte?"
-    - text: "¿Puedo ayudarte en algo?"
-    - text: "¿Como puedo puedo ayudarte?"
+    - text: "¿En qué puedo ayudarte?"
+    - text: "¿Dime en que puedo ayudarte?"
+    - text: "¿Como puedo ayudarte?"
   utter_canthelp:
     - text: "Lo siento, no puedo ayudarte con tu consulta. Próximamente podré ayudarte creando una petición a tu nombre en Unity pero mientras tanto, puedes utilizar tu canal habitual de soporte. Gracias"
   utter_thumbsup:
@@ -68,6 +68,8 @@ templates:
     - text: "Cuando dispongas de la informacion requerida podremos continuar con tu solicitud"
   utter_intro:
     - text: "Le voy a pedir datos. Cancele el proceso en cualquier momento diciendo 'PARAR'"
+  utter_next_step_none:
+    - text: "No hay ningún siguiente paso definido, puesto que no hay ningún formulario activo"
   utter_action_handoff:
     - text: "No ha sido posible tramitar su petición, por favor, inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
 
@@ -115,7 +117,7 @@ templates:
   utter_wrong_robot_id:
     - text: "Por favor, introduzca el cif or nif del proveedor o acreedor"
   utter_ask_orgcompras:
-    - text: "Organización de compras incorrecta (Valor numérico de 4 digitos)"
+    - text: "Por favor, introduzca la organización de compras (Valor numérico de 4 digitos)"
   utter_wrong_orgcompras:
     - text: "El código de organización de compras introducido {orgcompras} no es válido. Se espera un valor numérico de 4 dígitos"
   utter_ask_currency:
@@ -128,6 +130,8 @@ templates:
     - text: "Su proceso con el {proveedor} y {organizacion} con {codigo} {robot_id} ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos: {status}"
   utter_rpalaunch_form_error:
     - text: "En este momento no es posible la comunicación con SAP, por lo tanto no ha sido posible tramitar su petición, por favor inténtelo más tarde. En caso de persistir el error contacto con ISI_SOPORTE"
+  utter_robotlaunch_resume:
+    - text: "Su proceso con el {proveedor} con {codigo} {robot_id}, {organizacion} {orgcompras}, moneda {currency} y condición de pago {paycon} se va a tramitar. Por favor, confirme esta solicitud"
 
 intents:
   # forms
@@ -270,8 +274,9 @@ actions:
   - action_invoicestatus_next_step
   - action_providerconsultation_next_step
   - action_robotlaunch_next_step
+  - action_next_step
   # shared
-  - utter_insist
+  - utter_next_step_none
   # invoice status
   - utter_ask_reference
   - utter_wrong_reference
@@ -301,6 +306,7 @@ actions:
   - utter_wrong_paycondition
   - utter_rpalaunch_form_error
   - utter_robotlaunch_status
+  - utter_robotlaunch_resume
 
 forms:
   - invoicestatus_form

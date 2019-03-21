@@ -29,8 +29,6 @@ def update_logs(session, key, value):
     history_item[CONVERSATION_LABEL][key] = value
     local_db[session].push(history_item)
 
-    logger.debug(session, 'update_logs: {0}'.format(local_db))
-
     return make_context_response({"OK": "OK"}, 200)
 
 

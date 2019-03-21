@@ -139,8 +139,9 @@ actions:
   - action_invoicestatus_next_step
   - action_providerconsultation_next_step
   - action_robotlaunch_next_step
+  - action_next_step
   # shared
-  - utter_insist
+  - utter_next_step_none
   # invoice status
   - utter_ask_reference
   - utter_wrong_reference
@@ -170,6 +171,7 @@ actions:
   - utter_wrong_paycondition
   - utter_rpalaunch_form_error
   - utter_robotlaunch_status
+  - utter_robotlaunch_resume
 
 forms:
   - invoicestatus_form

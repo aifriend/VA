@@ -1,5 +1,6 @@
 import json
 
+from typing import Text
 from watson_assistant.util.HttpUtils import https_request
 from watson_assistant.wd_service.IWdService import IWdService
 from tools.ACNLogger import ACNLogger
@@ -46,6 +47,15 @@ class WdService(IWdService):
         except:
             return 500, {"WA - Exception requesting service"}, None
 
+    @staticmethod
+    def _is_float(string: Text) -> bool:
+        """Check if a string is an float"""
+        try:
+            float(string)
+            return True
+        except ValueError:
+            return False
+
     def _get_answer_wd(self, token, session, query):
         # Request
         headers = {
@@ -76,8 +86,12 @@ class WdService(IWdService):
             answer["response"] = wa_response["content"]
             # NLU
             answer["intent"] = wa_response["intent"]
-            answer["confidence"] = wa_response["confidence"]
-            answer["entities"].extend(wa_response["entities"])
+            answer["confidence"] = \
+                float(wa_response["confidence"]) if self._is_float(wa_response["confidence"]) else str(1.0)
+            for entity in wa_response["entities"]:
+                entity['confidence'] = \
+                    float(entity["confidence"]) if self._is_float(entity["confidence"]) else str(1.0)
+                answer["entities"].append(entity)
 
         answer["session"] = session
 

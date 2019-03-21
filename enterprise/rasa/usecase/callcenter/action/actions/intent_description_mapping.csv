@@ -1,18 +1,18 @@
 intent,button
-invoicestatus,Cual es el estado de mi pedido?
-robotlaunch,Me gustaría extender un proveedor
-providerconsultation,El proveedor trabaja por Adquira?
-greetings,Hola
-goodbye,Adios
-gethelp,Puedes ayudarme?
-stop,Parar
-deny,No
-affirm,Si
-next_step,Llévame al siguiente paso
-thankyou,Gracias
-compliment,Eres genial
-gratitude,Gracias
-out_of_scope,Algo incomprensible para mi
-human_handoff,Paseme con un humano
-inform,Introduzca el dato pedido
+invoicestatus,Cual es el estado del pedido
+robotlaunch,Que te gustaría extender un proveedor
+providerconsultation,Si el proveedor trabaja por Adquira
+greetings,Saludar
+goodbye,Despedirse
+gethelp,Que necesitas ayuda
+stop,Que necesitas parar o cancelar el dialog actual
+deny,Que no lo quieres
+affirm,Que si lo quieres
+next_step,Que quieres saber el siguiente paso
+thankyou,Que quieres dar las gracias
+compliment,Que quieres dar un cumplido
+gratitude,Que quieres dar las gracias
+out_of_scope,Que es algo que aun no puedo responder
+human_handoff,Que quieres comunicarte con un humano
+inform,Que quieres introducir un dato
 chitchat,Algo para lo que aun no tengo respuestas

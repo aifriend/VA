@@ -10,7 +10,15 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"adquira": null}
+    - slot{"codigo": null}
+    - slot{"proveedor": null}
+    - slot{"provider_id": null}
+    - slot{"system": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## provider + inform x stop x inform + followup
@@ -28,12 +36,19 @@
 * form: inform{"cnn": "cnn"}
     - providerconsultation_form
     - slot{"provider_id": "cnn"}
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"adquira": null}
+    - slot{"codigo": null}
+    - slot{"proveedor": null}
+    - slot{"provider_id": null}
+    - slot{"system": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## provider + inform x stop x followup

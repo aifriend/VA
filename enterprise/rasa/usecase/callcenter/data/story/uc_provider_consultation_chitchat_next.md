@@ -7,50 +7,9 @@
     - providerconsultation_form
     - form{"name": "providerconsultation_form"}
     - slot{"requested_slot": "provider_id"}
-* chitchat
-    - action_chitchat
-    - action_providerconsultation_next_step
-* inform{"cnn": "cnn"}
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"provider_id": "cnn"}
-    - slot{"requested_slot": "system"}
-* next_step
-    - action_providerconsultation_next_step
-
-## provider + inform x inform
-* providerconsultation{"proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - utter_intro
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"requested_slot": "provider_id"}
-* form: inform{"cnn": "cnn"}
-    - providerconsultation_form
-    - slot{"provider_id": "cnn"}
-    - form: providerconsultation_form
-    - slot{"requested_slot": "system"}
-* chitchat
-    - action_chitchat
-    - action_providerconsultation_next_step
-* next_step
-    - action_providerconsultation_next_step
-
-## provider + chitchat + followup
-* providerconsultation{"proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - utter_intro
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"requested_slot": "provider_id"}
 * form: inform{"cnn": "cnn"}
     - slot{"provider_id": "cnn"}
     - providerconsultation_form
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * chitchat
     - action_chitchat
@@ -109,7 +68,6 @@
 * form: inform{"cnn": "cnn"}
     - slot{"provider_id": "cnn"}
     - providerconsultation_form
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * next_step
     - action_providerconsultation_next_step

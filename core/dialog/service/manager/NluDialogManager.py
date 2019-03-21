@@ -1,9 +1,11 @@
+import copy
 import json
 import requests
 
 from urllib.parse import urlencode, quote_plus
 from service.ComponentsFactory import ComponentsFactory
 from service.manager.IDialogManager import IDialogManager
+from service.manager.ConfidenceDialogManager import ConfidenceActionMode
 
 
 class NluDialogManager(IDialogManager):
@@ -37,20 +39,21 @@ class NluDialogManager(IDialogManager):
                 context_result.intent = None
 
         # Entity confidence filter
-        for entity in context_result.entities:
+        entity_filtered = copy.copy(context_result.entities)
+        for entity in entity_filtered:
             entity_with_confidence = self._has_entity_confidence(entity, context_result, check_confidence)
             if not entity_with_confidence:
-                context_result.entities.remove(entity_with_confidence)
+                context_result.entities.remove(entity)
 
     def _has_intent_confidence(self, context, check_confidence):
-        return True if not check_confidence else self.confidence_manager.get_answer(
+        return True if check_confidence else self.confidence_manager.get_answer(
             context.intent.name, context.intent.confidence,
-            service.manager.ConfidenceDialogManager.ConfidenceActionMode.INTENT, context)
+            ConfidenceActionMode.INTENT, context)
 
     def _has_entity_confidence(self, entity, context, check_confidence):
-        return True if not check_confidence else self.confidence_manager.get_answer(
+        return True if check_confidence else self.confidence_manager.get_answer(
             entity.name, entity.confidence,
-            service.manager.ConfidenceDialogManager.ConfidenceActionMode.ENTITY, context)
+            ConfidenceActionMode.ENTITY, context)
 
     def _get_luis_answer(self, context_result, check_confidence):
         # Request

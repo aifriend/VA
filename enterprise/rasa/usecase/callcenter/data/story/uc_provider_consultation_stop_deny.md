@@ -27,7 +27,6 @@
 * form: inform{"cnn": "cnn"}
     - providerconsultation_form
     - slot{"provider_id": "cnn"}
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * stop
     - utter_stop

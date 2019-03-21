@@ -11,7 +11,19 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"codigo": null}
+    - slot{"organizacion": null}
+    - slot{"proveedor": null}
+    - slot{"session": null}
+    - slot{"robot_id": null}
+    - slot{"orgcompras": null}
+    - slot{"currency": null}
+    - slot{"paycondition": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## robot + stop x followup
@@ -35,7 +47,19 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"codigo": null}
+    - slot{"organizacion": null}
+    - slot{"proveedor": null}
+    - slot{"session": null}
+    - slot{"robot_id": null}
+    - slot{"orgcompras": null}
+    - slot{"currency": null}
+    - slot{"paycondition": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## robot + stop x followup
@@ -64,7 +88,19 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"codigo": null}
+    - slot{"organizacion": null}
+    - slot{"proveedor": null}
+    - slot{"session": null}
+    - slot{"robot_id": null}
+    - slot{"orgcompras": null}
+    - slot{"currency": null}
+    - slot{"paycondition": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## robot + stop x followup
@@ -98,7 +134,19 @@
 * stop
     - utter_stop
 * affirm
-    - action_reset_history_and_form
+    - slot{"session": null}
+    - slot{"codigo": null}
+    - slot{"organizacion": null}
+    - slot{"proveedor": null}
+    - slot{"session": null}
+    - slot{"robot_id": null}
+    - slot{"orgcompras": null}
+    - slot{"currency": null}
+    - slot{"paycondition": null}
+    - slot{"step": "0"}
+    - action_reset_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - utter_stop_followup
 
 ## robot + stop x followup

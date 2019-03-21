@@ -3,7 +3,6 @@ import requests
 
 from enum import Enum
 from service.manager.IDialogManager import IDialogManager
-from tools.response_utils import make_dialog_error_response
 from tools.ACNLogger import ACNLogger
 
 
@@ -36,16 +35,7 @@ class ConfidenceDialogManager(IDialogManager):
         Returns:
             A JSON with Security response information. For example,
             {
-                "threshold": {
-                    Entity - {
-                        "upper": 0.0,
-                        "lower": 0.0
-                        }
-                    Intent - {
-                        "upper": 0.0,
-                        "lower": 0.0
-                        }
-                }
+                "threshold": {True, False}
             }
 
         """
@@ -99,11 +89,13 @@ class ConfidenceDialogManager(IDialogManager):
         try:
             if action_mode == ConfidenceActionMode.INTENT:
                 response = self._apply_intent_threshold(session, nlu_item, confidence_score)
-            else:
+            elif action_mode == ConfidenceActionMode.ENTITY:
                 response = self._apply_entity_threshold(session, nlu_item, confidence_score)
+            else:
+                response = {"threshold": False, "reason": "No configuration defined (intent? or entity?)"}
 
         except Exception as exc:
             self.logger.exception("Exception: Confidence - get_answer")
-            return make_dialog_error_response(exc, 500)
+            response = {"threshold": False, "reason": exc}
 
         return response

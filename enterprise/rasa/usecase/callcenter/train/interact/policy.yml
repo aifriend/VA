@@ -5,15 +5,13 @@ policies:
         max_history: 10
         state_featurizer:
           - name: BinarySingleStateFeaturizer
-    epochs: 100
+    epochs: 30
     batch_size: 256
-    max_history: 10
+    max_history: 12
   - name: AugmentedMemoizationPolicy
-    max_history: 6
+    max_history: 3
   - name: MemoizationPolicy
     max_history: 10
-  - name: MemoizationPolicy
-    max_history: 7
   - name: TwoStageFallbackPolicy
     nlu_threshold: 0.5
     core_threshold: 0.3

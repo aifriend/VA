@@ -3,7 +3,6 @@ import requests
 
 from enum import Enum
 from service.manager.IDialogManager import IDialogManager
-from tools.response_utils import make_dialog_error_response
 from tools.ACNLogger import ACNLogger
 
 
@@ -80,8 +79,8 @@ class SecurityDialogManager(IDialogManager):
         :return:
             A JSON with Business Logic response information. For example:
             {
-                "result": { "OK", "NOT_ACTION_AVAILABLE" }
-                "response": { backend, sap }
+                "result": { "OK", "NOK" }
+                "response": { backend, sap, not_allowed }
             }
 
         """
@@ -118,6 +117,6 @@ class SecurityDialogManager(IDialogManager):
 
         except Exception as exc:
             self.logger.exception("Exception: Security - get_answer")
-            return make_dialog_error_response(exc, 500)
+            return {"authorization": "NOK", "level": {}}
 
         return response

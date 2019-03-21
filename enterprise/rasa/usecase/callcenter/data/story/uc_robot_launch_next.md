@@ -1,16 +1,5 @@
 ## robotlaunch + next_step x inform x inform x inform x inform
 * robotlaunch{"session": "session", "proveedor": "proveedor", "organizacion": "organizacion", "codigo": "CIF"}
-    - utter_intro
-    - robotlaunch_form
-    - form{"name": "robotlaunch_form"}
-* next_step
-    - action_robotlaunch_next_step
-
-## robotlaunch + next_step x inform x inform x inform x inform + followup
-    - utter_anything_else
-
-## robotlaunch + next_step x inform x inform x inform x inform
-* robotlaunch{"session": "session", "proveedor": "proveedor", "organizacion": "organizacion", "codigo": "CIF"}
     - slot{"codigo": "CIF"}
     - slot{"organizacion": "organizacion"}
     - slot{"proveedor": "proveedor"}

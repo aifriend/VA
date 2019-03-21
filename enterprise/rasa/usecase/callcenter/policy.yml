@@ -1,12 +1,19 @@
 policies:
   - name: KerasPolicy
+    featurizer:
+      - name: MaxHistoryTrackerFeaturizer
+        max_history: 10
+        state_featurizer:
+          - name: BinarySingleStateFeaturizer
     epochs: 90
     batch_size: 256
-    max_history: 10
+    max_history: 12
+  - name: AugmentedMemoizationPolicy
+    max_history: 2
   - name: MemoizationPolicy
     max_history: 7
   - name: TwoStageFallbackPolicy
-    nlu_threshold: 0.8
+    nlu_threshold: 0.6
     core_threshold: 0.3
     fallback_nlu_action_name: "action_default_nlu_fallback"
     fallback_core_action_name: "action_default_core_fallback"

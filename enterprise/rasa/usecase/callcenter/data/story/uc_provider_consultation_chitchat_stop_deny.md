@@ -1,47 +1,3 @@
-## provider + stop + chitchat
-* providerconsultation{"proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - utter_intro
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"requested_slot": "provider_id"}
-* chitchat
-    - action_chitchat
-    - action_providerconsultation_next_step
-* stop
-    - utter_stop
-* deny
-    - action_providerconsultation_next_step
-
-## provider + chitchat + stop x inform x inform + followup
-    - followup{"name": "action_listen"}
-
-## provider + inform x chitchat + stop x inform
-* providerconsultation{"proveedor": "proveedor", "codigo": "CIF", "adquira": "Marketplace"}
-    - slot{"adquira": "Marketplace"}
-    - slot{"codigo": "CIF"}
-    - slot{"proveedor": "proveedor"}
-    - providerconsultation_form
-    - form{"name": "providerconsultation_form"}
-    - slot{"requested_slot": "provider_id"}
-* form: inform{"cnn": "cnn"}
-    - providerconsultation_form
-    - slot{"provider_id": "cnn"}
-    - form: providerconsultation_form
-    - slot{"requested_slot": "system"}
-* chitchat
-    - action_chitchat
-    - action_providerconsultation_next_step
-* stop
-    - utter_stop
-* deny
-    - action_providerconsultation_next_step
-
-## provider + inform x chitchat + stop x inform + followup
-    - followup{"name": "action_listen"}
-
 ## provider + chitchat^2 + stop
 * providerconsultation{"proveedor": "proveedor", "adquira": "Marketplace"}
     - slot{"adquira": "Marketplace"}
@@ -87,7 +43,6 @@
 * form: inform{"cnn": "cnn"}
     - providerconsultation_form
     - slot{"provider_id": "cnn"}
-    - form: providerconsultation_form
     - slot{"requested_slot": "system"}
 * chitchat
     - action_chitchat

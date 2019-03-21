@@ -6,7 +6,6 @@ from service.context.Entity import Entity, EntityContextEncoder
 from service.context.Intent import Intent
 from service.manager.IDialogManager import IDialogManager
 from enum import Enum
-from tools.response_utils import make_dialog_error_response
 from tools.ACNLogger import ACNLogger
 
 
@@ -114,7 +113,7 @@ class ContextDialogManager(IDialogManager):
 
         except Exception as exc:
             self.logger.exception("Exception: Context - get_answer")
-            return make_dialog_error_response(exc, 500)
+            return {"NOK": "NOK"}
 
         return response
 
@@ -160,8 +159,9 @@ class ContextDialogManager(IDialogManager):
                         # Intent CHITCHAT replace
                         _ = self._intent_chitchat_context_resolver(context_result)
         else:
+            if not context_result.has_intent():
+                context_result.intent = Intent(confidence=1.0)
             context_result.intent.name = "out_of_scope"
-
         return context_result
 
     def _context_history_resolver(self, context_result, history_back=-1):

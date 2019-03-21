@@ -54,15 +54,15 @@ data:
   THRESHOLD_TABLE:
     High: 
       - 
-        INT_lower_threshold: 0.0
+        INT_lower_threshold: 0.2
         INT_upper_threshold: 0.0
-        ENT_lower_threshold: 0.0
+        ENT_lower_threshold: 0.2
         ENT_upper_threshold: 0.0
     Medium:
       - 
-        INT_lower_threshold: 0.0
+        INT_lower_threshold: 0.1
         INT_upper_threshold: 0.0
-        ENT_lower_threshold: 0.0
+        ENT_lower_threshold: 0.1
         ENT_upper_threshold: 0.0
     Low:
       -
