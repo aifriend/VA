@@ -13,7 +13,7 @@ templates:
     - text: "Podrías formular la pregunta de otra manera?"
   utter_greetings:
     - text: "Hola"
-    - text: "Hola, soy REPSOLBOT"
+    - text: "Hola, soy DEATHBOT"
     - text: "Hola, Bienvenido"
   utter_goodbye:
     - text: "Adios"
@@ -243,7 +243,7 @@ actions:
   - utter_possibilities
   - utter_canthelp
   - utter_thank_usecase
-  - utter_have_you_used_repsolbot_before
+  - utter_have_you_used_deathbot_before
   - utter_anything_else
   - utter_encourage_building_bot
   - utter_no_guide_for_switch

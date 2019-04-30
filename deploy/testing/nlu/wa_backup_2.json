@@ -1,5 +1,5 @@
 {
-  "name": "Repsol",
+  "name": "Death",
   "intents": [
     {
       "intent": "gratitude",
@@ -8349,7 +8349,7 @@
       "minor_version": "2018-09-20"
     }
   },
-  "description": "Repsol Assistant",
+  "description": "Death Assistant",
   "dialog_nodes": [
     {
       "type": "standard",
@@ -8479,7 +8479,7 @@
       "output": {
         "text": {
           "values": [
-            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7BC8D3AAD3-DE90-4CEF-9A16-10EEF5B92538%7D&file=Devolver%20una%20confirmaci%C3%B3n.docx&action=default&mobileredirect=true"
+            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://ts.death.com/:w:/r/sites/Death_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7BC8D3AAD3-DE90-4CEF-9A16-10EEF5B92538%7D&file=Devolver%20una%20confirmaci%C3%B3n.docx&action=default&mobileredirect=true"
           ],
           "selection_policy": "sequential"
         }
@@ -8512,7 +8512,7 @@
       "output": {
         "text": {
           "values": [
-            "Acceder a la ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña de confirmaciones-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.accenture.com/yzNzY9"
+            "Acceder a la ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña de confirmaciones-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.death.com/yzNzY9"
           ],
           "selection_policy": "sequential"
         }
@@ -8707,7 +8707,7 @@
       "output": {
         "text": {
           "values": [
-            "Para ver los pedidos realizados por otros usuarios debe seguir la siguiente ruta : Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa> y buscamos según el nº documento que tengamos, si no aparece envien email a isisoporte@repsol.com con imagen de la búsuqeda y número de documento"
+            "Para ver los pedidos realizados por otros usuarios debe seguir la siguiente ruta : Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña Compra Operativa> y buscamos según el nº documento que tengamos, si no aparece envien email a isisoporte@death.com con imagen de la búsuqeda y número de documento"
           ],
           "selection_policy": "sequential"
         }
@@ -8787,7 +8787,7 @@
       "output": {
         "text": {
           "values": [
-            "Los mensajes mostrados en rojo al verificar la confirmación generan problemas que impiden confirmar y concluir el proceso. Se deberán revisar/ y o corregir los datos introducidos. El propio mensaje servirá de orientación para la corrección de los datos mal introducidos. En caso de que no se corrija el error, envíe un correo con la captura de pantalla del error a isisoporte\\@repsol.com"
+            "Los mensajes mostrados en rojo al verificar la confirmación generan problemas que impiden confirmar y concluir el proceso. Se deberán revisar/ y o corregir los datos introducidos. El propio mensaje servirá de orientación para la corrección de los datos mal introducidos. En caso de que no se corrija el error, envíe un correo con la captura de pantalla del error a isisoporte\\@death.com"
           ],
           "selection_policy": "sequential"
         }
@@ -8852,7 +8852,7 @@
       "output": {
         "text": {
           "values": [
-            "Se accede a la pestaña compra operativa. https://go.accenture.com/jB6ars"
+            "Se accede a la pestaña compra operativa. https://go.death.com/jB6ars"
           ],
           "selection_policy": "sequential"
         }
@@ -8918,7 +8918,7 @@
       "output": {
         "text": {
           "values": [
-            "Desde SRM --> pulsar pestaña \"Cestas\" ->  ir a la pestaña \"confirmaciones\"-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.accenture.com/yzNzY9"
+            "Desde SRM --> pulsar pestaña \"Cestas\" ->  ir a la pestaña \"confirmaciones\"-> clicar en el botón \"crear confirmación\". Para más información ver el siguiente manual https://go.death.com/yzNzY9"
           ],
           "selection_policy": "sequential"
         }
@@ -8934,7 +8934,7 @@
       "output": {
         "text": {
           "values": [
-            "El comprador recibirá de forma automática un mail indicando que tiene un pedido pendiente de ser confirmado, en caso de duda, si cuando buscas la cesta desde la pestaña \"Cestas\" aparece el boton en azul \"crear confirmación\" indica que aún queda importe por confirmar, tambien puede mirar el siguiente manual https://go.accenture.com/1ohCXi"
+            "El comprador recibirá de forma automática un mail indicando que tiene un pedido pendiente de ser confirmado, en caso de duda, si cuando buscas la cesta desde la pestaña \"Cestas\" aparece el boton en azul \"crear confirmación\" indica que aún queda importe por confirmar, tambien puede mirar el siguiente manual https://go.death.com/1ohCXi"
           ],
           "selection_policy": "sequential"
         }
@@ -8951,7 +8951,7 @@
       "output": {
         "text": {
           "values": [
-            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://go.accenture.com/dy4YfZ"
+            "En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://go.death.com/dy4YfZ"
           ],
           "selection_policy": "random"
         }

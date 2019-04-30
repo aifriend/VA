@@ -4,7 +4,7 @@
     "generateOperationScopedModels": true,
     "uiDirs": "server/explorer",
     "apiInfo": {
-      "title": "Repsol API Explorer",
+      "title": "Death API Explorer",
       "description": "Connector to Watson Discovery to get more relevant documents"
     }
   }

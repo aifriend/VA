@@ -16,12 +16,6 @@ FAQ
 ---
 Q. ¿Cómo confirmar una factura?
 A. Acceder a la ruta: Canales > Compras y Contrataciones > Portal del Comprador > herramientas > SRM y cuando se cargue la pagina->  ir a la pestaña de confirmaciones-> clicar en el botón crear confirmación. Para más información ver el siguiente manual ***********adjuntar manual******
-Q. ¿Cómo anulo una confirmación?
-A. En primer lugar, debemos revisar en el pedido que no esté facturada la confirmación (comprobar estado de confirmación), si no lo está debemos seguir los pasos del siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7BC8D3AAD3-DE90-4CEF-9A16-10EEF5B92538%7D&file=Devolver%20una%20confirmaci%C3%B3n.docx&action=default&mobileredirect=true
-Q. ¿Cómo podría confirmar el pedido de mi compañero?
-A. Se accede a la pestaña compra operativa. https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7B78FBDEA4-9B17-4096-AAEC-AE1B755B8647%7D&file=Confirmar%20pedido%20desde%20la%20pesta%C3%B1a%20Compra%20Operativa.docx&action=default&mobileredirect=true
-Q. ¿Tengo confirmaciones pendientes?
-A. El comprador recibirá de forma automática un mail indicando que tiene un pedido pendiente de ser confirmado, en caso de duda, si cuando buscas la cesta desde la pestaña Cestas aparece el boton en azul crear confirmación indica que aún queda importe por confirmar, tambien puede mirar el siguiente manual https://ts.accenture.com/:w:/r/sites/Repsol_AO_site/tech_hub/_layouts/15/Doc.aspx?sourcedoc=%7B78FBDEA4-9B17-4096-AAEC-AE1B755B8647%7D&file=Confirmar%20pedido%20desde%20la%20pesta%C3%B1a%20Compra%20Operativa.docx&action=default&mobileredirect=true
 
 
 INVOICE STATUS

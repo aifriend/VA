@@ -1,42 +1,7 @@
 {
     "authorized_users": [
 
-        {"user":"d.aguirre.sanchez@accenture.com","sap":"yes"},
-        {"user":"jose.bernal.blanco@accenture.com","sap":"yes"},
-        {"user":"sandra.cobos.toro@accenture.com","sap":"yes"},
-        {"user":"j.becerra.bautista@accenture.com","sap":"yes"},
-        {"user":"d.taboas.pereira@accenture.com","sap":"yes"},
-        {"user":"j.a.rodriguez.rivas@accenture.com","sap":"yes"},
-        {"user":"f.algaba.de.la.vieja@accenture.com","sap":"yes"},
-        {"user":"j.b.lopez@accenture.com","sap":"yes"},
-        {"user":"jaime.mata.iriondo@accenture.com","sap":"yes"},
-        {"user":"marta.alvarez.ortiz@accenture.com","sap":"yes"},
-	    {"user":"sergio.llanes.ferro@accenture.com","sap":"yes"},
-        {"user":"m.kortazar.basterra@accenture.com","sap":"no"},
-        {"user":"a.ramirez.cabello@accenture.com", "sap":"no"},
-        {"user":"m.cuesta.diaz.rada@accenture.com","sap":"no"},        
-        {"user":"pedro.a.rey.alvarez@accenture.com","sap":"no"},
-        {"user":"m.sanchez.beltran@accenture.com","sap":"no"},
-        {"user":"jose.antonio.marquez@accenture.com","sap":"no"},
-        {"user":"a.ramos.caro@accenture.com","sap":"no"},
-        {"user":"jose.chamorro@accenture.com","sap":"no"},
-        {"user":"s.gomez.oliver@accenture.com","sap":"no"},
-        {"user":"diego.a.jarillo@accenture.com","sap":"no"},
-        {"user":"a.holgado.infante@accenture.com","sap":"no"},
-        {"user":"jorge.hidalgo@accenture.com","sap":"no"},
-        {"user":"victor.nieto.castan@accenture.com","sap":"no"},
-        {"user":"r.blanco.rincon@accenture.com","sap":"no"},
-        {"user":"maria.vinent.pons@accenture.com","sap":"no"},
-        {"user":"hector.rosales@accenture.com","sap":"no"},
-        {"user":"manuel.vallejo@servexternos.repsol.com","sap":"yes"},
-        {"user":"pedro.kunze@servexternos.repsol.com","sap":"yes"},
-        {"user":"adrian.trujillo@servexternos.repsol.com","sap":"yes"},
-        {"user":"david.taboas@servexternos.repsol.com","sap":"yes"},
-        {"user":"jesus.c.rodriguez@servexternos.repsol.com","sap":"yes"},
-        {"user":"maider.kortazar@servexternos.repsol.com","sap":"no"},
-        {"user":"adrian.cabello@servexternos.repsol.com","sap":"no"},
-        {"user":"mariacuesta.diaz@servexternos.repsol.com","sap":"no"},
-        {"user":"marta.alvarez@servexternos.repsol.com","sap":"no"}
+        {"user":"j.b.lopez@death.com","sap":"yes"},
 
     ]
 }

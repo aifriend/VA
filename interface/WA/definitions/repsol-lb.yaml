@@ -76,9 +76,9 @@ definitions: {}
 basePath: /api
 swagger: '2.0'
 info:
-  x-ibm-name: repsol-finder
+  x-ibm-name: death-finder
   version: 1.0.0
-  title: repsol-finder
+  title: death-finder
 schemes:
   - https
 host: $(catalog.host)
@@ -113,6 +113,6 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: 'http://repsol-lb.mybluemix.net$(request.path)$(request.search)'
+          target-url: 'http://death-lb.mybluemix.net$(request.path)$(request.search)'
           cache-response: time-to-live
           verb: keep

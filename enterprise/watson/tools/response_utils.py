@@ -35,7 +35,7 @@ def make_repo_response(data, status_code):
                 ], 
                 'intent': 'intent_name',
                 'response': [], 
-                'session': '@accenture.com', 
+                'session': '@j.b.lopez@death.com.com',
                 'status': HTTP_CODE
             }
         }
@@ -75,7 +75,7 @@ def make_repo_error_response(data, status_code):
                 ], 
                 'intent': 'intent_name',
                 'response': [], 
-                'session': '@accenture.com', 
+                'session': '@death.com',
                 'status': HTTP_CODE
             }
         }

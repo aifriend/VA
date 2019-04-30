@@ -1077,7 +1077,6 @@
 - [IBM](company)
 - [t-mobile US](company)
 - [vodafone](company)
-- [accenture](company)
 - [McKinsey Germany](company)
 - [BCG brazil](company)
 - [BCG digital ventures](company)

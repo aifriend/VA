@@ -1,13 +1,13 @@
 product: '1.0.0'
 
 info:
-  name: repsol-lb
-  title: repsol-lb
+  name: death-lb
+  title: death-lb
   version: "1.0.0"
 
 apis:
-  'repsol-lb':
-    $ref: repsol-lb.yaml
+  'death-lb':
+    $ref: death-lb.yaml
 
 visibility:
   view:

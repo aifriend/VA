@@ -1,8 +1,8 @@
 {
   "luis_schema_version": "3.2.0",
   "versionId": "0.3",
-  "name": "REPSOLVA_DEV",
-  "desc": "REPSOL VA DESARROLLO",
+  "name": "DEATHVA_DEV",
+  "desc": "DEATH VA DESARROLLO",
   "culture": "es-es",
   "tokenizerVersion": "1.0.0",
   "intents": [

@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "cloudantDB": {
-    "database": "repsol-lb",
+    "database": "death-lb",
     "username": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "password": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "name": "cloudantDB",

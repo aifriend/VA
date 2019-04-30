@@ -220,7 +220,7 @@ class asumeA060(Action):
         paycondition = "A060"
         logger.info(session, "Executing action: asumeA060")
 
-        ROBOT_NAME = "REPSOL_R000484",
+        ROBOT_NAME = "DEATH_R000484",
 
         if config.DEBUG:
             message = pickutter(answers.utter_robot_launched)
@@ -381,7 +381,7 @@ class robotLaunch(FormAction):
             currency = tracker.get_slot("builtin.currency")
             paycondition = tracker.get_slot("paycondition")
 
-            ROBOT_NAME = "REPSOL_R000484",
+            ROBOT_NAME = "DEATH_R000484",
 
             if iscreditor == "True":
                 rpa_instance = RasaRpaRequest(user_name=session, robot_name=ROBOT_NAME, creditor=crednif, nif=None,

@@ -16,16 +16,16 @@ la condicion de pago del nuevo proveedor es a060
 a060
     Su proceso con el proveedor y organizacion con None 24256398T ha sido lanzado y actualmente se encuentra en ejecución. Tan pronto finalice se le enviará un e-mail. Hasta pronto! Se están tramitando la extensión del proveedor con los datos proporcionados, en cuanto esté extendido se lo confirmaremos, esta operación puede tardar unos minutos
 
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"sys-number":"1234", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"currency":"a1b2c3", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/robotlaunch{"currency":"eur", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/robotlaunch{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/robotlaunch{"sys-number":"123456789", "session": "j.b.lopez@death.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/robotlaunch{"sys-number":"1234", "session": "j.b.lopez@death.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/robotlaunch{"currency":"a1b2c3", "session": "j.b.lopez@death.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/robotlaunch{"currency":"eur", "session": "j.b.lopez@death.com"}
 
 ----
 
@@ -38,9 +38,9 @@ adquira con maquina 1234
 adquira con maquina SRM
     El proveedor con None 24256398T y sistema SRM factura para Adquira
 
-- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
-- /providerconsultation{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
-- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
-- /providerconsultation{"macsystem":"1234", "session": "j.b.lopez@accenture.com"}
-- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
-- /providerconsultation{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@death.com"}
+- /providerconsultation{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@death.com"}
+- /providerconsultation{"macsystem":"1234", "session": "j.b.lopez@death.com"}
+- /providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@death.com"}
+- /providerconsultation{"macsystem":"SRM", "session": "j.b.lopez@death.com"}

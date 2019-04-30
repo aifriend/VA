@@ -109,7 +109,7 @@ actions:
   - utter_out_of_scope
   - utter_possibilities
   - utter_thank_usecase
-  - utter_have_you_used_repsolbot_before
+  - utter_have_you_used_deathbot_before
   - utter_anything_else
   - utter_encourage_building_bot
   - utter_offer_recommendation

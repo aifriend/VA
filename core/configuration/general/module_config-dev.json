@@ -14,7 +14,7 @@
     "SAP_DEV": {
         "url": "127.0.0.1",
         "port": "8060",
-        "wsdl": "http://qsoa.repsol.com:8280/services/SRM_ROBOT_FE_ps?wsdl",
+        "wsdl": "http://qsoa.death.com:8280/services/SRM_ROBOT_FE_ps?wsdl",
         "user": "USER_DQSOA_ROB001",
         "password": "xm12TYnpt",
         "invoice_status_action": "Z_XSRM_ESTADO_CUALQUIER_DOC",
@@ -33,27 +33,39 @@
     "WA": {
         "url": "127.0.0.1",
         "port": "8075",
+
+  "apikey": "zAmbgNG6zoW5kqQU5aPGz7hKie5H-VES8umL2OzIHIxd",
+  "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:natural-language-understanding:eu-gb:a/d8132d59365d40eaadb6fdc35fa0f0e4:ce060a3d-61d4-4a8a-8094-f90dfa4fa994::",
+  "iam_apikey_name": "auto-generated-apikey-86e3447b-e8f4-447c-a299-e10c1694c1cd",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/d8132d59365d40eaadb6fdc35fa0f0e4::serviceid:ServiceId-395ebacb-92c5-41ec-b5d4-284089abd4ac",
+  "url": "https://gateway-lon.watsonplatform.net/natural-language-understanding/api",
+
+
         "app_id": "f8f48a40-d41d-4491-a269-dfbeb143715f",
         "app_key": "rV1tS8wY8gQ0sM2iX2iS7yW0xI6dY8tQ5cI6uU1tR6jJ2xH2wJ",
         "app_token": "9ae20e8102de3aaf0883187ba74452cc",
         "app_origin": "https://us.apiconnect.ibmcloud.com",
+
         "login_server": "api.us.apiconnect.ibmcloud.com",
-        "login_url": "/acit-ds-think-2018/repsol/api/Clients/login",
-        "login_user": "accenture",
+        "login_url": "/acit-ds-think-2018/death/api/Clients/login",
+        "login_user": "death",
         "login_pwd": "p@ssw0rd",
+
         "query_server": "api.us.apiconnect.ibmcloud.com",
-        "query_url": "/acit-ds-think-2018/repsol/api/Messages/assess"
+        "query_url": "/acit-ds-think-2018/death/api/Messages/assess",
+
     },
     "RPA": {
         "url": "127.0.0.1",
         "port": "8095",
         "sqs_server": "sqs.eu-central-1.amazonaws.com",
         "sqs_url": "/%s/%s/?Action=SendMessage&MessageBody=%s",
-        "user": "repsolbot@accenture.com",
+        "user": "deathbot@death.com",
         "password": "_Abcd1234",
-        "robot_name": "REPSOL_R000484",
-        "robot_id": "REPSOL_R000484@EC2AMAZ-B8JUESH",
-        "aros_server": "aros.accenture.com",
+        "robot_name": "DEATH_R000484",
+        "robot_id": "DEATH_R000484@EC2AMAZ-B8JUESH",
+        "aros_server": "aros.death.com",
         "aros_url_token": "/dashboardws/Token",
         "aros_url_info": "/dashboardws/api/State/%s",
         "aros_url_perm": "/dashboardws/api/Permissions/%s",

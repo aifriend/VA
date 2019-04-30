@@ -28,6 +28,6 @@ module.exports.cloudantDb = {
   'port': 443,
   'url': 'https://ZXZZZZZZZZZZZZZ@c9b556ef-d0ba-428f-ab5b-4b02aa6a2ddc-bluemix.cloudant.com',
   'names': {
-    'documents': 'repsol'
+    'documents': 'death'
   }
 };

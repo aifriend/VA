@@ -1,4 +1,4 @@
-# Repsol chatbot
+# Death chatbot
 This is an chatbot implementation that can be connected to Skype for Business
 
 ## Project

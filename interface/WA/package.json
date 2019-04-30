@@ -1,5 +1,5 @@
 {
-  "name": "repsol-lb",
+  "name": "death-lb",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
@@ -34,5 +34,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "repsol-lb"
+  "description": "death-lb"
 }

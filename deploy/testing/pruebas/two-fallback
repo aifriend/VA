@@ -12,18 +12,18 @@ If the user affirms the intent, the story continues as if the user had this inte
 If the user denies, an ultimate fallback action is triggered (e.g. a handoff to a human).
 
 FORMULACION
-/providerconsultation@0.2{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
+/providerconsultation@0.2{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@death.com"}
     *affirm
     *deny
-/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
-/inform{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
+/inform{"macsystem":"SRM", "session": "j.b.lopez@death.com"}
 
 REFORMULACION
-/robotlaunch@0.9{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
+/robotlaunch@0.9{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
     *affirm
     *deny
-/inform@0.1{"orgcompras":"1234", "session": "j.b.lopez@accenture.com"}
-/inform{"currency":"EUR", "session": "j.b.lopez@accenture.com"}
-/inform{"paycon":"a060", "session": "j.b.lopez@accenture.com"}
+/inform@0.1{"orgcompras":"1234", "session": "j.b.lopez@death.com"}
+/inform{"currency":"EUR", "session": "j.b.lopez@death.com"}
+/inform{"paycon":"a060", "session": "j.b.lopez@death.com"}
 

@@ -5,25 +5,25 @@ session: default, status: None, system: None
 
 ----
 
-/invoicestatus{"pedido":"factura", "sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
-/invoicestatus{"pedido":"factura", "session": "j.b.lopez@accenture.com"}
-/inform{"sys-number":"123456789", "session": "j.b.lopez@accenture.com"}
+/invoicestatus{"pedido":"factura", "sys-number":"123456789", "session": "j.b.lopez@death.com"}
+/invoicestatus{"pedido":"factura", "session": "j.b.lopez@death.com"}
+/inform{"sys-number":"123456789", "session": "j.b.lopez@death.com"}
 
 ----
 
-/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "cnn":"A45768795", "macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
-/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@accenture.com"}
-/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
-/inform{"macsystem":"SRM", "session": "j.b.lopez@accenture.com"}
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "cnn":"A45768795", "macsystem":"SRM", "session": "j.b.lopez@death.com"}
+/providerconsultation{"proveedor":"proveedor", "codigo":"CIF", "adquira":"Marketplace", "session": "j.b.lopez@death.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
+/inform{"macsystem":"SRM", "session": "j.b.lopez@death.com"}
 
 ----
 
 /robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "cnn":"A45768795", "currency":"EUR", "paycon":"a060", "sys-number":"1234"}
-/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@accenture.com"}
-/inform{"cnn":"A45768795", "session": "j.b.lopez@accenture.com"}
-/inform{"sys-number":"1234", "session": "j.b.lopez@accenture.com"}
-/inform{"currency":"EUR", "session": "j.b.lopez@accenture.com"}
-/inform{"paycon":"a060", "session": "j.b.lopez@accenture.com"}
+/robotlaunch{"proveedor":"proveedor", "organizacion":"organizacion", "codigo":"CIF", "session": "j.b.lopez@death.com"}
+/inform{"cnn":"A45768795", "session": "j.b.lopez@death.com"}
+/inform{"sys-number":"1234", "session": "j.b.lopez@death.com"}
+/inform{"currency":"EUR", "session": "j.b.lopez@death.com"}
+/inform{"paycon":"a060", "session": "j.b.lopez@death.com"}
 
 ----
 
